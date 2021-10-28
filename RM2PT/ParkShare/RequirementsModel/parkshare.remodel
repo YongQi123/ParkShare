@@ -187,7 +187,7 @@ UseCaseModel ParkShare {
 	Service RentToDriverService {
 
 		[Operation]
-		uploadSpotInfo(location : String, moneyPerhour : Integer, startTime : Integer, endTime : Integer)
+		uploadSpotInfo(owner : String, address : String, price : Integer, serviceStartTime : Date, serviceEndTime : Date)
 		uploadCertificate(certificate : String)
 		confirmRegister()
 
@@ -424,10 +424,10 @@ UseCaseModel ParkShare {
 			if
 				certificate.isReal = true
 			then
-				self.certificate = true and
+				self.Certificate = true and
 				result = true
 			else
-				self.certificate = false and
+				self.Certificate = false and
 				result = false
 			endif
 
@@ -437,7 +437,7 @@ UseCaseModel ParkShare {
 
 		precondition:
 			self.IsLogin = true and
-			self.certificate = true
+			self.Certificate = true
 
 		// add to all if conformed	
 		postcondition:
@@ -454,6 +454,7 @@ DomainModel ParkShare {
 	Entity ParkingSpotOwner extends User {
 		Assets : Real
 		SelfParkingSpot : ParkingSpot
+		Certificate : Boolean
 
 		[Refer]
 		ParkingSpotOwnertoParkingSpot : ParkingSpot* ! Association
@@ -462,6 +463,7 @@ DomainModel ParkShare {
 	Entity ParkingAreaOwner extends User {
 		Assets : Real
 		SelfParkingSpot : ParkingSpot
+		Certificate : Boolean
 
 		[Refer]
 		ParkingAreaOwnertoParkingSpot : ParkingSpot* Association

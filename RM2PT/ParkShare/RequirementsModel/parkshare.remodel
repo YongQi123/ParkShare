@@ -106,9 +106,15 @@ UseCaseModel ParkShare {
 		ReturnMessage::returnSpotInfo(RentFromOwnerSSDExecution1FinishEnd -> RentFromOwnerSSDCallMessage1ReturnReceivingEnd RentFromOwnerSSDCallMessage1)
 		CallMessage::RentFromOwnerSSDCallMessage3(confirmRent RentFromOwnerSSDCallMessage3SendingEnd -> RentFromOwnerSSDExecution2StartEnd)
 		ReturnMessage::returnRentStatus(RentFromOwnerSSDExecution2FinishEnd -> RentFromOwnerSSDCallMessage3ReturnReceivingEnd RentFromOwnerSSDCallMessage3)
+		CallMessage::RentFromOwnerSSDCallMessage5(arrive_registration_information RentFromOwnerSSDCallMessage5SendingEnd -> RentFromOwnerSSDExecution3StartEnd)
+		ReturnMessage::RentFromOwnerSSDCallMessage5Return(RentFromOwnerSSDExecution3FinishEnd -> RentFromOwnerSSDCallMessage5ReturnReceivingEnd RentFromOwnerSSDCallMessage5)
+		CallMessage::RentFromOwnerSSDCallMessage7(leave_pay RentFromOwnerSSDCallMessage7SendingEnd -> RentFromOwnerSSDExecution4StartEnd)
+		ReturnMessage::RentFromOwnerSSDCallMessage7Return(RentFromOwnerSSDExecution4FinishEnd -> RentFromOwnerSSDCallMessage7ReturnReceivingEnd RentFromOwnerSSDCallMessage7)
 
 		Execution::RentFromOwnerSSDExecution1(RentFromOwnerService RentFromOwnerSSDExecution1StartEnd RentFromOwnerSSDExecution1FinishEnd)
 		Execution::RentFromOwnerSSDExecution2(RentFromOwnerService RentFromOwnerSSDExecution2StartEnd RentFromOwnerSSDExecution2FinishEnd)
+		Execution::RentFromOwnerSSDExecution3(RentFromOwnerService RentFromOwnerSSDExecution3StartEnd RentFromOwnerSSDExecution3FinishEnd)
+		Execution::RentFromOwnerSSDExecution4(RentFromOwnerService RentFromOwnerSSDExecution4StartEnd RentFromOwnerSSDExecution4FinishEnd)
 
 		MessageEnd::RentFromOwnerSSDCallMessage1SendingEnd(Driver RentFromOwnerSSDCallMessage1)
 		ExecutionEnd::RentFromOwnerSSDExecution1StartEnd(RentFromOwnerService RentFromOwnerSSDExecution1)
@@ -118,6 +124,14 @@ UseCaseModel ParkShare {
 		ExecutionEnd::RentFromOwnerSSDExecution2StartEnd(RentFromOwnerService RentFromOwnerSSDExecution2)
 		ExecutionEnd::RentFromOwnerSSDExecution2FinishEnd(RentFromOwnerService RentFromOwnerSSDExecution2)
 		MessageEnd::RentFromOwnerSSDCallMessage3ReturnReceivingEnd(Driver returnRentStatus)
+		MessageEnd::RentFromOwnerSSDCallMessage5SendingEnd(Driver RentFromOwnerSSDCallMessage5)
+		ExecutionEnd::RentFromOwnerSSDExecution3StartEnd(RentFromOwnerService RentFromOwnerSSDExecution3)
+		ExecutionEnd::RentFromOwnerSSDExecution3FinishEnd(RentFromOwnerService RentFromOwnerSSDExecution3)
+		MessageEnd::RentFromOwnerSSDCallMessage5ReturnReceivingEnd(Driver RentFromOwnerSSDCallMessage5Return)
+		MessageEnd::RentFromOwnerSSDCallMessage7SendingEnd(Driver RentFromOwnerSSDCallMessage7)
+		ExecutionEnd::RentFromOwnerSSDExecution4StartEnd(RentFromOwnerService RentFromOwnerSSDExecution4)
+		ExecutionEnd::RentFromOwnerSSDExecution4FinishEnd(RentFromOwnerService RentFromOwnerSSDExecution4)
+		MessageEnd::RentFromOwnerSSDCallMessage7ReturnReceivingEnd(Driver RentFromOwnerSSDCallMessage7Return)
 
 	}
 
@@ -179,8 +193,10 @@ UseCaseModel ParkShare {
 	Service RentFromOwnerService {
 
 		[Operation]
-		selectSpot()
-		confirmRent()
+		selectSpot(location, parking_space_number, parking_time)
+		confirmRent(moneyPerhour)
+		arrive_registration_information(name, license_number)
+		leave_pay(time, money)
 
 	}
 
@@ -212,7 +228,7 @@ UseCaseModel ParkShare {
 		/* postcondition: skeleton */
 		postcondition:
 			if
-				// �񶨲�������
+				// ·ñ¶¨²Ù×÷·û£¿
 				User.allInstance()->exists(c:User | c.Username = username)
 			then
 				result = false
@@ -267,6 +283,53 @@ UseCaseModel ParkShare {
 			else
 				result = false
 			endif
+	}
+
+	// by Xu yunhao
+	Contract RentFromOwnerService::selectSpot(location : String, parking_space_number : Integer, parking_time : Integer) : Boolean {
+
+		precondition:
+			parking_space_number > 0 and
+			location.IsAccessible = true and
+			parking_time > 0
+
+		postcondition:
+			if
+				// ³µÎ»¿É½øÈë
+				location.IsAccessible = true
+			then
+				/*µ¼º½µ½Ä¿±ê³µÎ»*/
+				result = location.Navigation
+			else
+				result = null
+			endif
+	}
+
+	Contract RentFromOwnerService::confirmRent(moneyPerhour : Integer) : Boolean {
+
+		precondition:
+			moneyPerhour > 0
+		postcondition:
+			true
+	}
+
+	Contract RentFromOwnerService::arrive_registration_information(name : String, license_number : String) : Boolean {
+
+		precondition:
+			name.IsReal = true and
+			license_number.IsReal = true
+		postcondition:
+			result = ParkingStartTime
+	}
+
+	Contract RentFromOwnerService::leave_pay(time : Integer, money : Integer) : Boolean {
+
+		precondition:
+			time > 0 and
+			money > 0
+		postcondition:
+			// ½»µÄÇ®Ó¦¸ÃµÈÓÚÍ£µÄÊ±¼ä³ËÒÔÃ¿Ð¡Ê±µ¥¼Û
+			money = time*moneyPerhour
 	}
 
 }

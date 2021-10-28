@@ -4,8 +4,8 @@ UseCaseModel ParkShare {
 	UC::rentFromOwner include login definedBySSD(RentFromOwnerSSD) relatedService(RentFromOwnerService)
 	UC::searchParkingSpot include login definedBySSD(SearchParkingSpotSSD) relatedService(SearchParkingSpotService)
 	UC::showAssets include login definedBySSD(ShowAssetsSSD) relatedService(ShowAssetsService)
-	UC::register definedBySSD(RegisterSSD) relatedService(RegisterService)
-	UC::login definedBySSD(LoginSSD) relatedService(LoginService)
+	UC::register
+	UC::login
 
 	Actor ParkingSpotOwner
 	{
@@ -103,9 +103,15 @@ UseCaseModel ParkShare {
 		ReturnMessage::returnSpotInfo(RentFromOwnerSSDExecution1FinishEnd -> RentFromOwnerSSDCallMessage1ReturnReceivingEnd RentFromOwnerSSDCallMessage1)
 		CallMessage::RentFromOwnerSSDCallMessage3(confirmRent RentFromOwnerSSDCallMessage3SendingEnd -> RentFromOwnerSSDExecution2StartEnd)
 		ReturnMessage::returnRentStatus(RentFromOwnerSSDExecution2FinishEnd -> RentFromOwnerSSDCallMessage3ReturnReceivingEnd RentFromOwnerSSDCallMessage3)
+		CallMessage::RentFromOwnerSSDCallMessage5(arrive_registration_information RentFromOwnerSSDCallMessage5SendingEnd -> RentFromOwnerSSDExecution3StartEnd)
+		ReturnMessage::RentFromOwnerSSDCallMessage5Return(RentFromOwnerSSDExecution3FinishEnd -> RentFromOwnerSSDCallMessage5ReturnReceivingEnd RentFromOwnerSSDCallMessage5)
+		CallMessage::RentFromOwnerSSDCallMessage7(leave_pay RentFromOwnerSSDCallMessage7SendingEnd -> RentFromOwnerSSDExecution4StartEnd)
+		ReturnMessage::RentFromOwnerSSDCallMessage7Return(RentFromOwnerSSDExecution4FinishEnd -> RentFromOwnerSSDCallMessage7ReturnReceivingEnd RentFromOwnerSSDCallMessage7)
 
 		Execution::RentFromOwnerSSDExecution1(RentFromOwnerService RentFromOwnerSSDExecution1StartEnd RentFromOwnerSSDExecution1FinishEnd)
 		Execution::RentFromOwnerSSDExecution2(RentFromOwnerService RentFromOwnerSSDExecution2StartEnd RentFromOwnerSSDExecution2FinishEnd)
+		Execution::RentFromOwnerSSDExecution3(RentFromOwnerService RentFromOwnerSSDExecution3StartEnd RentFromOwnerSSDExecution3FinishEnd)
+		Execution::RentFromOwnerSSDExecution4(RentFromOwnerService RentFromOwnerSSDExecution4StartEnd RentFromOwnerSSDExecution4FinishEnd)
 
 		MessageEnd::RentFromOwnerSSDCallMessage1SendingEnd(Driver RentFromOwnerSSDCallMessage1)
 		ExecutionEnd::RentFromOwnerSSDExecution1StartEnd(RentFromOwnerService RentFromOwnerSSDExecution1)
@@ -115,38 +121,14 @@ UseCaseModel ParkShare {
 		ExecutionEnd::RentFromOwnerSSDExecution2StartEnd(RentFromOwnerService RentFromOwnerSSDExecution2)
 		ExecutionEnd::RentFromOwnerSSDExecution2FinishEnd(RentFromOwnerService RentFromOwnerSSDExecution2)
 		MessageEnd::RentFromOwnerSSDCallMessage3ReturnReceivingEnd(Driver returnRentStatus)
-
-	}
-
-	Interaction RegisterSSD {
-
-		[Participants: ParkingSpotOwner ParkingAreaOwner Driver RegisterService]
-
-		CallMessage::RegisterSSDCallMessage1(inputRegisterInfo RegisterSSDCallMessage1SendingEnd -> RegisterSSDExecution1StartEnd)
-		ReturnMessage::returnRegisterStatus(RegisterSSDExecution1FinishEnd -> RegisterSSDCallMessage1ReturnReceivingEnd RegisterSSDCallMessage1)
-
-		Execution::RegisterSSDExecution1(RegisterService RegisterSSDExecution1StartEnd RegisterSSDExecution1FinishEnd)
-
-		MessageEnd::RegisterSSDCallMessage1SendingEnd(ParkingSpotOwner RegisterSSDCallMessage1)
-		ExecutionEnd::RegisterSSDExecution1StartEnd(RegisterService RegisterSSDExecution1)
-		ExecutionEnd::RegisterSSDExecution1FinishEnd(RegisterService RegisterSSDExecution1)
-		MessageEnd::RegisterSSDCallMessage1ReturnReceivingEnd(ParkingSpotOwner returnRegisterStatus)
-
-	}
-
-	Interaction LoginSSD {
-
-		[Participants: ParkingSpotOwner ParkingAreaOwner Driver LoginService]
-
-		CallMessage::LoginSSDCallMessage1(inputLoginInfo LoginSSDCallMessage1SendingEnd -> LoginSSDExecution1StartEnd)
-		ReturnMessage::returnLoginStatus(LoginSSDExecution1FinishEnd -> LoginSSDCallMessage1ReturnReceivingEnd LoginSSDCallMessage1)
-
-		Execution::LoginSSDExecution1(LoginService LoginSSDExecution1StartEnd LoginSSDExecution1FinishEnd)
-
-		MessageEnd::LoginSSDCallMessage1SendingEnd(ParkingSpotOwner LoginSSDCallMessage1)
-		ExecutionEnd::LoginSSDExecution1StartEnd(LoginService LoginSSDExecution1)
-		ExecutionEnd::LoginSSDExecution1FinishEnd(LoginService LoginSSDExecution1)
-		MessageEnd::LoginSSDCallMessage1ReturnReceivingEnd(ParkingSpotOwner returnLoginStatus)
+		MessageEnd::RentFromOwnerSSDCallMessage5SendingEnd(Driver RentFromOwnerSSDCallMessage5)
+		ExecutionEnd::RentFromOwnerSSDExecution3StartEnd(RentFromOwnerService RentFromOwnerSSDExecution3)
+		ExecutionEnd::RentFromOwnerSSDExecution3FinishEnd(RentFromOwnerService RentFromOwnerSSDExecution3)
+		MessageEnd::RentFromOwnerSSDCallMessage5ReturnReceivingEnd(Driver RentFromOwnerSSDCallMessage5Return)
+		MessageEnd::RentFromOwnerSSDCallMessage7SendingEnd(Driver RentFromOwnerSSDCallMessage7)
+		ExecutionEnd::RentFromOwnerSSDExecution4StartEnd(RentFromOwnerService RentFromOwnerSSDExecution4)
+		ExecutionEnd::RentFromOwnerSSDExecution4FinishEnd(RentFromOwnerService RentFromOwnerSSDExecution4)
+		MessageEnd::RentFromOwnerSSDCallMessage7ReturnReceivingEnd(Driver RentFromOwnerSSDCallMessage7Return)
 
 	}
 
@@ -186,22 +168,10 @@ UseCaseModel ParkShare {
 	Service RentFromOwnerService {
 
 		[Operation]
-		selectSpot()
-		confirmRent()
-
-	}
-
-	Service RegisterService {
-
-		[Operation]
-		inputRegisterInfo(username, password)
-
-	}
-
-	Service LoginService {
-
-		[Operation]
-		inputLoginInfo(username, password)
+		selectSpot(location, parking_space_number, parking_time)
+		confirmRent(moneyPerhour)
+		arrive_registration_information(name, license_number)
+		leave_pay(time, money)
 
 	}
 
@@ -223,7 +193,7 @@ UseCaseModel ParkShare {
 			then
 				result = ps.BriefIntro
 			else
-				// ÔøΩ—æÔøΩrentÔøΩÀµÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ—æÔøΩÔøΩÔøΩÔøΩÔøΩ
+				// ÔøΩ—æÔøΩrentÔøΩÀµÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ—æÔøΩÔøΩÔøΩÔøΩÔø?
 				self.RentNotice = true and
 				result = null
 			endif
@@ -248,10 +218,57 @@ UseCaseModel ParkShare {
 			then
 				result = ps.Details
 			else
-				// ÔøΩ—æÔøΩrentÔøΩÀµÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ—æÔøΩÔøΩÔøΩÔøΩÔøΩ
+				// ÔøΩ—æÔøΩrentÔøΩÀµÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ—æÔøΩÔøΩÔøΩÔøΩÔø?
 				self.RentNotice = true and
 				result = null
 			endif
+	}
+
+	// by Xu yunhao
+	Contract RentFromOwnerService::selectSpot(location : String, parking_space_number : Integer, parking_time : Integer) : Boolean {
+
+		precondition:
+			parking_space_number > 0 and
+			location.IsAccessible = true and
+			parking_time > 0
+
+		postcondition:
+			if
+				// ≥µŒªø…Ω¯»Î
+				location.IsAccessible = true
+			then
+				/*µº∫ΩµΩƒø±Í≥µŒª*/
+				result = location.Navigation
+			else
+				result = null
+			endif
+	}
+
+	Contract RentFromOwnerService::confirmRent(moneyPerhour : Integer) : Boolean {
+
+		precondition:
+			moneyPerhour > 0
+		postcondition:
+			true
+	}
+
+	Contract RentFromOwnerService::arrive_registration_information(name : String, license_number : String) : Boolean {
+
+		precondition:
+			name.IsReal = true and
+			license_number.IsReal = true
+		postcondition:
+			result = ParkingStartTime
+	}
+
+	Contract RentFromOwnerService::leave_pay(time : Integer, money : Integer) : Boolean {
+
+		precondition:
+			time > 0 and
+			money > 0
+		postcondition:
+			// Ωªµƒ«Æ”¶∏√µ»”⁄Õ£µƒ ±º‰≥À“‘√ø–° ±µ•º€
+			money = time*moneyPerhour
 	}
 
 }
@@ -268,23 +285,23 @@ DomainModel ParkShare {
 		ParkingAreaOwnertoParkingSpot : ParkingSpot* Association
 	}
 
-	Entity Driver extends User {
+	Entity DriverNew extends User {
 		[Refer]
 		DrivertoRentRecord : RentRecord* Association
 		DrivertoFineRecord : FineRecord* Association
 	}
 
 	Entity ParkingSpot {
-		owner : String
-		registerDate : Date
-		status : ParkingSpotStatus[EMPTY|USING|OVERTIME]
-		price : Real
-		serviceStartTime : Date
-		serviceEndTime : Date
-		income : Real
-		address : String
-		longitude : String
-		latitude : String
+		Owner  : String
+		RegisterDate : Date
+		Status : ParkingSpotStatus[EMPTY|USING|OVERTIME]
+		Price : Real
+		ServiceStartTime : Date
+		ServiceEndTime : Date
+		Income : Real
+		Address : String
+		Longitude : String
+		Latitude : String
 
 		[Refer]
 		ParkingSpottoParkingSpotOwner : ParkingSpotOwner Association
@@ -293,35 +310,35 @@ DomainModel ParkShare {
 	}
 
 	@AutoCRUD Entity User {
-		id : String
-		username : String
-		password : String
-		telephone : String
+		Id : String
+		Username : String
+		Password : String
+		Telephone : String
 	}
 
 	Entity RentRecord {
-		driver : String
-		parkingSpot : String
-		bookStartTime : Date
-		bookEndTime : Date
-		rentStartTime : Date
-		rentEndTime : Date
-		cost : Real
-		id : String
+		Driver : String
+		ParkingSpot : String
+		BookStartTime : Date
+		BookEndTime : Date
+		RentStartTime : Date
+		RentEndTime : Date
+		Cost : Real
+		Id : String
 
 		[Refer]
-		RentRecordtoDriver : Driver ! Association
+		RentRecordtoDriver : DriverNew ! Association
 		RentRecordtoParkingSpot : ParkingSpot ! Association
 	}
 
 	Entity FineRecord {
-		driver : String
-		rentRecord : String
-		money : Real
-		fineDate : Date
+		Driver : String
+		RentRecord : String
+		Money : Real
+		FineDate : Date
 
 		[Refer]
-		FineRecordtoDriver : Driver ! Association
+		FineRecordtoDriver : DriverNew ! Association
 		FineRecordtoRentRecord : RentRecord Association
 	}
 

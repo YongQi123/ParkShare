@@ -332,16 +332,34 @@ UseCaseModel ParkShare {
 			money = time*moneyPerhour
 	}
 
+	// by Zhou Yumeng
+	// 展示资产
+	Contract ShowAssetsService::submitCheckRequest() : Real {
+
+		/* definition skeleton */
+		/* precondition: skeleton */
+		precondition:
+			self.Assets >= 0
+
+		/* postcondition: skeleton */
+		postcondition:
+			result = self.Assets
+	}
+
 }
 
 DomainModel ParkShare {
 
 	Entity ParkingSpotOwner extends User {
+		Assets : Real
+
 		[Refer]
 		ParkingSpotOwnertoParkingSpot : ParkingSpot* ! Association
 	}
 
 	Entity ParkingAreaOwner extends User {
+		Assets : Real
+
 		[Refer]
 		ParkingAreaOwnertoParkingSpot : ParkingSpot* Association
 	}

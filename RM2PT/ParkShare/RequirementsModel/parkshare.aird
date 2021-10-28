@@ -4,7 +4,7 @@
     <semanticResources>parkshare.remodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_ezJKIDIYEey3L4UzQGy2GA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_e0rbMDIYEey3L4UzQGy2GA" name="ParkShare Conceptual Class Diagram" repPath="#_ez5YEDIYEey3L4UzQGy2GA" changeId="ab8c0497-26b8-46d2-a4a5-7a1848c6d8a4">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_e0rbMDIYEey3L4UzQGy2GA" name="ParkShare Conceptual Class Diagram" repPath="#_ez5YEDIYEey3L4UzQGy2GA" changeId="43bfd0c5-dd81-4539-870d-efbc30c3ad4f">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']"/>
         <target xmi:type="rEMODEL:DomainModel" href="parkshare.remodel#//@DomainModel"/>
       </ownedRepresentationDescriptors>
@@ -44,6 +44,10 @@
         <children xmi:type="notation:Node" xmi:id="_nXGZ4DeXEeyZQf8sZ6Fxnw" type="2003" element="_nW6MoDeXEeyZQf8sZ6Fxnw">
           <children xmi:type="notation:Node" xmi:id="_nXHA8DeXEeyZQf8sZ6Fxnw" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_nXHoADeXEeyZQf8sZ6Fxnw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_VUkDjzf7Eey2_q300yy2-w" type="3010" element="_VUaSEDf7Eey2_q300yy2-w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_VUkDkDf7Eey2_q300yy2-w" fontName="Microsoft YaHei UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VUkDkTf7Eey2_q300yy2-w"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_nXHoATeXEeyZQf8sZ6Fxnw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_nXHoAjeXEeyZQf8sZ6Fxnw"/>
           </children>
@@ -53,6 +57,10 @@
         <children xmi:type="notation:Node" xmi:id="_qOy_wDeXEeyZQf8sZ6Fxnw" type="2003" element="_qOqc4DeXEeyZQf8sZ6Fxnw">
           <children xmi:type="notation:Node" xmi:id="_qOy_wzeXEeyZQf8sZ6Fxnw" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_qOzm0DeXEeyZQf8sZ6Fxnw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_XX9ePDf7Eey2_q300yy2-w" type="3010" element="_XXztMDf7Eey2_q300yy2-w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_XX9ePTf7Eey2_q300yy2-w" fontName="Microsoft YaHei UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_XX9ePjf7Eey2_q300yy2-w"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_qOzm0TeXEeyZQf8sZ6Fxnw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_qOzm0jeXEeyZQf8sZ6Fxnw"/>
           </children>
@@ -402,6 +410,14 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_VUaSEDf7Eey2_q300yy2-w" name="Assets : Real">
+        <target xmi:type="rEMODEL:Attribute" href="parkshare.remodel#//@DomainModel/@entity.0/@attributes.0"/>
+        <semanticElements xmi:type="rEMODEL:Attribute" href="parkshare.remodel#//@DomainModel/@entity.0/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_VUaSETf7Eey2_q300yy2-w" showIcon="false" labelAlignment="LEFT" labelPosition="node" height="20">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']/@subNodeMappings[name='EntityAttribute']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']/@subNodeMappings[name='EntityAttribute']"/>
+      </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_qOqc4DeXEeyZQf8sZ6Fxnw" name="ParkingAreaOwner" outgoingEdges="_TVtSuDeYEeyZQf8sZ6Fxnw _CscvgDeaEeyZQf8sZ6Fxnw" width="10">
       <target xmi:type="rEMODEL:Entity" href="parkshare.remodel#//@DomainModel/@entity.1"/>
@@ -414,6 +430,14 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_XXztMDf7Eey2_q300yy2-w" name="Assets : Real">
+        <target xmi:type="rEMODEL:Attribute" href="parkshare.remodel#//@DomainModel/@entity.1/@attributes.0"/>
+        <semanticElements xmi:type="rEMODEL:Attribute" href="parkshare.remodel#//@DomainModel/@entity.1/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_XXztMTf7Eey2_q300yy2-w" showIcon="false" labelAlignment="LEFT" labelPosition="node" height="20">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']/@subNodeMappings[name='EntityAttribute']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/net.mydreamy.requirementmodel.design/description/requirementmodel.odesign#//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='Conceptual%20Class%20Diagram']/@defaultLayer/@containerMappings[name='Entity']/@subNodeMappings[name='EntityAttribute']"/>
+      </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_rX3goDeXEeyZQf8sZ6Fxnw" name="Driver" outgoingEdges="_R2qh2DeYEeyZQf8sZ6Fxnw _KN5SQDebEeyZQf8sZ6Fxnw _zjKxXDebEeyZQf8sZ6Fxnw" width="10">
       <target xmi:type="rEMODEL:Entity" href="parkshare.remodel#//@DomainModel/@entity.2"/>

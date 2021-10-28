@@ -7,16 +7,19 @@ UseCaseModel ParkShare {
 	UC::showAssets definedBySSD(ShowAssetsSSD) relatedService(ShowAssetsService)
 	UC::register definedBySSD(RegisterSSD) relatedService(RegisterService)
 	UC::loginn definedBySSD(LoginnSSD) relatedService(LoginnService)
+	UC::showParkingSpotStatus definedBySSD(ShowParkingSpotStatusSSD) relatedService(ShowParkingSpotStatusService)
 
 	Actor ParkingSpotOwner
 	extends User {
 		rentToDriver
 		showAssets
+		showParkingSpotStatus
 	}
 
 	Actor ParkingAreaOwner extends User {
 		rentToDriver
 		showAssets
+		showParkingSpotStatus
 	}
 
 	Actor Driver extends User {
@@ -157,6 +160,22 @@ UseCaseModel ParkShare {
 
 	}
 
+	Interaction ShowParkingSpotStatusSSD {
+
+		[Participants: ParkingSpotOwner ParkingAreaOwner ShowParkingSpotStatusService]
+
+		CallMessage::ShowParkingSpotStatusSSDCallMessage1(ifSpotInUse ShowParkingSpotStatusSSDCallMessage1SendingEnd -> ShowParkingSpotStatusSSDExecution1StartEnd)
+		ReturnMessage::ShowParkingSpotStatusSSDCallMessage1Return(ShowParkingSpotStatusSSDExecution1FinishEnd -> ShowParkingSpotStatusSSDCallMessage1ReturnReceivingEnd ShowParkingSpotStatusSSDCallMessage1)
+
+		Execution::ShowParkingSpotStatusSSDExecution1(ShowParkingSpotStatusService ShowParkingSpotStatusSSDExecution1StartEnd ShowParkingSpotStatusSSDExecution1FinishEnd)
+
+		MessageEnd::ShowParkingSpotStatusSSDCallMessage1SendingEnd(ParkingSpotOwner ShowParkingSpotStatusSSDCallMessage1)
+		ExecutionEnd::ShowParkingSpotStatusSSDExecution1StartEnd(ShowParkingSpotStatusService ShowParkingSpotStatusSSDExecution1)
+		ExecutionEnd::ShowParkingSpotStatusSSDExecution1FinishEnd(ShowParkingSpotStatusService ShowParkingSpotStatusSSDExecution1)
+		MessageEnd::ShowParkingSpotStatusSSDCallMessage1ReturnReceivingEnd(ParkingSpotOwner ShowParkingSpotStatusSSDCallMessage1Return)
+
+	}
+
 	Service ParkShareSystem {
 
 	}
@@ -215,6 +234,13 @@ UseCaseModel ParkShare {
 	}
 
 	Service LoginnService {
+
+	}
+
+	Service ShowParkingSpotStatusService {
+
+		[Operation]
+		ifSpotInUse(spotID)
 
 	}
 
@@ -346,6 +372,27 @@ UseCaseModel ParkShare {
 			result = self.Assets
 	}
 
+	Contract ShowParkingSpotStatusService::ifSpotInUse(spotID :String) : Boolean {
+
+		/* definition skeleton */
+		definition:
+			ps:ParkingSpot = ParkingSpot.allInstance()->any(c:ParkingSpot | c.ID = spotID)
+
+		/* precondition: skeleton */
+		precondition:
+			true
+
+		/* postcondition: skeleton */
+		postcondition:
+			if
+				ps.Status = EMPTY
+			then
+				result = false
+			else
+				result = true
+			endif
+	}
+
 }
 
 DomainModel ParkShare {
@@ -384,6 +431,7 @@ DomainModel ParkShare {
 		Longitude : String
 		Latitude : String
 		Labels : String
+		ID : String
 
 		[Refer]
 		ParkingSpottoParkingSpotOwner : ParkingSpotOwner Association

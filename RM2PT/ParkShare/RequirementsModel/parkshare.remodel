@@ -371,7 +371,6 @@ UseCaseModel ParkShare {
 			result = self.Assets
 	}
 
-<<<<<<< Updated upstream
 	Contract ShowParkingSpotStatusService::ifSpotInUse(spotID :String) : Boolean {
 
 		/* definition skeleton */
@@ -391,9 +390,10 @@ UseCaseModel ParkShare {
 			else
 				result = true
 			endif
-=======
+	}
+
 	// by Wanghao
-	Contract RentToDriverService::uploadSpotInfo(location : String, moneyPerhour : Integer, startTime : Integer, endTime : Integer) : Boolean {
+	Contract RentToDriverService::uploadSpotInfo(owner : String, address : String, price : Integer, serviceStartTime : Date, serviceEndTime : Date) : Boolean {
 
 		precondition:
 			self.IsLogin = true
@@ -402,11 +402,12 @@ UseCaseModel ParkShare {
 		postcondition:
 			let new:ParkingSpot in
 			new.oclIsNew() and
-			new.location = location and
-			new.moneyPerhour = moneyPerhour and
-			new.startTime = startTime and
-			new.endTime = endTime and
-			new.parkingId = generate() and
+			new.Owner = owner and
+			new.Address = address and
+			new.Price = price and
+			new.ServiceStartTime = serviceStartTime and
+			new.ServiceEndTime = serviceEndTime and
+			new.ID = generateID() and
 			self.parkingSpot = new and
 			self.spotInfo = true and
 			result = ture
@@ -440,11 +441,10 @@ UseCaseModel ParkShare {
 
 		// add to all if conformed	
 		postcondition:
-			new = self.parkingSpot and
+			new = self.SelfParkingSpot and
 			ParkingSpot.allInstance()->includes(new) and
 			result = true
 
->>>>>>> Stashed changes
 	}
 
 }
@@ -453,6 +453,7 @@ DomainModel ParkShare {
 
 	Entity ParkingSpotOwner extends User {
 		Assets : Real
+		SelfParkingSpot : ParkingSpot
 
 		[Refer]
 		ParkingSpotOwnertoParkingSpot : ParkingSpot* ! Association
@@ -460,6 +461,7 @@ DomainModel ParkShare {
 
 	Entity ParkingAreaOwner extends User {
 		Assets : Real
+		SelfParkingSpot : ParkingSpot
 
 		[Refer]
 		ParkingAreaOwnertoParkingSpot : ParkingSpot* Association

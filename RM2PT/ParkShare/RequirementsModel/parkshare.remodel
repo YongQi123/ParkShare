@@ -187,9 +187,8 @@ UseCaseModel ParkShare {
 	Service RentToDriverService {
 
 		[Operation]
-		uploadSpotInfo()
-		registerSpot()
-		uploadCertificate()
+		uploadSpotInfo(location : String, moneyPerhour : Integer, startTime : Integer, endTime : Integer)
+		uploadCertificate(certificate : String)
 		confirmRegister()
 
 	}
@@ -372,6 +371,7 @@ UseCaseModel ParkShare {
 			result = self.Assets
 	}
 
+<<<<<<< Updated upstream
 	Contract ShowParkingSpotStatusService::ifSpotInUse(spotID :String) : Boolean {
 
 		/* definition skeleton */
@@ -391,6 +391,60 @@ UseCaseModel ParkShare {
 			else
 				result = true
 			endif
+=======
+	// by Wanghao
+	Contract RentToDriverService::uploadSpotInfo(location : String, moneyPerhour : Integer, startTime : Integer, endTime : Integer) : Boolean {
+
+		precondition:
+			self.IsLogin = true
+
+		// store message in a global parameter	
+		postcondition:
+			let new:ParkingSpot in
+			new.oclIsNew() and
+			new.location = location and
+			new.moneyPerhour = moneyPerhour and
+			new.startTime = startTime and
+			new.endTime = endTime and
+			new.parkingId = generate() and
+			self.parkingSpot = new and
+			self.spotInfo = true and
+			result = ture
+	}
+
+	Contract RentToDriverService::uploadCertificate(certificate : String) : Boolean {
+
+		precondition:
+			self.IsLogin = true and
+			self.spotInfo = true
+
+		// verify the certificate	
+		postcondition:
+			if
+				certificate.isReal = true
+			then
+				self.certificate = true and
+				result = true
+			else
+				self.certificate = false and
+				result = false
+			endif
+
+	}
+
+	Contract RentToDriverService::confirmRegister() : Real {
+
+		precondition:
+			self.IsLogin = true and
+			self.certificate = true
+
+		// add to all if conformed	
+		postcondition:
+			new = self.parkingSpot and
+			ParkingSpot.allInstance()->includes(new) and
+			result = true
+
+>>>>>>> Stashed changes
 	}
 
 }

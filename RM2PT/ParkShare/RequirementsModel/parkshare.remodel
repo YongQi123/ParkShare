@@ -229,6 +229,7 @@ UseCaseModel ParkShare {
 
 		[Operation]
 		register(username, password, tel)
+		register(username, password, tel)
 
 	}
 
@@ -358,7 +359,7 @@ UseCaseModel ParkShare {
 	}
 
 	// by Zhou Yumeng
-	// 展示资产
+	// 展示锟绞诧拷
 	Contract ShowAssetsService::submitCheckRequest() : Real {
 
 		/* definition skeleton */

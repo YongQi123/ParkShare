@@ -154,7 +154,6 @@ UseCaseModel ParkShare {
 		ExecutionEnd::RegisterSSDExecution2StartEnd(RegisterService RegisterSSDExecution2)
 		ExecutionEnd::RegisterSSDExecution2FinishEnd(RegisterService RegisterSSDExecution2)
 		MessageEnd::RegisterSSDCallMessage3ReturnReceivingEnd(User RegisterSSDCallMessage3Return)
-
 		MessageEnd::RegisterSSDCallMessage1SendingEnd(User RegisterSSDCallMessage1)
 		ExecutionEnd::RegisterSSDExecution1StartEnd(RegisterService RegisterSSDExecution1)
 		ExecutionEnd::RegisterSSDExecution1FinishEnd(RegisterService RegisterSSDExecution1)
@@ -229,7 +228,7 @@ UseCaseModel ParkShare {
 	Service RegisterService {
 
 		[Operation]
-	register(username, password, tel)
+		register(username, password, tel)
 
 	}
 
@@ -411,7 +410,7 @@ UseCaseModel ParkShare {
 			new.ID = generateID() and
 			self.parkingSpot = new and
 			self.spotInfo = true and
-			result = ture
+			result = true
 	}
 
 	Contract RentToDriverService::uploadCertificate(certificate : String) : Boolean {

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/uafMetadata/src-gen" creationIcons="false" editDirectory="/uafMetadata.edit/src-gen"
+    editorDirectory="/uafMetadata.editor/src-gen" modelPluginID="uafMetadata" modelName="UafMetadata"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="#//uafMetadata/Taxonomy" operationReflection="true" importOrganizing="true">
+  <foreignModel>uafMetadata.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="UafMetadata" disposableProviderFactory="true" ecorePackage="uafMetadata.ecore#/">
+    <nestedGenPackages prefix="MeasurableElement" disposableProviderFactory="true"
+        ecorePackage="uafMetadata.ecore#//Taxonomy">
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/Metadata">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uafMetadata.ecore#//Taxonomy/Metadata/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uafMetadata.ecore#//Taxonomy/Metadata/metaDataScheme"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uafMetadata.ecore#//Taxonomy/Metadata/dublinCoreTag"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uafMetadata.ecore#//Taxonomy/Metadata/category"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/ArchitectureMetad">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/ArchitectureMetad/annotation"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/Description"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/MeasurableElement"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/InteractionScenarioGeneralization"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/InteractionScenario">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/InteractionScenario/generalInterationScenario"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/InteractionScenario/specificInteractionScenario"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/ProcessGeneralization"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/Proces">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/Proces/specificProcess"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/Proces/generalProcess"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/PropertySetGeneralization"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/PropertySet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/PropertySet/generalPropertySet"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/PropertySet/specificPropertySet"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/CapabilityGeneralization"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/StateDescriptionGeneralization"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Taxonomy/StateDescription">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/StateDescription/generalStateDescription"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Taxonomy/StateDescription/specificStateDescription"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="MeasurableElement" disposableProviderFactory="true"
+        ecorePackage="uafMetadata.ecore#//Structure">
+      <genClasses ecoreClass="uafMetadata.ecore#//Structure/MeasurableElemen"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Structure/EnvironmentProperty">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uafMetadata.ecore#//Structure/EnvironmentProperty/type"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Structure/Condition"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Structure/Environment">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Structure/Environment/conditionProperty"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="MeasurableElement, BPMN2Metamodel::MessageFlow, SubjectOfSecurityConstraint"
+        disposableProviderFactory="true" ecorePackage="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/OperationalExchangeItem.1"/>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/BPMN2Metamodel%3A%3ABPMNMessage"/>
+      <genDataTypes ecoreDataType="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/NewDataType3"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/Exchange"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/ServiceMessage">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/ServiceMessage/realizes"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/SubjectOfSecurityConstrain"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/MeasurableElement"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/OperationalExchange"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/ResourceExchange"/>
+      <genClasses documentation="BPMN2Metamodel::BPMNMessage" ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/ExchangeItem"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/ResourceExchangeItem"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/OperationalExchangeItem"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/NewEClass10"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/BPMNMessage"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/PropertySet"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/Resource"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/OperationalExchangeItem.2"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//BPMN2Metamodel%3A%3ABPMNMessage/ResourceExchangeItem.1"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage4" disposableProviderFactory="true" ecorePackage="uafMetadata.ecore#//Processes">
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/MeasurableElement"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/ActivityPerformableUnderCondition"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/ActualCondition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/ActualCondition/conditio"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/Process">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/Process/activity"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/IsCapableToPerform"/>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/OperationalActivity">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/OperationalActivity/performedActivity"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/ServiceFunction">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/ServiceFunction/serviceFunction"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/Function">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/Function/performedFunction"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/OperationalAgent">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/OperationalAgent/performingOperationalPerformer"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/ServiceSpecification">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/ServiceSpecification/serviceSpecification"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/ResourcePerformer">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uafMetadata.ecore#//Processes/ResourcePerformer/performingResource"/>
+      </genClasses>
+      <genClasses ecoreClass="uafMetadata.ecore#//Processes/PerformsInContext"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

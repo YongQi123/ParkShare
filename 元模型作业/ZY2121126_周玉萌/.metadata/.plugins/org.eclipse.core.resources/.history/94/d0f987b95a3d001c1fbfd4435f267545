@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="uafMetadata" nsURI="http://www.example.org/uafMetadata" nsPrefix="uafMetadata">
+  <eSubpackages name="Taxonomy">
+    <eClassifiers xsi:type="ecore:EClass" name="Metadata" eSuperTypes="#//Taxonomy/MeasurableElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="metaDataScheme" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dublinCoreTag" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ArchitectureMetad" eSuperTypes="#//Taxonomy/Metadata">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/Description" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Description"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="InteractionScenarioGeneralization"
+        eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="InteractionScenario">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalInterationScenario"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/InteractionScenarioGeneralization"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificInteractionScenario"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/InteractionScenarioGeneralization"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ProcessGeneralization" eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Proces">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificProcess" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/ProcessGeneralization" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalProcess" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/ProcessGeneralization" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PropertySetGeneralization" eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PropertySet">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalPropertySet" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/PropertySetGeneralization" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificPropertySet"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/PropertySetGeneralization"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CapabilityGeneralization" eSuperTypes="#//Taxonomy/PropertySetGeneralization"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StateDescriptionGeneralization" eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StateDescription">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalStateDescription"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/StateDescriptionGeneralization"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificStateDescription"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/StateDescriptionGeneralization"
+          containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

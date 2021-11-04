@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="uafMetadata" nsURI="http://www.example.org/uafMetadata" nsPrefix="uafMetadata">
+  <eSubpackages name="Taxonomy">
+    <eClassifiers xsi:type="ecore:EClass" name="Metadata" eSuperTypes="#//Taxonomy/MeasurableElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="metaDataScheme" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dublinCoreTag" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ArchitectureMetad" eSuperTypes="#//Taxonomy/Metadata">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/Description" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Description"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="InteractionScenarioGeneralization"
+        eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="InteractionScenario">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalInterationScenario"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/InteractionScenarioGeneralization"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificInteractionScenario"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/InteractionScenarioGeneralization"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ProcessGeneralization" eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Proces">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificProcess" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/ProcessGeneralization" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalProcess" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/ProcessGeneralization" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PropertySetGeneralization" eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PropertySet">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalPropertySet" lowerBound="1"
+          upperBound="-1" eType="#//Taxonomy/PropertySetGeneralization" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificPropertySet"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/PropertySetGeneralization"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CapabilityGeneralization" eSuperTypes="#//Taxonomy/PropertySetGeneralization"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StateDescriptionGeneralization" eSuperTypes="#//Taxonomy/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StateDescription">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generalStateDescription"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/StateDescriptionGeneralization"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specificStateDescription"
+          lowerBound="1" upperBound="-1" eType="#//Taxonomy/StateDescriptionGeneralization"
+          containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Structure">
+    <eClassifiers xsi:type="ecore:EClass" name="MeasurableElemen"/>
+    <eClassifiers xsi:type="ecore:EClass" name="EnvironmentProperty" eSuperTypes="#//Structure/MeasurableElemen">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Structure/Condition"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Condition"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Environment">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="conditionProperty" upperBound="-1"
+          eType="#//Structure/EnvironmentProperty" containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="BPMN2Metamodel::BPMNMessage">
+    <eClassifiers xsi:type="ecore:EClass" name="Exchange" abstract="true" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/MeasurableElement #//BPMN2Metamodel%3A%3ABPMNMessage/SubjectOfSecurityConstrain"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceMessage">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="realizes" upperBound="-1"
+          eType="#//BPMN2Metamodel%3A%3ABPMNMessage/Exchange" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SubjectOfSecurityConstrain"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalExchange" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/Exchange"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ResourceExchange" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/Exchange"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ExchangeItem" abstract="true" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/BPMNMessage"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ResourceExchangeItem" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/ExchangeItem"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalExchangeItem" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/ExchangeItem"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="OperationalExchangeItem"/>
+    <eClassifiers xsi:type="ecore:EClass" name="NewEClass10"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="BPMN2Metamodel::BPMNMessage"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="NewDataType3" instanceTypeName="newDataType3"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BPMNMessage"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PropertySet"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Resource" abstract="true" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/PropertySet"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalExchangeItem" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/Resource"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ResourceExchangeItem" eSuperTypes="#//BPMN2Metamodel%3A%3ABPMNMessage/Resource"/>
+  </eSubpackages>
+  <eSubpackages name="Processes">
+    <eClassifiers xsi:type="ecore:EClass" name="MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ActivityPerformableUnderCondition"
+        eSuperTypes="#//Processes/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ActualCondition">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="conditio" lowerBound="1"
+          upperBound="-1" eType="#//Processes/ActivityPerformableUnderCondition" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Process">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="activity" lowerBound="1"
+          upperBound="-1" eType="#//Processes/ActivityPerformableUnderCondition" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="IsCapableToPerform" eSuperTypes="#//Processes/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalActivity">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="performedActivity" lowerBound="1"
+          upperBound="-1" eType="#//Processes/IsCapableToPerform" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceFunction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="serviceFunction" lowerBound="1"
+          upperBound="-1" eType="#//Processes/IsCapableToPerform" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Function">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="performedFunction" lowerBound="1"
+          upperBound="-1" eType="#//Processes/IsCapableToPerform" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalAgent">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="performingOperationalPerformer"
+          lowerBound="1" upperBound="-1" eType="#//Processes/IsCapableToPerform" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecification">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="serviceSpecification"
+          lowerBound="1" upperBound="-1" eType="#//Processes/IsCapableToPerform" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ResourcePerformer">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="performingResource" lowerBound="1"
+          upperBound="-1" eType="#//Processes/IsCapableToPerform" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PerformsInContext" eSuperTypes="#//Processes/MeasurableElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalRole">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="operationalRole" lowerBound="1"
+          upperBound="-1" eType="#//Processes/PerformsInContext" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OperationalActivityAction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="activity" lowerBound="1"
+          upperBound="-1" eType="#//Processes/PerformsInContext" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="FunctionAction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="function" lowerBound="1"
+          upperBound="-1" eType="#//Processes/PerformsInContext" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ResourceRole">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="usage" lowerBound="1"
+          upperBound="-1" eType="#//Processes/PerformsInContext" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecificationRole">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="serviceRole" lowerBound="1"
+          upperBound="-1" eType="#//Processes/PerformsInContext" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceFunctionAction">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="serviceAction" lowerBound="1"
+          upperBound="-1" eType="#//Processes/PerformsInContext" containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

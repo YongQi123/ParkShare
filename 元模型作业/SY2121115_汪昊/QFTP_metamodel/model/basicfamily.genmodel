@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.eclipse.sirius.sample.basicfamily/src-gen"
+    creationIcons="false" editDirectory="/org.eclipse.sirius.sample.basicfamily.edit/src-gen"
+    editorDirectory="/org.eclipse.sirius.sample.basicfamily.editor/src-gen" modelPluginID="org.eclipse.sirius.sample.basicfamily"
+    modelName="Basicfamily" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>basicfamily.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Basicfamily" basePackage="org.eclipse.sirius.sample" disposableProviderFactory="true"
+      ecorePackage="basicfamily.ecore#/">
+    <genClasses ecoreClass="basicfamily.ecore#//QoSDimension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSDimension/direction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSDimension/statisticalQualifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSDimension/unit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSDimension/Type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSDimension/evaluate"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSCharacteristics">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSCharacteristics/isInvariant"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/qSub"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/qParent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/qTemplate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/qDerivation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/dimension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/parameter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCharacteristics/context"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSCategory">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCategory/referenced"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCategory/own"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCategory/group"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSParameter"/>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3ANamespace"/>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3ASPTQoS%3A%3AQoSCharacteristics">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//MetaModels%3A%3ASPTQoS%3A%3AQoSCharacteristics/instance"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AProperty"/>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSDimentionSlot">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSDimentionSlot/referencedValue"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSValue/ownerValue"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSConstraint">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/evaluate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSConstraint/qualification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSConstraint/logicalOperator"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/endToEndSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/endToEndTarget"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/next"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/previous"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/context"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSConstraint/currentLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3ASPTQoS%3A%3AQoSValue"/>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//QoSContext/isOoSObeservation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSContext/oppositeAssociation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSContext/support"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSContext/basedOn"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSCompoundConstraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCompoundConstraint/constraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCompoundConstraint/level"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AConstraint"/>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AElement"/>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSOffered">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSOffered/contract"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSOffered/qRequired"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSRequired">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSRequired/contract"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSRequired/qOffered"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSContract">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSContract/requireAccorded"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSContract/offerAccorded"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AClassifier"/>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSCompoundLevel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCompoundLevel/allowedSpace"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSCompoundLevel/groupOfLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSTransition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSTransition/adaptationAction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSTransition/destination"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSTransition/source"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//QoSLevel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSLevel/allowedSpace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSLevel/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference basicfamily.ecore#//QoSLevel/to"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AAction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AAction/effect"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3ATransition"/>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3AState"/>
+    <genClasses ecoreClass="basicfamily.ecore#//FaultToleranceDomain">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//FaultToleranceDomain/FaultDetectorDeploymentPolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//FaultToleranceDomain/Identifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//FaultToleranceDomain/Element"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//FaultToleranceDomain/Replicationstyle"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//%3A%3AFaultTolerant%20Mechanisms%3A%3ASoftwareReplicationMechanisms%3A%3AReplication%20Style%3A%3Areplicationstyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ServerObjectGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//ServerObjectGroup/Replica"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//ServerObjectGroup/Replicationstyle"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//LoggableState"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ObjectReplica">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ObjectReplica/InitialReplicationState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference basicfamily.ecore#//ObjectReplica/State"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//StaticallyDeployedFaultDetectors"/>
+    <genClasses ecoreClass="basicfamily.ecore#//FaultDetectorDeploymentPolicy"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ApplicationCreatedFaultDetectors"/>
+    <genClasses ecoreClass="basicfamily.ecore#//InfrastructureCreatedFaultDetectors"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ColdPassiveReplicationStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ObjectGroupProperty"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ConsistencyStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//FaultMonitoringStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//MembershipStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//FaultMonitoringGranularity"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ApplicationControlledMembership"/>
+    <genClasses ecoreClass="basicfamily.ecore#//InfrastructureControlledMembership"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ApplicationControlledConsistency"/>
+    <genClasses ecoreClass="basicfamily.ecore#//InfrastructureControlledConsistency"/>
+    <genClasses ecoreClass="basicfamily.ecore#//PullMonitoringStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//PullMonitoringStyle/PingInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//PullMonitoringStyle/PingMaximumResponseTime"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//PushMonitoringStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ApplicationMonitoringStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//IndividualMemberMonitoring"/>
+    <genClasses ecoreClass="basicfamily.ecore#//LocationMonitoring"/>
+    <genClasses ecoreClass="basicfamily.ecore#//LocationAndTypeMonitoring"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ReplicationStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/Membership"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/FaultMonitoringStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/FaultMonitoringGranularity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/InitialNumberReplicas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/MinimumNumberReplicas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/HeartbeatEnabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//ReplicationStyle/Identifie"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//TransientStateReplicaStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//PersistentStatetReplicaStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//PersistentStatetReplicaStyle/Consistency"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//StatelessReplicationStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//PassiveReplicaStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute basicfamily.ecore#//PassiveReplicaStyle/CheckPointInterva"/>
+    </genClasses>
+    <genClasses ecoreClass="basicfamily.ecore#//ActiveReplicaStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//WarmPassiveReplicationStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ActiveReplicationStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//ActiveWithVotingReplicationStyle"/>
+    <genClasses ecoreClass="basicfamily.ecore#//MetaModels%3A%3Auml2%3A%3ATypedElement"/>
+  </genPackages>
+</genmodel:GenModel>

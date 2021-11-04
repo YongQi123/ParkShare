@@ -1,210 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="basicfamily" nsURI="http://www.example.org/basicfamily" nsPrefix="basicfamily">
-  <eClassifiers xsi:type="ecore:EClass" name="QoSDimension" eSuperTypes="#//MetaModels%3A%3Auml2%3A%3AProperty">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" defaultValueLiteral=""/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statisticalQualifier"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Type" eType="#//QoSCharacteristics"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="evaluate" lowerBound="1"
-        upperBound="-1" eType="#//QoSDimentionSlot" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSCharacteristics" eSuperTypes="#//MetaModels%3A%3ASPTQoS%3A%3AQoSCharacteristics #//QoSContext">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isInvariant" ordered="false"
-        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
-        changeable="false" defaultValueLiteral="false"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="qSub" upperBound="-1" eType="#//QoSCharacteristics"
-        eOpposite="#//QoSCharacteristics/qParent"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="qParent" upperBound="-1"
-        eType="#//QoSCharacteristics" eOpposite="#//QoSCharacteristics/qSub"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="qTemplate" eType="#//QoSCharacteristics"
-        eOpposite="#//QoSCharacteristics/qDerivation"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="qDerivation" upperBound="-1"
-        eType="#//QoSCharacteristics" eOpposite="#//QoSCharacteristics/qTemplate"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dimension" eType="#//QoSDimension"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" lowerBound="1"
-        upperBound="-1" eType="#//QoSParameter" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="context" upperBound="-1"
-        eType="#//QoSContext" eOpposite="#//QoSContext/basedOn"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSCategory" eSuperTypes="#//MetaModels%3A%3Auml2%3A%3ANamespace">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="referenced" upperBound="-1"
-        eType="#//QoSCategory"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="own" eType="#//QoSCategory"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="group" eType="#//QoSCharacteristics"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSParameter" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EObject #//MetaModels%3A%3Auml2%3A%3ATypedElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Namespace" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::SPTQoS::QoSCharacteristics"
-      instanceTypeName="">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="instance" lowerBound="1"
-        upperBound="-1" eType="#//MetaModels%3A%3ASPTQoS%3A%3AQoSValue"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Property" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSDimentionSlot">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="referencedValue" eType="#//QoSValue"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSValue" eSuperTypes="#//MetaModels%3A%3ASPTQoS%3A%3AQoSValue">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ownerValue" lowerBound="1"
-        upperBound="-1" eType="#//QoSDimentionSlot" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSConstraint" eSuperTypes="#//MetaModels%3A%3Auml2%3A%3AConstraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="evaluate" upperBound="-1"
-        eType="#//QoSValue"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualification"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="logicalOperator"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="endToEndSource" upperBound="-1"
-        eType="#//MetaModels%3A%3Auml2%3A%3AElement"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="endToEndTarget" upperBound="-1"
-        eType="#//MetaModels%3A%3Auml2%3A%3AElement"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//QoSConstraint"
-        eOpposite="#//QoSConstraint/previous"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" eType="#//QoSConstraint"
-        eOpposite="#//QoSConstraint/next"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//QoSContext"
-        eOpposite="#//QoSContext/support"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="currentLevel" upperBound="-1"
-        eType="#//QoSLevel" eOpposite="#//QoSLevel/allowedSpace"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::SPTQoS::QoSValue" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSContext" eSuperTypes="#//MetaModels%3A%3Auml2%3A%3AClassifier">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isOoSObeservation" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="oppositeAssociation" upperBound="-1"
-        eType="#//QoSContext"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="support" upperBound="-1"
-        eType="#//QoSConstraint" eOpposite="#//QoSConstraint/context"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="basedOn" upperBound="-1"
-        eType="#//QoSCharacteristics" eOpposite="#//QoSCharacteristics/context"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSCompoundConstraint" eSuperTypes="#//QoSConstraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="constraint" upperBound="-1"
-        eType="#//QoSConstraint" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="level" eType="#//QoSCompoundLevel"
-        eOpposite="#//QoSCompoundLevel/allowedSpace"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Constraint" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Element" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSOffered" eSuperTypes="#//QoSConstraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contract" upperBound="-1"
-        eType="#//QoSContract" eOpposite="#//QoSContract/offerAccorded"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="qRequired" upperBound="-1"
-        eType="#//QoSRequired" eOpposite="#//QoSRequired/qOffered"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSRequired" eSuperTypes="#//QoSConstraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contract" upperBound="-1"
-        eType="#//QoSContract" eOpposite="#//QoSContract/requireAccorded"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="qOffered" upperBound="-1"
-        eType="#//QoSOffered" eOpposite="#//QoSOffered/qRequired"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSContract" eSuperTypes="#//QoSConstraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requireAccorded" upperBound="-1"
-        eType="#//QoSRequired" eOpposite="#//QoSRequired/contract"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="offerAccorded" upperBound="-1"
-        eType="#//QoSOffered" eOpposite="#//QoSOffered/contract"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Classifier" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSCompoundLevel" eSuperTypes="#//QoSLevel">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allowedSpace" eType="#//QoSCompoundConstraint"
-        eOpposite="#//QoSCompoundConstraint/level"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="groupOfLevel" upperBound="-1"
-        eType="#//QoSLevel" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSTransition" eSuperTypes="#//MetaModels%3A%3Auml2%3A%3ATransition">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="adaptationAction" lowerBound="1"
-        upperBound="-1" eType="#//MetaModels%3A%3Auml2%3A%3AAction" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="#//QoSLevel"
-        eOpposite="#//QoSLevel/from"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//QoSLevel"
-        eOpposite="#//QoSLevel/to"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QoSLevel" eSuperTypes="#//MetaModels%3A%3Auml2%3A%3AState">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allowedSpace" upperBound="-1"
-        eType="#//QoSConstraint" eOpposite="#//QoSConstraint/currentLevel"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="from" upperBound="-1" eType="#//QoSTransition"
-        eOpposite="#//QoSTransition/destination"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="to" upperBound="-1" eType="#//QoSTransition"
-        eOpposite="#//QoSTransition/source"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Action" instanceTypeName="">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="effect" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::Transition" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::State" instanceTypeName=""/>
-  <eClassifiers xsi:type="ecore:EClass" name="FaultToleranceDomain">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FaultDetectorDeploymentPolicy"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Element" lowerBound="1"
-        upperBound="-1" eType="#//ServerObjectGroup" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Replicationstyle" lowerBound="1"
-        eType="#//%3A%3AFaultTolerant%20Mechanisms%3A%3ASoftwareReplicationMechanisms%3A%3AReplication%20Style%3A%3Areplicationstyle"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="::FaultTolerant Mechanisms::SoftwareReplicationMechanisms::Replication Style::replicationstyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ServerObjectGroup">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Replica" lowerBound="1"
-        upperBound="-1" eType="#//ObjectReplica" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Replicationstyle" lowerBound="1"
-        eType="#//%3A%3AFaultTolerant%20Mechanisms%3A%3ASoftwareReplicationMechanisms%3A%3AReplication%20Style%3A%3Areplicationstyle"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LoggableState"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ObjectReplica">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InitialReplicationState"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="State" lowerBound="1" upperBound="-1"
-        eType="#//LoggableState" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StaticallyDeployedFaultDetectors" eSuperTypes="#//FaultDetectorDeploymentPolicy"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FaultDetectorDeploymentPolicy"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationCreatedFaultDetectors" eSuperTypes="#//FaultDetectorDeploymentPolicy"/>
-  <eClassifiers xsi:type="ecore:EClass" name="InfrastructureCreatedFaultDetectors"
-      eSuperTypes="#//FaultDetectorDeploymentPolicy"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ColdPassiveReplicationStyle" eSuperTypes="#//PassiveReplicaStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ObjectGroupProperty"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ConsistencyStyle" eSuperTypes="#//ObjectGroupProperty"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FaultMonitoringStyle" eSuperTypes="#//ObjectGroupProperty"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MembershipStyle" eSuperTypes="#//ObjectGroupProperty"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FaultMonitoringGranularity" eSuperTypes="#//ObjectGroupProperty"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationControlledMembership" eSuperTypes="#//MembershipStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="InfrastructureControlledMembership"
-      eSuperTypes="#//MembershipStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationControlledConsistency" eSuperTypes="#//ConsistencyStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="InfrastructureControlledConsistency"
-      eSuperTypes="#//ConsistencyStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PullMonitoringStyle" eSuperTypes="#//FaultMonitoringStyle">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PingInterval"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PingMaximumResponseTime"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PushMonitoringStyle" eSuperTypes="#//FaultMonitoringStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationMonitoringStyle" eSuperTypes="#//FaultMonitoringStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="IndividualMemberMonitoring" eSuperTypes="#//FaultMonitoringGranularity"/>
-  <eClassifiers xsi:type="ecore:EClass" name="LocationMonitoring" eSuperTypes="#//FaultMonitoringGranularity"/>
-  <eClassifiers xsi:type="ecore:EClass" name="LocationAndTypeMonitoring" eSuperTypes="#//FaultMonitoringGranularity"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ReplicationStyle">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Membership"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FaultMonitoringStyle"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FaultMonitoringGranularity"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="InitialNumberReplicas"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MinimumNumberReplicas"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="HeartbeatEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Identifie" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TransientStateReplicaStyle" eSuperTypes="#//ReplicationStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PersistentStatetReplicaStyle" eSuperTypes="#//ReplicationStyle">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Consistency"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StatelessReplicationStyle" eSuperTypes="#//TransientStateReplicaStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PassiveReplicaStyle" eSuperTypes="#//PersistentStatetReplicaStyle">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CheckPointInterva"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ActiveReplicaStyle" eSuperTypes="#//PersistentStatetReplicaStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="WarmPassiveReplicationStyle" eSuperTypes="#//PassiveReplicaStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ActiveReplicationStyle" eSuperTypes="#//ActiveReplicaStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ActiveWithVotingReplicationStyle" eSuperTypes="#//ActiveReplicaStyle"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MetaModels::uml2::TypedElement"/>
+  <eSubpackages name="FT">
+    <eClassifiers xsi:type="ecore:EClass" name="ReplicationStyle">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="Membership" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="FaultMonitoringStyle"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="FaultMonitoringGranularity"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="InitialNumberReplicas"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="MinimumNumberReplicas"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="HeartbeatEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="Identifie" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ActiveWithVotingReplicationStyle"
+        eSuperTypes="#//FT/ActiveReplicaStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ActiveReplicaStyle" eSuperTypes="#//FT/PersistentStatetReplicaStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StatelessReplicationStyle" eSuperTypes="#//FT/TransientStateReplicaStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FaultMonitoringStyle" eSuperTypes="#//FT/ObjectGroupProperty"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PersistentStatetReplicaStyle" eSuperTypes="#//FT/ReplicationStyle">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="Consistency" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="TransientStateReplicaStyle" eSuperTypes="#//FT/ReplicationStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FaultMonitoringGranularity" eSuperTypes="#//FT/ObjectGroupProperty"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ObjectReplica">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="InitialReplicationState"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="State" lowerBound="1"
+          upperBound="-1" eType="#//FT/LoggableState" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ServerObjectGroup">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="Replica" lowerBound="1"
+          upperBound="-1" eType="#//FT/ObjectReplica" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="Replicationstyle" lowerBound="1"
+          eType="#//FT/Replicationstyle" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PassiveReplicaStyle" eSuperTypes="#//FT/PersistentStatetReplicaStyle">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="CheckPointInterva" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="InfrastructureControlledMembership"
+        eSuperTypes="#//FT/MembershipStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ApplicationControlledMembership" eSuperTypes="#//FT/MembershipStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ApplicationMonitoringStyle" eSuperTypes="#//FT/FaultMonitoringStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ObjectGroupProperty"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PullMonitoringStyle" eSuperTypes="#//FT/FaultMonitoringStyle">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="PingInterval" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="PingMaximumResponseTime"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="StaticallyDeployedFaultDetectors"
+        eSuperTypes="#//FT/FaultDetectorDeploymentPolicy"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConsistencyStyle" eSuperTypes="#//FT/ObjectGroupProperty"/>
+    <eClassifiers xsi:type="ecore:EClass" name="WarmPassiveReplicationStyle" eSuperTypes="#//FT/PassiveReplicaStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LocationMonitoring" eSuperTypes="#//FT/FaultMonitoringGranularity"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LocationAndTypeMonitoring" eSuperTypes="#//FT/FaultMonitoringGranularity"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ApplicationCreatedFaultDetectors"
+        eSuperTypes="#//FT/FaultDetectorDeploymentPolicy"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LoggableState"/>
+    <eClassifiers xsi:type="ecore:EClass" name="InfrastructureControlledConsistency"
+        eSuperTypes="#//FT/ConsistencyStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="IndividualMemberMonitoring" eSuperTypes="#//FT/FaultMonitoringGranularity"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Replicationstyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ApplicationControlledConsistency"
+        eSuperTypes="#//FT/ConsistencyStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ActiveReplicationStyle" eSuperTypes="#//FT/ActiveReplicaStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FaultToleranceDomain">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="FaultDetectorDeploymentPolicy"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="Identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="Element" lowerBound="1"
+          upperBound="-1" eType="#//FT/ServerObjectGroup" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="Replicationstyle" lowerBound="1"
+          eType="#//FT/Replicationstyle" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ColdPassiveReplicationStyle" eSuperTypes="#//FT/PassiveReplicaStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MembershipStyle" eSuperTypes="#//FT/ObjectGroupProperty"/>
+    <eClassifiers xsi:type="ecore:EClass" name="InfrastructureCreatedFaultDetectors"
+        eSuperTypes="#//FT/FaultDetectorDeploymentPolicy"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PushMonitoringStyle" eSuperTypes="#//FT/FaultMonitoringStyle"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FaultDetectorDeploymentPolicy"/>
+  </eSubpackages>
+  <eSubpackages name=" QoS">
+    <eClassifiers xsi:type="ecore:EClass" name="QoSCharacteristics" eSuperTypes="#//%20QoS/QoSContext #//%20QoS/SPTQoSCharacteristics">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isInvariant" ordered="false"
+          unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+          changeable="false" defaultValueLiteral="false"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qSub" upperBound="-1"
+          eType="#//%20QoS/QoSCharacteristics" eOpposite="#//%20QoS/QoSCharacteristics/qParent"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qParent" upperBound="-1"
+          eType="#//%20QoS/QoSCharacteristics" eOpposite="#//%20QoS/QoSCharacteristics/qSub"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qTemplate" eType="#//%20QoS/QoSCharacteristics"
+          eOpposite="#//%20QoS/QoSCharacteristics/qDerivation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qDerivation" upperBound="-1"
+          eType="#//%20QoS/QoSCharacteristics" eOpposite="#//%20QoS/QoSCharacteristics/qTemplate"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="dimension" eType="#//%20QoS/QoSDimension"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" lowerBound="1"
+          upperBound="-1" eType="#//%20QoS/QoSParameter" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="context" upperBound="-1"
+          eType="#//%20QoS/QoSContext" eOpposite="#//%20QoS/QoSContext/basedOn"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSContract" eSuperTypes="#//%20QoS/QoSConstraint">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="requireAccorded" upperBound="-1"
+          eType="#//%20QoS/QoSRequired" eOpposite="#//%20QoS/QoSRequired/contract"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="offerAccorded" upperBound="-1"
+          eType="#//%20QoS/QoSOffered" eOpposite="#//%20QoS/QoSOffered/contract"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSTransition" eSuperTypes="#//%20QoS/Uml2Transition">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="#//%20QoS/QoSLevel"
+          eOpposite="#//%20QoS/QoSLevel/from"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//%20QoS/QoSLevel"
+          eOpposite="#//%20QoS/QoSLevel/to"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSCompoundConstraint" eSuperTypes="#//%20QoS/QoSConstraint">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="constraint" upperBound="-1"
+          eType="#//%20QoS/QoSConstraint" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="level" eType="#//%20QoS/QoSCompoundLevel"
+          eOpposite="#//%20QoS/QoSCompoundLevel/allowedSpace"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSConstraint" eSuperTypes="#//%20QoS/Uml2Constraint">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="evaluate" upperBound="-1"
+          eType="#//%20QoS/QoSValue"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualification" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="logicalOperator" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//%20QoS/QoSConstraint"
+          eOpposite="#//%20QoS/QoSConstraint/previous"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="previous" eType="#//%20QoS/QoSConstraint"
+          eOpposite="#//%20QoS/QoSConstraint/next"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="context" eType="#//%20QoS/QoSContext"
+          eOpposite="#//%20QoS/QoSContext/support"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="currentLevel" upperBound="-1"
+          eType="#//%20QoS/QoSLevel" eOpposite="#//%20QoS/QoSLevel/allowedSpace"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="endToEndSource" upperBound="-1"
+          eType="#//%20QoS/Uml2Element"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="endToEndTarget" upperBound="-1"
+          eType="#//%20QoS/Uml2Element"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSDimentionSlot">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="referencedValue" eType="#//%20QoS/QoSValue"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSOffered" eSuperTypes="#//%20QoS/QoSConstraint">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contract" upperBound="-1"
+          eType="#//%20QoS/QoSContract" eOpposite="#//%20QoS/QoSContract/offerAccorded"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qRequired" upperBound="-1"
+          eType="#//%20QoS/QoSRequired" eOpposite="#//%20QoS/QoSRequired/qOffered"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSRequired" eSuperTypes="#//%20QoS/QoSConstraint">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contract" upperBound="-1"
+          eType="#//%20QoS/QoSContract" eOpposite="#//%20QoS/QoSContract/requireAccorded"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="qOffered" upperBound="-1"
+          eType="#//%20QoS/QoSOffered" eOpposite="#//%20QoS/QoSOffered/qRequired"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSParameter" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EObject #//%20QoS/TypedElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSValue" eSuperTypes="#//%20QoS/SPTQoSValue">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ownerValue" lowerBound="1"
+          upperBound="-1" eType="#//%20QoS/QoSDimentionSlot" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSDimension" eSuperTypes="#//%20QoS/Uml2Property">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"
+          defaultValueLiteral=""/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="statisticalQualifier"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="Type" eType="#//%20QoS/QoSCharacteristics"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="evaluate" lowerBound="1"
+          upperBound="-1" eType="#//%20QoS/QoSDimentionSlot" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSLevel" eSuperTypes="#//%20QoS/Uml2State">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="allowedSpace" upperBound="-1"
+          eType="#//%20QoS/QoSConstraint" eOpposite="#//%20QoS/QoSConstraint/currentLevel"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="from" upperBound="-1"
+          eType="#//%20QoS/QoSTransition" eOpposite="#//%20QoS/QoSTransition/destination"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="to" upperBound="-1" eType="#//%20QoS/QoSTransition"
+          eOpposite="#//%20QoS/QoSTransition/source"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSContext" eSuperTypes="#//%20QoS/Uml2Classifier">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isOoSObeservation" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="oppositeAssociation"
+          upperBound="-1" eType="#//%20QoS/QoSContext"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="support" upperBound="-1"
+          eType="#//%20QoS/QoSConstraint" eOpposite="#//%20QoS/QoSConstraint/context"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="basedOn" upperBound="-1"
+          eType="#//%20QoS/QoSCharacteristics" eOpposite="#//%20QoS/QoSCharacteristics/context"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSCategory" eSuperTypes="#//%20QoS/Uml2NameSpace">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="referenced" upperBound="-1"
+          eType="#//%20QoS/QoSCategory"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="own" eType="#//%20QoS/QoSCategory"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="group" eType="#//%20QoS/QoSCharacteristics"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="TypedElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2NameSpace"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SPTQoSCharacteristics">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="instance" lowerBound="1"
+          upperBound="-1" eType="#//%20QoS/SPTQoSValue"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SPTQoSValue"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2Classifier"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2Property"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2Constraint"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2State"/>
+    <eClassifiers xsi:type="ecore:EClass" name="QoSCompoundLevel">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="allowedSpace" eType="#//%20QoS/QoSCompoundConstraint"
+          eOpposite="#//%20QoS/QoSCompoundConstraint/level"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="groupOfLevel" upperBound="-1"
+          eType="#//%20QoS/QoSLevel" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2Transition"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Uml2Element"/>
+  </eSubpackages>
 </ecore:EPackage>

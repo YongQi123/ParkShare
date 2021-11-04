@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/pytorch_metamodel/src-gen" creationIcons="false"
+    editDirectory="/pytorch_metamodel.edit/src-gen" editorDirectory="/pytorch_metamodel.editor/src-gen"
+    modelPluginID="pytorch_metamodel" modelName="Pytorch_metamodel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" usedGenPackages="#//torch/nn" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>pytorch_metamodel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Pytorch_metamodel" disposableProviderFactory="true" ecorePackage="pytorch_metamodel.ecore#/">
+    <genClasses ecoreClass="pytorch_metamodel.ecore#//Tensor"/>
+    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="pytorch_metamodel.ecore#//nn">
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Module"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_ConvNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Conv1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Conv2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Conv3d"/>
+      <genClasses image="false" ecoreClass="pytorch_metamodel.ecore#//nn/_MaxPoolNd"/>
+      <genClasses image="false" ecoreClass="pytorch_metamodel.ecore#//nn/_AvgPoolNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Sequential">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//nn/Sequential/module"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ModuleList">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//nn/ModuleList/module"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ModuleDict">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//nn/ModuleDict/module"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ParameterList">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//nn/ParameterList/parameter"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ParameterDIct">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//nn/ParameterDIct/parameter"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Parameter"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_ConvTransposeNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ConvTranspose1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ConvTranspose2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ConvTranspose3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyConv1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyConv2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyConv3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyConvTranspose1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyConvTranspose2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyConvTranspose3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MaxPool1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MaxPool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MaxPool3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_MaxUnpoolNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MaxUnpool1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MaxUnpool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MaxUnpool3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AvgPool1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AvgPool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AvgPool3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/FractionalMaxPool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/FractionalMaxPool3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_LPPoolNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LPPool1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LPPool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_AdaptiveMaxPoolNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AdaptiveMaxPool1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AdaptiveMaxPool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AdaptiveMaxPool3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_AdaptiveAvgPoolNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AdaptiveAvgPool1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AdaptiveAvgPool2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/AdaptiveAvgPool3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_ConstantPadNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ConstantPad1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ConstantPad2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ConstantPad3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_ReflectionPadNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReflectionPad1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReflectionPad2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReflectionPad3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_ReplicationPadNd"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReplicationPad1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReplicationPad2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReplicationPad3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ZeroPad2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Threshold"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReLU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/RReLU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Hardtanh"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ReLU6"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Sigmoid"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Hardsigmoid"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Tanh"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/SiLU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Mish"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Hardswish"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/ELU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/CELU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/SELU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/GLU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/GELU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Hardshrink"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LeakyReLU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LogSigmoid"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Softplus"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Softshrink"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/MultiheadAttention"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/PReLU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Softsign"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Tanhshrink"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Softmin"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Softmax"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/Softmax2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LogSoftmax"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_NormBase"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_BatchNorm"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_LazyNormBase"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/BatchNorm1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyBatchNorm1d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/BatchNorm2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyBatchNorm2d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/BatchNorm3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyBatchNorm3d"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/SyncBatchNorm"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/RNNBase"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/_LazyConvXdMixin"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LazyModuleMixin"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/RNN"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LSTM"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/GRU"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/RNNCellBase"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/RNNCell"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/LSTMCell"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//nn/GRUCell"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage2" disposableProviderFactory="true" ecorePackage="pytorch_metamodel.ecore#//optim">
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/Optimizer"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/Adadelta"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/Adagrad"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/Adam"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/AdamW"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/SparseAdam"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/Adamax"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/ASGD"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/LBFGS"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/NAdam"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/RAdam"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/RMSprop"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/Rprop"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/SGD"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/_LRScheduler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/LambdaLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/MultiplicativeLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/StepLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/MultiStepLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/ConstantLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/LinearLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/ExponentialLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/SequentialLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/CosineAnnealingLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/ChainedScheduler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/ReduceLROnPlateau"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/CyclicLR"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/CosineAnnealingWarmRestarts"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//optim/OneCycleLR"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage3" disposableProviderFactory="true" ecorePackage="pytorch_metamodel.ecore#//utils.data">
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/DataLoader">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//utils.data/DataLoader/iterator"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/_BaseDataLoaderIter">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference pytorch_metamodel.ecore#//utils.data/_BaseDataLoaderIter/dataloader"/>
+      </genClasses>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/_SingleProcessDataLoaderIter"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/_MultiProcessingDataLoaderIter"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/Dataset"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/IterableDataset"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/DFIterDataPipe"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/TensorDataset"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/ConcatDataset"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/ChainDataset"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/Subset"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/Sampler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/SequentialSampler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/RandomSampler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/SubsetRandomSampler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/WeightedRandomSampler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/BatchSampler"/>
+      <genClasses ecoreClass="pytorch_metamodel.ecore#//utils.data/DistributedSampler"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

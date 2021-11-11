@@ -5,9 +5,7 @@
     editorDirectory="/org.eclipse.sirius.sample.basicfamily.editor/src-gen" modelPluginID="org.eclipse.sirius.sample.basicfamily"
     modelName="Basicfamily" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
-    copyrightFields="false" usedGenPackages="#//basicfamily/FT" operationReflection="true"
-    importOrganizing="true">
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>basicfamily.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages href="#//basicfamily"/>
 </genmodel:GenModel>

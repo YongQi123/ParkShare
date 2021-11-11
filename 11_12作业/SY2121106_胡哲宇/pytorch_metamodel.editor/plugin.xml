@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pytorch_metamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="torch.presentation.Pytorch_metamodelModelWizardID"
+            name="%_UI_Pytorch_metamodelModelWizard_label"
+            class="torch.presentation.Pytorch_metamodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Pytorch_metamodelModelFile.gif">
+         <description>%_UI_Pytorch_metamodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pytorch_metamodel -->
+      <editor
+            id="torch.presentation.Pytorch_metamodelEditorID"
+            name="%_UI_Pytorch_metamodelEditor_label"
+            icon="icons/full/obj16/Pytorch_metamodelModelFile.gif"
+            extensions="pytorch_metamodel"
+            class="torch.presentation.Pytorch_metamodelEditor"
+            contributorClass="torch.presentation.Pytorch_metamodelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pytorch_metamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="torch.nn.presentation.NewPackage1ModelWizardID"
+            name="%_UI_NewPackage1ModelWizard_label"
+            class="torch.nn.presentation.NewPackage1ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NewPackage1ModelFile.gif">
+         <description>%_UI_NewPackage1ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pytorch_metamodel -->
+      <editor
+            id="torch.nn.presentation.NewPackage1EditorID"
+            name="%_UI_NewPackage1Editor_label"
+            icon="icons/full/obj16/NewPackage1ModelFile.gif"
+            extensions="newpackage1"
+            class="torch.nn.presentation.NewPackage1Editor"
+            contributorClass="torch.nn.presentation.NewPackage1ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pytorch_metamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="torch.optim.presentation.NewPackage2ModelWizardID"
+            name="%_UI_NewPackage2ModelWizard_label"
+            class="torch.optim.presentation.NewPackage2ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NewPackage2ModelFile.gif">
+         <description>%_UI_NewPackage2ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pytorch_metamodel -->
+      <editor
+            id="torch.optim.presentation.NewPackage2EditorID"
+            name="%_UI_NewPackage2Editor_label"
+            icon="icons/full/obj16/NewPackage2ModelFile.gif"
+            extensions="newpackage2"
+            class="torch.optim.presentation.NewPackage2Editor"
+            contributorClass="torch.optim.presentation.NewPackage2ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pytorch_metamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="torch.utils.data.presentation.NewPackage3ModelWizardID"
+            name="%_UI_NewPackage3ModelWizard_label"
+            class="torch.utils.data.presentation.NewPackage3ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NewPackage3ModelFile.gif">
+         <description>%_UI_NewPackage3ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pytorch_metamodel -->
+      <editor
+            id="torch.utils.data.presentation.NewPackage3EditorID"
+            name="%_UI_NewPackage3Editor_label"
+            icon="icons/full/obj16/NewPackage3ModelFile.gif"
+            extensions="newpackage3"
+            class="torch.utils.data.presentation.NewPackage3Editor"
+            contributorClass="torch.utils.data.presentation.NewPackage3ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sklearnMetaModel" nsURI="http://www.example.org/sklearnMetaModel"
+    nsPrefix="sklearnMetaModel">
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierMixin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RegressorMixin"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseEstimator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MetaEstimatorMixin"/>
+  <eSubpackages name="linear_model">
+    <eClassifiers xsi:type="ecore:EClass" name="LinearRegression" eSuperTypes="#//linear_model/LinearModel #//linear_model/MultiOutputMixin #//RegressorMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LinearModel"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MultiOutputMixin"/>
+  </eSubpackages>
+  <eSubpackages name="cluster">
+    <eClassifiers xsi:type="ecore:EClass" name="ClusterMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BaseEstimator"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AffinityPropagation" eSuperTypes="#//cluster/BaseEstimator #//cluster/ClusterMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AgglomerativeClustering" eSuperTypes="#//cluster/BaseEstimator #//cluster/ClusterMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FeatureAgglomeration" eSuperTypes="#//cluster/AgglomerativeClustering.1 #//cluster/AgglomerationTransform"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AgglomerativeClustering"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AgglomerationTransform"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BaseSpectral" eSuperTypes="#//cluster/BaseEstimator #//cluster/BiclusterMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BiclusterMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpectralCoclustering" eSuperTypes="#//cluster/BaseSpectral"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpectralBiclustering" eSuperTypes="#//cluster/BaseSpectral"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Birch" eSuperTypes="#//cluster/ClusterMixin #//cluster/BaseEstimator"/>
+  </eSubpackages>
+  <eSubpackages name="neural_network">
+    <eClassifiers xsi:type="ecore:EClass" name="BaseMultilayerPerceptron" eSuperTypes="#//BaseEstimator"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MLPClassifier" eSuperTypes="#//neural_network/BaseMultilayerPerceptron.1 #//ClassifierMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BaseMultilayerPerceptron"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MLPRegressor" eSuperTypes="#//RegressorMixin #//neural_network/BaseMultilayerPerceptron.1"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BaseOptimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SGDOptimizer" eSuperTypes="#//neural_network/BaseOptimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdamOptimizer" eSuperTypes="#//neural_network/BaseOptimizer"/>
+  </eSubpackages>
+  <eSubpackages name="semi_supervised">
+    <eClassifiers xsi:type="ecore:EClass" name="BaseLabelPropagation" eSuperTypes="#//ClassifierMixin #//BaseEstimator"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LabelPropagation" eSuperTypes="#//semi_supervised/BaseLabelPropagation"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LabelSpreading" eSuperTypes="#//semi_supervised/BaseLabelPropagation"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SelfTrainingClassifier" eSuperTypes="#//BaseEstimator"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SelfTrainingClassifier" eSuperTypes="#//MetaEstimatorMixin #//BaseEstimator"/>
+  </eSubpackages>
+</ecore:EPackage>

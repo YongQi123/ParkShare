@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.eclipse.sirius.sample.QFTP/src-gen" creationIcons="false"
+    editDirectory="/org.eclipse.sirius.sample.QFTP.edit/src-gen" editorDirectory="/org.eclipse.sirius.sample.QFTP.editor/src-gen"
+    modelPluginID="org.eclipse.sirius.sample.QFTP" modelName="QFTP" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>QFTP.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="QFTP" basePackage="org.eclipse.sirius.sample" disposableProviderFactory="true"
+      ecorePackage="QFTP.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="QFTP.ecore#//QoSStatisticalAttribute">
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/maximumvalue"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/minimumvalue"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/range"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/mean"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/variance"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/standarddeviation"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QoSStatisticalAttribute/percentile"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="QFTP.ecore#//QualificationKind">
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QualificationKind/Guarantee"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QualificationKind/BestEffort"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QualificationKind/ThresholdBestEffort"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QualificationKind/CompulsoryBestEffort"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//QualificationKind/none"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="QFTP.ecore#//DirectionKind">
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//DirectionKind/increasing"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//DirectionKind/decreasing"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//DirectionKind/undefined"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="QFTP.ecore#//LogicalOperators">
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//LogicalOperators/and"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//LogicalOperators/or"/>
+      <genEnumLiterals ecoreEnumLiteral="QFTP.ecore#//LogicalOperators/none"/>
+    </genEnums>
+    <genClasses ecoreClass="QFTP.ecore#//QoSRequired">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSRequired/contract"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSRequired/qOffered"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSCharacteristics">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSCharacteristics/isInvariant"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/qSub"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/qParent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/qTemplate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/qDerivation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/dimension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/parameter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCharacteristics/context"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSLevel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSLevel/allowedSpace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSLevel/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSLevel/to"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSDimension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSDimension/direction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSDimension/statisticalQualifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSDimension/unit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSDimension/Type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSDimension/evaluate"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSParameter"/>
+    <genClasses ecoreClass="QFTP.ecore#//QoSCompoundLevel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCompoundLevel/allowedSpace"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCompoundLevel/groupOfLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSDimentionSlot">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSDimentionSlot/referencedValue"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSValue/ownerValue"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSOffered">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSOffered/contract"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSOffered/qRequired"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSConstraint">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSConstraint/evaluate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSConstraint/qualification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSConstraint/logicalOperator"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSConstraint/next"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSConstraint/previous"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSConstraint/context"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSConstraint/currentLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute QFTP.ecore#//QoSContext/isOoSObeservation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSContext/oppositeAssociation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSContext/support"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSContext/basedOn"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSTransition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSTransition/destination"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSTransition/source"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSContract">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSContract/requireAccorded"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSContract/offerAccorded"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSCategory">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCategory/referenced"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCategory/own"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCategory/group"/>
+    </genClasses>
+    <genClasses ecoreClass="QFTP.ecore#//QoSCompoundConstraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCompoundConstraint/constraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference QFTP.ecore#//QoSCompoundConstraint/level"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

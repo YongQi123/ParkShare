@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pytorch -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ooad.pytorch.presentation.PytorchModelWizardID"
+            name="%_UI_PytorchModelWizard_label"
+            class="ooad.pytorch.presentation.PytorchModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PytorchModelFile.gif">
+         <description>%_UI_PytorchModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pytorch -->
+      <editor
+            id="ooad.pytorch.presentation.PytorchEditorID"
+            name="%_UI_PytorchEditor_label"
+            icon="icons/full/obj16/PytorchModelFile.gif"
+            extensions="pytorch"
+            class="ooad.pytorch.presentation.PytorchEditor"
+            contributorClass="ooad.pytorch.presentation.PytorchActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

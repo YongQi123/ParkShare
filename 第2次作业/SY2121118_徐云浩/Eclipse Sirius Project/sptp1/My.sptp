@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sPTP:Sptp xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sPTP="http://www.example.org/sPTP">
+  <eventoccurence xsi:type="sPTP:UsageDemand" name="singal1">
+    <resourceusage xsi:type="sPTP:ActionExecution" predecessor="//@eventoccurence.0/@resourceusage.0" successor="//@eventoccurence.0/@resourceusage.0"/>
+  </eventoccurence>
+  <instance xsi:type="sPTP:ResourceInstance" name="RI">
+    <resourceserviceinstance type="//@descriptor.0/@resourceservice.0"/>
+  </instance>
+  <instance xsi:type="sPTP:Client" usedResources="//@instance.0"/>
+  <descriptor xsi:type="sPTP:Resource">
+    <resourceservice instance="//@instance.0/@resourceserviceinstance.0"/>
+  </descriptor>
+  <descriptor/>
+</sPTP:Sptp>

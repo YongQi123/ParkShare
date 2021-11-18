@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/SPTP/src-gen" creationIcons="false" editDirectory="/SPTP.edit/src-gen"
+    editorDirectory="/SPTP.editor/src-gen" modelPluginID="SPTP" modelName="SPTP" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>sPTP.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="SPTP" disposableProviderFactory="true" ecorePackage="sPTP.ecore#/">
+    <genClasses ecoreClass="sPTP.ecore#//Instance">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sPTP.ecore#//Instance/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Instance/water"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Instance/soid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Instance/homan"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Instance/electric"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//Descriptor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Descriptor/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//ResourceInstance">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//ResourceInstance/resourceserviceinstance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceInstance/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//Resource">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//Resource/resourceservice"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//ResourceServiceInstance">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sPTP.ecore#//ResourceServiceInstance/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceServiceInstance/water_control_bureau"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceServiceInstance/land_bureau"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceServiceInstance/homan_bureau"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceServiceInstance/electric_bureau"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//ResourceService">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sPTP.ecore#//ResourceService/instance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceService/waterService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceService/landService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceService/homan_Service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ResourceService/electicService"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//EventOccurence">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//EventOccurence/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//StimulusReception"/>
+    <genClasses ecoreClass="sPTP.ecore#//StimulusGeneration"/>
+    <genClasses ecoreClass="sPTP.ecore#//ScenarioEndEvent"/>
+    <genClasses ecoreClass="sPTP.ecore#//ScenarioStartEvent"/>
+    <genClasses ecoreClass="sPTP.ecore#//UsageDemand">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//UsageDemand/resourceusage"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//ResourceUsage"/>
+    <genClasses ecoreClass="sPTP.ecore#//StaticUsage"/>
+    <genClasses ecoreClass="sPTP.ecore#//DynamicUsage"/>
+    <genClasses ecoreClass="sPTP.ecore#//Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sPTP.ecore#//Client/usedResources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Client/xiaoming"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Client/xiaohong"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Client/xiaowang"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//Client/xiaozhang"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//Scenario">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//Scenario/step"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//ActionExecution">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sPTP.ecore#//ActionExecution/execution"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sPTP.ecore#//ActionExecution/successor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ActionExecution/signal1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ActionExecution/signal2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ActionExecution/signal3"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sPTP.ecore#//ActionExecution/signal4"/>
+    </genClasses>
+    <genClasses ecoreClass="sPTP.ecore#//Sptp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//Sptp/eventoccurence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//Sptp/instance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sPTP.ecore#//Sptp/descriptor"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

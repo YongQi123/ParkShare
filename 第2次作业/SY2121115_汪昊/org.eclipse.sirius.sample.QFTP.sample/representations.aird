@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:QFTP="http://www.eclipse.org/sirius/sample/QFTP" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_6aqgkEL_Eeyii-GnvERjng" selectedViews="_koYvgEONEeyaUNVHMjjSlA" version="14.5.1.202106111100">
+    <semanticResources>My.qftp</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_z_I24ENoEeyaUNVHMjjSlA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='Qo%20SCharacteristics']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hU74MEOBEeyaUNVHMjjSlA" name="new Qo SCharacteristics diagram" repPath="#_hU6qEEOBEeyaUNVHMjjSlA" changeId="410d9214-c67e-4187-adc9-0facf30c6a57">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='Qo%20SCharacteristics']/@ownedRepresentations[name='Qo%20SCharacteristics%20diagram']"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_koYvgEONEeyaUNVHMjjSlA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_cfO8cEOgEeyaUNVHMjjSlA" name="new QoSCompoundConstraint" repPath="#_cfNHQEOgEeyaUNVHMjjSlA" changeId="7750cf5e-e0a8-4b5f-9d40-17c1788684eb">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']"/>
+        <target xmi:type="QFTP:QoSCompoundConstraint" href="My.qftp#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_hU6qEEOBEeyaUNVHMjjSlA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_hU9GUEOBEeyaUNVHMjjSlA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_hU9GUUOBEeyaUNVHMjjSlA" type="Sirius" element="_hU6qEEOBEeyaUNVHMjjSlA" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_hU9GUkOBEeyaUNVHMjjSlA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_hVfR0EOBEeyaUNVHMjjSlA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_hVfR0UOBEeyaUNVHMjjSlA"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='Qo%20SCharacteristics']/@ownedRepresentations[name='Qo%20SCharacteristics%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_hU7RIEOBEeyaUNVHMjjSlA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='Qo%20SCharacteristics']/@ownedRepresentations[name='Qo%20SCharacteristics%20diagram']/@defaultLayer"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_cfNHQEOgEeyaUNVHMjjSlA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cfQKkEOgEeyaUNVHMjjSlA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_cfQKkUOgEeyaUNVHMjjSlA" type="Sirius" element="_cfNHQEOgEeyaUNVHMjjSlA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_cgKwkEOgEeyaUNVHMjjSlA" type="2001" element="_cfZUgEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgL-sEOgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgL-sUOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgVvskOgEeyaUNVHMjjSlA" type="3003" element="_cfZUgUOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgVvs0OgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgVvtEOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgKwkUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgKwkkOgEeyaUNVHMjjSlA" x="525" y="959" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgL-skOgEeyaUNVHMjjSlA" type="2001" element="_cfbwwEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgMlwEOgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgMlwUOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgWWwEOgEeyaUNVHMjjSlA" type="3003" element="_cfdl8EOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgWWwUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgWWwkOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgL-s0OgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgL-tEOgEeyaUNVHMjjSlA" x="287" y="161" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgNM0EOgEeyaUNVHMjjSlA" type="2001" element="_cfeNAUOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgNM00OgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgNM1EOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgW90EOgEeyaUNVHMjjSlA" type="3003" element="_cfeNAkOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgW90UOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgW90kOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgNM0UOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgNM0kOgEeyaUNVHMjjSlA" x="609" y="798" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgNz4EOgEeyaUNVHMjjSlA" type="2001" element="_cfe0EUOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgNz40OgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgNz5EOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgW900OgEeyaUNVHMjjSlA" type="3003" element="_cfe0EkOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgW91EOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgW91UOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgNz4UOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgNz4kOgEeyaUNVHMjjSlA" x="287" y="322" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgQ3MEOgEeyaUNVHMjjSlA" type="2001" element="_cfiecEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgSsYEOgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgSsYUOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgZaEEOgEeyaUNVHMjjSlA" type="3003" element="_cfiecUOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgZaEUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgZaEkOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgQ3MUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgQ3MkOgEeyaUNVHMjjSlA" x="448" y="637" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgTTcEOgEeyaUNVHMjjSlA" type="2001" element="_cfjFgEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgT6gEOgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgT6gUOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgZaE0OgEeyaUNVHMjjSlA" type="3003" element="_cfjFgUOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgZaFEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgZaFUOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgTTcUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgTTckOgEeyaUNVHMjjSlA" x="448" y="798" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgUhkEOgEeyaUNVHMjjSlA" type="2001" element="_cfjskUOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgVIoEOgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgVIoUOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgaBIEOgEeyaUNVHMjjSlA" type="3003" element="_cfjskkOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgaBIUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgaBIkOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgUhkUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgUhkkOgEeyaUNVHMjjSlA" x="448" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cgVIokOgEeyaUNVHMjjSlA" type="2001" element="_cfk6sEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgVvsEOgEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cgVvsUOgEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgaoMEOgEeyaUNVHMjjSlA" type="3003" element="_cfk6sUOgEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cgaoMUOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgaoMkOgEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cgVIo0OgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgVIpEOgEeyaUNVHMjjSlA" x="448" y="483" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_C-VfoEOhEeyaUNVHMjjSlA" type="2001" element="_C-LHkEOhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_C-WGsEOhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_C-WGsUOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C-WtwEOhEeyaUNVHMjjSlA" type="3003" element="_C-LuoEOhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C-WtwUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C-WtwkOhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_C-VfoUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C-VfokOhEeyaUNVHMjjSlA" x="770" y="105" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Dbhx8EOhEeyaUNVHMjjSlA" type="2001" element="_DbcSaUOhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_Dbhx80OhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dbhx9EOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_DbjAEEOhEeyaUNVHMjjSlA" type="3003" element="_DbcSakOhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_DbjAEUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DbjAEkOhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Dbhx8UOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dbhx8kOhEeyaUNVHMjjSlA" x="980" y="112" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_DbiZAEOhEeyaUNVHMjjSlA" type="2001" element="_DbYoAEOhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_DbiZA0OhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DbiZBEOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_DbjnIEOhEeyaUNVHMjjSlA" type="3003" element="_DbYoAUOhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_DbjnIUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DbjnIkOhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_DbiZAUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DbiZAkOhEeyaUNVHMjjSlA" x="987" y="119" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_D6aGUEOhEeyaUNVHMjjSlA" type="2001" element="_D6V05kOhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_D6atYEOhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_D6atYUOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_D6bUckOhEeyaUNVHMjjSlA" type="3003" element="_D6V050OhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_D6bUc0OhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D6bUdEOhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_D6aGUUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D6aGUkOhEeyaUNVHMjjSlA" x="805" y="273" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_D6atYkOhEeyaUNVHMjjSlA" type="2001" element="_D6SKgEOhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_D6bUcEOhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_D6bUcUOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_D6b7gEOhEeyaUNVHMjjSlA" type="3003" element="_D6SKgUOhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_D6b7gUOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D6b7gkOhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_D6atY0OhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D6atZEOhEeyaUNVHMjjSlA" x="812" y="280" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ETTu-EOhEeyaUNVHMjjSlA" type="2001" element="_ETTuj0OhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_ETTu-0OhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ETTu_EOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ETdfgkOhEeyaUNVHMjjSlA" type="3003" element="_ETTukEOhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ETdfg0OhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ETdfhEOhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ETTu-UOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ETTu-kOhEeyaUNVHMjjSlA" x="1008" y="287" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ETTu_UOhEeyaUNVHMjjSlA" type="2001" element="_ETJ9gEOhEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_ETdfgEOhEeyaUNVHMjjSlA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ETdfgUOhEeyaUNVHMjjSlA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ETdfhUOhEeyaUNVHMjjSlA" type="3003" element="_ETJ9gUOhEeyaUNVHMjjSlA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ETdfhkOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ETdfh0OhEeyaUNVHMjjSlA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ETTu_kOhEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ETTu_0OhEeyaUNVHMjjSlA" x="1015" y="294" width="100" height="100"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_cfQKkkOgEeyaUNVHMjjSlA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_cgb2UEOgEeyaUNVHMjjSlA" type="4001" element="_cfmI0EOgEeyaUNVHMjjSlA" source="_cgVIokOgEeyaUNVHMjjSlA" target="_cgUhkEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgdEcEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgdEcUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgdEckOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgdEc0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgdrgEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgdrgUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cgb2UUOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cgb2UkOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cgb2U0OgEeyaUNVHMjjSlA" points="[0, 0, 0, 380]$[-30, -61, -30, 319]$[-30, -320, -30, 60]$[0, -380, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cgeSkEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cgeSkUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cge5oEOgEeyaUNVHMjjSlA" type="4001" element="_cfs2gEOgEeyaUNVHMjjSlA" source="_cgQ3MEOgEeyaUNVHMjjSlA" target="_cgTTcEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cge5pEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cge5pUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgfgsEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgfgsUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgfgskOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgfgs0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cge5oUOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cge5okOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cge5o0OgEeyaUNVHMjjSlA" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cgfgtEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cgs8EEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cgs8EUOgEeyaUNVHMjjSlA" type="4001" element="_cfuEoEOgEeyaUNVHMjjSlA" source="_cgTTcEOgEeyaUNVHMjjSlA" target="_cgQ3MEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgx0kEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgx0kUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgx0kkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgx0k0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgyboEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgyboUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cgs8EkOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cgs8E0OgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cgs8FEOgEeyaUNVHMjjSlA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cgzCsEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cgzCsUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cgzCskOgEeyaUNVHMjjSlA" type="4001" element="_cfursEOgEeyaUNVHMjjSlA" source="_cgUhkEOgEeyaUNVHMjjSlA" target="_cgVIokOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cgzpwEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgzpwUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cgzpwkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cgzpw0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg0Q0EOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg0Q0UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cgzCs0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cgzCtEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cgzCtUOgEeyaUNVHMjjSlA" points="[0, 0, 0, -380]$[30, 60, 30, -320]$[30, 319, 30, -61]$[0, 380, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg0Q0kOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg0Q00OgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg034EOgEeyaUNVHMjjSlA" type="4001" element="_cfv50EOgEeyaUNVHMjjSlA" source="_cgVIokOgEeyaUNVHMjjSlA" target="_cgQ3MEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg035EOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg035UOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg1e8EOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg1e8UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg1e8kOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg1e80OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg034UOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg034kOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg0340OgEeyaUNVHMjjSlA" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg1e9EOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg1e9UOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg2GAEOgEeyaUNVHMjjSlA" type="4001" element="_cfxH8EOgEeyaUNVHMjjSlA" source="_cgQ3MEOgEeyaUNVHMjjSlA" target="_cgVIokOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg2GBEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg2GBUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg2tEEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg2tEUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg2tEkOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg2tE0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg2GAUOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg2GAkOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg2GA0OgEeyaUNVHMjjSlA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg3UIEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg3UIUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg3UIkOgEeyaUNVHMjjSlA" type="4001" element="_cfy9IEOgEeyaUNVHMjjSlA" source="_cgKwkEOgEeyaUNVHMjjSlA" target="_cgTTcEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg37MEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg37MUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg37MkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg37M0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg37NEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg37NUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg3UI0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg3UJEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg3UJUOgEeyaUNVHMjjSlA" points="[0, 0, 80, 60]$[-80, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg4iQEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg4iQUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg4iQkOgEeyaUNVHMjjSlA" type="4001" element="_cfzkMEOgEeyaUNVHMjjSlA" source="_cgKwkEOgEeyaUNVHMjjSlA" target="_cgNM0EOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg5JUEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg5JUUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg5JUkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg5JU0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg6XcEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg6XcUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg4iQ0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg4iREOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg4iRUOgEeyaUNVHMjjSlA" points="[0, 0, -80, 60]$[80, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg6-gEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg6-gUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg6-gkOgEeyaUNVHMjjSlA" type="4001" element="_cfzkNUOgEeyaUNVHMjjSlA" source="_cgL-skOgEeyaUNVHMjjSlA" target="_cgUhkEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg7lkEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg7lkUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg8MoEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg8MoUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg8MokOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg8Mo0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg6-g0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg6-hEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg6-hUOgEeyaUNVHMjjSlA" points="[0, 0, -126, 60]$[126, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg8zsEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg8zsUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg8zskOgEeyaUNVHMjjSlA" type="4001" element="_cf0yUEOgEeyaUNVHMjjSlA" source="_cgL-skOgEeyaUNVHMjjSlA" target="_cgNz4EOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg8ztkOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg8zt0OgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg9awEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg9awUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg9awkOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg9aw0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg8zs0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg8ztEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg8ztUOgEeyaUNVHMjjSlA" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg9axEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg9axUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg-B0EOgEeyaUNVHMjjSlA" type="4001" element="_cf2AcEOgEeyaUNVHMjjSlA" source="_cgQ3MEOgEeyaUNVHMjjSlA" target="_cgTTcEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg-B1EOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg-B1UOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg-B1kOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg-B10OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg-o4EOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg-o4UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg-B0UOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg-B0kOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg-B00OgEeyaUNVHMjjSlA" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg-o4kOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg-o40OgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg-o5EOgEeyaUNVHMjjSlA" type="4001" element="_cf3OkkOgEeyaUNVHMjjSlA" source="_cgQ3MEOgEeyaUNVHMjjSlA" target="_cgNM0EOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_cg_P8EOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg_P8UOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg_P8kOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg_P80OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cg_P9EOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cg_P9UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg-o5UOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg-o5kOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg-o50OgEeyaUNVHMjjSlA" points="[0, 0, -160, -60]$[160, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg_3AEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cg_3AUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cg_3AkOgEeyaUNVHMjjSlA" type="4001" element="_cf31okOgEeyaUNVHMjjSlA" source="_cgVIokOgEeyaUNVHMjjSlA" target="_cgUhkEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chAeEEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chAeEUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chAeEkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chAeE0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chAeFEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chAeFUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cg_3A0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cg_3BEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cg_3BUOgEeyaUNVHMjjSlA" points="[0, 0, 0, 380]$[0, -380, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chBFIEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chBFIUOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chBFIkOgEeyaUNVHMjjSlA" type="4001" element="_cf_xcEOgEeyaUNVHMjjSlA" source="_cgVIokOgEeyaUNVHMjjSlA" target="_cgNz4EOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chBsMEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chEvgEOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chFWkEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chFWkUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chFWkkOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chFWk0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chBFI0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chBFJEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chBFJUOgEeyaUNVHMjjSlA" points="[0, 0, 126, 60]$[-126, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chF9oEOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chGksEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chGksUOgEeyaUNVHMjjSlA" type="4001" element="_cgAYgEOgEeyaUNVHMjjSlA" source="_cgTTcEOgEeyaUNVHMjjSlA" target="_cgQ3MEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chHLwEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chHLwUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chHy0EOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chHy0UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chHy0kOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chHy00OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chGkskOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chGks0OgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chGktEOgEeyaUNVHMjjSlA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chIZ4EOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chIZ4UOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chIZ4kOgEeyaUNVHMjjSlA" type="4001" element="_cgA_lEOgEeyaUNVHMjjSlA" source="_cgTTcEOgEeyaUNVHMjjSlA" target="_cgKwkEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chJA8EOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chJA8UOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chJA8kOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chJA80OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chJA9EOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chJA9UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chIZ40OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chIZ5EOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chIZ5UOgEeyaUNVHMjjSlA" points="[0, 0, -80, -60]$[80, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chJoAEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chJoAUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chJoAkOgEeyaUNVHMjjSlA" type="4001" element="_cgBmokOgEeyaUNVHMjjSlA" source="_cgUhkEOgEeyaUNVHMjjSlA" target="_cgVIokOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chJoBkOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chJoB0OgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chKPEEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chKPEUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chKPEkOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chKPE0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chJoA0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chJoBEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chJoBUOgEeyaUNVHMjjSlA" points="[0, 0, 0, -380]$[61, 60, 61, -320]$[61, 319, 61, -61]$[0, 380, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chK2IEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chK2IUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chK2IkOgEeyaUNVHMjjSlA" type="4001" element="_cgBmp0OgEeyaUNVHMjjSlA" source="_cgUhkEOgEeyaUNVHMjjSlA" target="_cgL-skOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chLdMEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chLdMUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chLdMkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chLdM0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chLdNEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chLdNUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chK2I0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chK2JEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chK2JUOgEeyaUNVHMjjSlA" points="[0, 0, 126, -60]$[-126, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chMEQEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chMEQUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chMEQkOgEeyaUNVHMjjSlA" type="4001" element="_cgCNtEOgEeyaUNVHMjjSlA" source="_cgNM0EOgEeyaUNVHMjjSlA" target="_cgQ3MEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chMrUEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chMrUUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chMrUkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chMrU0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chMrVEOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chMrVUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chMEQ0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chMEREOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chMERUOgEeyaUNVHMjjSlA" points="[0, 0, 160, 60]$[-160, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chMrVkOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chMrV0OgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chNSYEOgEeyaUNVHMjjSlA" type="4001" element="_cgC0wEOgEeyaUNVHMjjSlA" source="_cgNM0EOgEeyaUNVHMjjSlA" target="_cgKwkEOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chNSZEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chNSZUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chNSZkOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chN5cEOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chN5cUOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chN5ckOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chNSYUOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chNSYkOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chNSY0OgEeyaUNVHMjjSlA" points="[0, 0, 80, -60]$[-80, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chPHkEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chPHkUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chPHkkOgEeyaUNVHMjjSlA" type="4001" element="_cgC0xUOgEeyaUNVHMjjSlA" source="_cgNz4EOgEeyaUNVHMjjSlA" target="_cgVIokOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chPuoEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chPuoUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chQVsEOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chQVsUOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chQVskOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chQVs0OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chPHk0OgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chPHlEOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chPHlUOgEeyaUNVHMjjSlA" points="[0, 0, -126, -60]$[126, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chQVtEOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chQVtUOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_chQ8wEOgEeyaUNVHMjjSlA" type="4001" element="_cgDb0kOgEeyaUNVHMjjSlA" source="_cgNz4EOgEeyaUNVHMjjSlA" target="_cgL-skOgEeyaUNVHMjjSlA">
+          <children xmi:type="notation:Node" xmi:id="_chQ8xEOgEeyaUNVHMjjSlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chQ8xUOgEeyaUNVHMjjSlA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chRj0EOgEeyaUNVHMjjSlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chRj0UOgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_chRj0kOgEeyaUNVHMjjSlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_chRj00OgEeyaUNVHMjjSlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_chQ8wUOgEeyaUNVHMjjSlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_chQ8wkOgEeyaUNVHMjjSlA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_chQ8w0OgEeyaUNVHMjjSlA" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chSK4EOgEeyaUNVHMjjSlA" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_chSK4UOgEeyaUNVHMjjSlA" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cgDb10OgEeyaUNVHMjjSlA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_cgDb2EOgEeyaUNVHMjjSlA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfZUgEOgEeyaUNVHMjjSlA" name="BestEffort" outgoingEdges="_cfy9IEOgEeyaUNVHMjjSlA _cfzkMEOgEeyaUNVHMjjSlA" incomingEdges="_cgA_lEOgEeyaUNVHMjjSlA _cgC0wEOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <semanticElements xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfZUgUOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfbwwEOgEeyaUNVHMjjSlA" name="ThresholdBestEffort" outgoingEdges="_cfzkNUOgEeyaUNVHMjjSlA _cf0yUEOgEeyaUNVHMjjSlA" incomingEdges="_cgBmp0OgEeyaUNVHMjjSlA _cgDb0kOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <semanticElements xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfdl8EOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfeNAUOgEeyaUNVHMjjSlA" name="CompulsoryBestEffort" outgoingEdges="_cgCNtEOgEeyaUNVHMjjSlA _cgC0wEOgEeyaUNVHMjjSlA" incomingEdges="_cfzkMEOgEeyaUNVHMjjSlA _cf3OkkOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <semanticElements xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfeNAkOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfe0EUOgEeyaUNVHMjjSlA" name="Guarantee" outgoingEdges="_cgC0xUOgEeyaUNVHMjjSlA _cgDb0kOgEeyaUNVHMjjSlA" incomingEdges="_cf0yUEOgEeyaUNVHMjjSlA _cf_xcEOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <semanticElements xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfe0EkOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_C-LHkEOhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSConstraint" href="My.qftp#//@constraint.4"/>
+      <semanticElements xmi:type="QFTP:QoSConstraint" href="My.qftp#//@constraint.4"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_C-LuoEOhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_DbcSaUOhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.5"/>
+      <semanticElements xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.5"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_DbcSakOhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_D6V05kOhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.6"/>
+      <semanticElements xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.6"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_D6V050OhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ETTuj0OhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.7"/>
+      <semanticElements xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.7"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_ETTukEOhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfiecEOgEeyaUNVHMjjSlA" name="BestEffort" outgoingEdges="_cfs2gEOgEeyaUNVHMjjSlA _cfxH8EOgEeyaUNVHMjjSlA _cf2AcEOgEeyaUNVHMjjSlA _cf3OkkOgEeyaUNVHMjjSlA" incomingEdges="_cfuEoEOgEeyaUNVHMjjSlA _cfv50EOgEeyaUNVHMjjSlA _cgAYgEOgEeyaUNVHMjjSlA _cgCNtEOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <semanticElements xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfiecUOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_DbYoAEOhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.5"/>
+      <semanticElements xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.5"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_DbYoAUOhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfjFgEOgEeyaUNVHMjjSlA" name="CompulsoryBestEffort" outgoingEdges="_cfuEoEOgEeyaUNVHMjjSlA _cgAYgEOgEeyaUNVHMjjSlA _cgA_lEOgEeyaUNVHMjjSlA" incomingEdges="_cfs2gEOgEeyaUNVHMjjSlA _cfy9IEOgEeyaUNVHMjjSlA _cf2AcEOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <semanticElements xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfjFgUOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfjskUOgEeyaUNVHMjjSlA" name="Guarantee" outgoingEdges="_cfursEOgEeyaUNVHMjjSlA _cgBmokOgEeyaUNVHMjjSlA _cgBmp0OgEeyaUNVHMjjSlA" incomingEdges="_cfmI0EOgEeyaUNVHMjjSlA _cfzkNUOgEeyaUNVHMjjSlA _cf31okOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <semanticElements xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfjskkOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_D6SKgEOhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.6"/>
+      <semanticElements xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.6"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_D6SKgUOhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cfk6sEOgEeyaUNVHMjjSlA" name="ThresholdBestEffort" outgoingEdges="_cfmI0EOgEeyaUNVHMjjSlA _cfv50EOgEeyaUNVHMjjSlA _cf31okOgEeyaUNVHMjjSlA _cf_xcEOgEeyaUNVHMjjSlA" incomingEdges="_cfursEOgEeyaUNVHMjjSlA _cfxH8EOgEeyaUNVHMjjSlA _cgBmokOgEeyaUNVHMjjSlA _cgC0xUOgEeyaUNVHMjjSlA" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <semanticElements xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_cfk6sUOgEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="238,201,142">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ETJ9gEOhEeyaUNVHMjjSlA" name="Guarantee" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.7"/>
+      <semanticElements xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.7"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_ETJ9gUOhEeyaUNVHMjjSlA" labelSize="12" labelPosition="node" width="10" height="10" color="238,201,142">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfmI0EOgEeyaUNVHMjjSlA" sourceNode="_cfk6sEOgEeyaUNVHMjjSlA" targetNode="_cfjskUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfpMIEOgEeyaUNVHMjjSlA" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='ContractEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfpMIUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='ContractEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfs2gEOgEeyaUNVHMjjSlA" sourceNode="_cfiecEOgEeyaUNVHMjjSlA" targetNode="_cfjFgEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cftdkEOgEeyaUNVHMjjSlA" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='ContractEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cftdkUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='ContractEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfuEoEOgEeyaUNVHMjjSlA" sourceNode="_cfjFgEOgEeyaUNVHMjjSlA" targetNode="_cfiecEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfuEoUOgEeyaUNVHMjjSlA" size="2" strokeColor="138,226,52">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='RequireAccordedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfuEokOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='RequireAccordedEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfursEOgEeyaUNVHMjjSlA" sourceNode="_cfjskUOgEeyaUNVHMjjSlA" targetNode="_cfk6sEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfursUOgEeyaUNVHMjjSlA" size="2" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='OfferAccordedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfurskOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='OfferAccordedEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfv50EOgEeyaUNVHMjjSlA" sourceNode="_cfk6sEOgEeyaUNVHMjjSlA" targetNode="_cfiecEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfv50UOgEeyaUNVHMjjSlA" size="2" strokeColor="173,127,168">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='QRequiredEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfv50kOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='QRequiredEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfxH8EOgEeyaUNVHMjjSlA" sourceNode="_cfiecEOgEeyaUNVHMjjSlA" targetNode="_cfk6sEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfxvAEOgEeyaUNVHMjjSlA" size="2" strokeColor="239,41,41">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='QOfferedEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfxvAUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='QOfferedEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfy9IEOgEeyaUNVHMjjSlA" sourceNode="_cfZUgEOgEeyaUNVHMjjSlA" targetNode="_cfjFgEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfy9IUOgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfy9IkOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfzkMEOgEeyaUNVHMjjSlA" sourceNode="_cfZUgEOgEeyaUNVHMjjSlA" targetNode="_cfeNAUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cfzkMUOgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cfzkMkOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cfzkNUOgEeyaUNVHMjjSlA" sourceNode="_cfbwwEOgEeyaUNVHMjjSlA" targetNode="_cfjskUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cf0LQEOgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cf0LQUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cf0yUEOgEeyaUNVHMjjSlA" sourceNode="_cfbwwEOgEeyaUNVHMjjSlA" targetNode="_cfe0EUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cf1ZYEOgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cf1ZYUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cf2AcEOgEeyaUNVHMjjSlA" sourceNode="_cfiecEOgEeyaUNVHMjjSlA" targetNode="_cfjFgEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cf2ngEOgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cf2ngUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cf3OkkOgEeyaUNVHMjjSlA" sourceNode="_cfiecEOgEeyaUNVHMjjSlA" targetNode="_cfeNAUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSRequired" href="My.qftp#//@constraint.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cf3Ok0OgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cf3OlEOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cf31okOgEeyaUNVHMjjSlA" sourceNode="_cfk6sEOgEeyaUNVHMjjSlA" targetNode="_cfjskUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cf31o0OgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cf31pEOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cf_xcEOgEeyaUNVHMjjSlA" sourceNode="_cfk6sEOgEeyaUNVHMjjSlA" targetNode="_cfe0EUOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSOffered" href="My.qftp#//@constraint.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cf_xcUOgEeyaUNVHMjjSlA" size="2" strokeColor="114,73,110">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cf_xckOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='NextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgAYgEOgEeyaUNVHMjjSlA" sourceNode="_cfjFgEOgEeyaUNVHMjjSlA" targetNode="_cfiecEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgA_kEOgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgA_kUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgA_lEOgEeyaUNVHMjjSlA" sourceNode="_cfjFgEOgEeyaUNVHMjjSlA" targetNode="_cfZUgEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgA_lUOgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgA_lkOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgBmokOgEeyaUNVHMjjSlA" sourceNode="_cfjskUOgEeyaUNVHMjjSlA" targetNode="_cfk6sEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgBmo0OgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgBmpEOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgBmp0OgEeyaUNVHMjjSlA" sourceNode="_cfjskUOgEeyaUNVHMjjSlA" targetNode="_cfbwwEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgCNsEOgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgCNsUOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgCNtEOgEeyaUNVHMjjSlA" sourceNode="_cfeNAUOgEeyaUNVHMjjSlA" targetNode="_cfiecEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgCNtUOgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgCNtkOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgC0wEOgEeyaUNVHMjjSlA" sourceNode="_cfeNAUOgEeyaUNVHMjjSlA" targetNode="_cfZUgEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgC0wUOgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgC0wkOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgC0xUOgEeyaUNVHMjjSlA" sourceNode="_cfe0EUOgEeyaUNVHMjjSlA" targetNode="_cfk6sEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgC0xkOgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgC0x0OgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cgDb0kOgEeyaUNVHMjjSlA" sourceNode="_cfe0EUOgEeyaUNVHMjjSlA" targetNode="_cfbwwEOgEeyaUNVHMjjSlA">
+      <target xmi:type="QFTP:QoSContract" href="My.qftp#//@constraint.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cgDb00OgEeyaUNVHMjjSlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cgDb1EOgEeyaUNVHMjjSlA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@edgeMappings[name='PreviousEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_cfNuUEOgEeyaUNVHMjjSlA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.sirius.sample.QFTP.design/description/QFTP.odesign#//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer"/>
+    <target xmi:type="QFTP:QoSCompoundConstraint" href="My.qftp#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

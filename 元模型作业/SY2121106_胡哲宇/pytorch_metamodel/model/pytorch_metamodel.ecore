@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="torch" nsURI="http://www.example.org/pytorch_metamodel" nsPrefix="pytorch_metamodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Tensor"/>
+  <eSubpackages name="nn">
+    <eClassifiers xsi:type="ecore:EClass" name="Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_ConvNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Conv1d" eSuperTypes="#//nn/_ConvNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Conv2d" eSuperTypes="#//nn/_ConvNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Conv3d" eSuperTypes="#//nn/_ConvNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_MaxPoolNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_AvgPoolNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequential" eSuperTypes="#//nn/Module">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="module" upperBound="-1"
+          eType="#//nn/Module" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ModuleList" eSuperTypes="#//nn/Module">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="module" upperBound="-1"
+          eType="#//nn/Module" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ModuleDict" eSuperTypes="#//nn/Module">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="module" upperBound="-1"
+          eType="#//nn/Module" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ParameterList" eSuperTypes="#//nn/Module">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" upperBound="-1"
+          eType="#//nn/Parameter" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ParameterDIct" eSuperTypes="#//nn/Module">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" upperBound="-1"
+          eType="#//nn/Parameter" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Parameter"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_ConvTransposeNd" eSuperTypes="#//nn/_ConvNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConvTranspose1d" eSuperTypes="#//nn/_ConvTransposeNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConvTranspose2d" eSuperTypes="#//nn/_ConvTransposeNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConvTranspose3d" eSuperTypes="#//nn/_ConvTransposeNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyConv1d" eSuperTypes="#//nn/_LazyConvXdMixin #//nn/Conv1d"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyConv2d" eSuperTypes="#//nn/Conv2d #//nn/_LazyConvXdMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyConv3d" eSuperTypes="#//nn/Conv3d #//nn/_LazyConvXdMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyConvTranspose1d" eSuperTypes="#//nn/ConvTranspose1d #//nn/_LazyConvXdMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyConvTranspose2d" eSuperTypes="#//nn/ConvTranspose2d #//nn/_LazyConvXdMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyConvTranspose3d" eSuperTypes="#//nn/ConvTranspose3d #//nn/_LazyConvXdMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MaxPool1d" eSuperTypes="#//nn/_MaxPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MaxPool2d" eSuperTypes="#//nn/_MaxPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MaxPool3d" eSuperTypes="#//nn/_MaxPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_MaxUnpoolNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MaxUnpool1d" eSuperTypes="#//nn/_MaxUnpoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MaxUnpool2d" eSuperTypes="#//nn/_MaxUnpoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MaxUnpool3d" eSuperTypes="#//nn/_MaxUnpoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AvgPool1d" eSuperTypes="#//nn/_AvgPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AvgPool2d" eSuperTypes="#//nn/_AvgPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AvgPool3d" eSuperTypes="#//nn/_AvgPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FractionalMaxPool2d" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="FractionalMaxPool3d" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_LPPoolNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LPPool1d" eSuperTypes="#//nn/_LPPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LPPool2d" eSuperTypes="#//nn/_LPPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_AdaptiveMaxPoolNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdaptiveMaxPool1d" eSuperTypes="#//nn/_AdaptiveMaxPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdaptiveMaxPool2d" eSuperTypes="#//nn/_AdaptiveMaxPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdaptiveMaxPool3d" eSuperTypes="#//nn/_AdaptiveMaxPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_AdaptiveAvgPoolNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdaptiveAvgPool1d" eSuperTypes="#//nn/_AdaptiveAvgPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdaptiveAvgPool2d" eSuperTypes="#//nn/_AdaptiveAvgPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdaptiveAvgPool3d" eSuperTypes="#//nn/_AdaptiveAvgPoolNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_ConstantPadNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConstantPad1d" eSuperTypes="#//nn/_ConstantPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConstantPad2d" eSuperTypes="#//nn/_ConstantPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConstantPad3d" eSuperTypes="#//nn/_ConstantPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_ReflectionPadNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReflectionPad1d" eSuperTypes="#//nn/_ReflectionPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReflectionPad2d" eSuperTypes="#//nn/_ReflectionPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReflectionPad3d" eSuperTypes="#//nn/_ReflectionPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_ReplicationPadNd" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReplicationPad1d" eSuperTypes="#//nn/_ReplicationPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReplicationPad2d" eSuperTypes="#//nn/_ReplicationPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReplicationPad3d" eSuperTypes="#//nn/_ReplicationPadNd"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ZeroPad2d" eSuperTypes="#//nn/ConstantPad2d"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Threshold"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReLU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RReLU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Hardtanh" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReLU6" eSuperTypes="#//nn/Hardtanh"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Sigmoid" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Hardsigmoid" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Tanh" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SiLU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Mish" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Hardswish" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ELU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CELU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SELU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="GLU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="GELU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Hardshrink" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LeakyReLU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LogSigmoid" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Softplus" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Softshrink" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MultiheadAttention" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PReLU" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Softsign" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Tanhshrink" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Softmin" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Softmax" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Softmax2d" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LogSoftmax" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_NormBase" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_BatchNorm" eSuperTypes="#//nn/_NormBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_LazyNormBase" eSuperTypes="#//nn/_NormBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatchNorm1d" eSuperTypes="#//nn/_BatchNorm"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyBatchNorm1d" eSuperTypes="#//nn/_BatchNorm #//nn/_LazyNormBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatchNorm2d" eSuperTypes="#//nn/_BatchNorm"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyBatchNorm2d" eSuperTypes="#//nn/_BatchNorm #//nn/_LazyNormBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatchNorm3d" eSuperTypes="#//nn/_BatchNorm"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyBatchNorm3d" eSuperTypes="#//nn/_BatchNorm #//nn/_LazyNormBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SyncBatchNorm" eSuperTypes="#//nn/_BatchNorm"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RNNBase" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_LazyConvXdMixin" eSuperTypes="#//nn/LazyModuleMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LazyModuleMixin"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RNN" eSuperTypes="#//nn/RNNBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LSTM" eSuperTypes="#//nn/RNNBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="GRU" eSuperTypes="#//nn/RNNBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RNNCellBase" eSuperTypes="#//nn/Module"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RNNCell" eSuperTypes="#//nn/RNNCellBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LSTMCell" eSuperTypes="#//nn/RNNCellBase"/>
+    <eClassifiers xsi:type="ecore:EClass" name="GRUCell" eSuperTypes="#//nn/RNNCellBase"/>
+  </eSubpackages>
+  <eSubpackages name="optim">
+    <eClassifiers xsi:type="ecore:EClass" name="Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Adadelta" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Adagrad" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Adam" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="AdamW" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SparseAdam" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Adamax" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ASGD" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LBFGS" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="NAdam" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RAdam" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RMSprop" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Rprop" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SGD" eSuperTypes="#//optim/Optimizer"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LambdaLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MultiplicativeLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StepLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MultiStepLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConstantLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LinearLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ExponentialLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SequentialLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CosineAnnealingLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ChainedScheduler" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ReduceLROnPlateau"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CyclicLR" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CosineAnnealingWarmRestarts" eSuperTypes="#//optim/_LRScheduler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OneCycleLR" eSuperTypes="#//optim/_LRScheduler"/>
+  </eSubpackages>
+  <eSubpackages name="utils.data">
+    <eClassifiers xsi:type="ecore:EClass" name="DataLoader">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="iterator" eType="#//utils.data/_BaseDataLoaderIter"
+          eOpposite="#//utils.data/_BaseDataLoaderIter/dataloader"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="_BaseDataLoaderIter">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="dataloader" eType="#//utils.data/DataLoader"
+          eOpposite="#//utils.data/DataLoader/iterator"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="_SingleProcessDataLoaderIter" eSuperTypes="#//utils.data/_BaseDataLoaderIter"/>
+    <eClassifiers xsi:type="ecore:EClass" name="_MultiProcessingDataLoaderIter" eSuperTypes="#//utils.data/_BaseDataLoaderIter"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Dataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="IterableDataset" eSuperTypes="#//utils.data/Dataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="DFIterDataPipe" eSuperTypes="#//utils.data/IterableDataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="TensorDataset" eSuperTypes="#//utils.data/Dataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConcatDataset" eSuperTypes="#//utils.data/Dataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ChainDataset" eSuperTypes="#//utils.data/IterableDataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Subset" eSuperTypes="#//utils.data/Dataset"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Sampler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SequentialSampler" eSuperTypes="#//utils.data/Sampler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RandomSampler" eSuperTypes="#//utils.data/Sampler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SubsetRandomSampler" eSuperTypes="#//utils.data/Sampler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="WeightedRandomSampler" eSuperTypes="#//utils.data/Sampler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatchSampler" eSuperTypes="#//utils.data/Sampler"/>
+    <eClassifiers xsi:type="ecore:EClass" name="DistributedSampler" eSuperTypes="#//utils.data/Sampler"/>
+  </eSubpackages>
+</ecore:EPackage>

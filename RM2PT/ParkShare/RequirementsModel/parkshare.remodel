@@ -144,9 +144,16 @@ UseCaseModel ParkShare {
 
 		CallMessage::RegisterSSDCallMessage1(register RegisterSSDCallMessage1SendingEnd -> RegisterSSDExecution1StartEnd)
 		ReturnMessage::RegisterSSDCallMessage1Return(RegisterSSDExecution1FinishEnd -> RegisterSSDCallMessage1ReturnReceivingEnd RegisterSSDCallMessage1)
+		CallMessage::RegisterSSDCallMessage3(register RegisterSSDCallMessage3SendingEnd -> RegisterSSDExecution2StartEnd)
+		ReturnMessage::RegisterSSDCallMessage3Return(RegisterSSDExecution2FinishEnd -> RegisterSSDCallMessage3ReturnReceivingEnd RegisterSSDCallMessage3)
 
 		Execution::RegisterSSDExecution1(RegisterService RegisterSSDExecution1StartEnd RegisterSSDExecution1FinishEnd)
+		Execution::RegisterSSDExecution2(RegisterService RegisterSSDExecution2StartEnd RegisterSSDExecution2FinishEnd)
 
+		MessageEnd::RegisterSSDCallMessage3SendingEnd(User RegisterSSDCallMessage3)
+		ExecutionEnd::RegisterSSDExecution2StartEnd(RegisterService RegisterSSDExecution2)
+		ExecutionEnd::RegisterSSDExecution2FinishEnd(RegisterService RegisterSSDExecution2)
+		MessageEnd::RegisterSSDCallMessage3ReturnReceivingEnd(User RegisterSSDCallMessage3Return)
 		MessageEnd::RegisterSSDCallMessage1SendingEnd(User RegisterSSDCallMessage1)
 		ExecutionEnd::RegisterSSDExecution1StartEnd(RegisterService RegisterSSDExecution1)
 		ExecutionEnd::RegisterSSDExecution1FinishEnd(RegisterService RegisterSSDExecution1)
@@ -218,13 +225,6 @@ UseCaseModel ParkShare {
 
 	}
 
-	Service LoginService {
-
-		[Operation]
-		inputLoginInfo(username, password)
-
-	}
-
 	Service RegisterService {
 
 		[Operation]
@@ -253,7 +253,7 @@ UseCaseModel ParkShare {
 		/* postcondition: skeleton */
 		postcondition:
 			if
-				// 路帽露篓虏脵脳梅路没拢驴
+				// if exists account, deny service
 				User.allInstance()->exists(c:User | c.Username = username)
 			then
 				result = false
@@ -358,7 +358,7 @@ UseCaseModel ParkShare {
 	}
 
 	// by Zhou Yumeng
-	// 展示资产
+	// 展示锟绞诧拷
 	Contract ShowAssetsService::submitCheckRequest() : Real {
 
 		/* definition skeleton */
@@ -410,7 +410,7 @@ UseCaseModel ParkShare {
 			new.ID = generateID() and
 			self.parkingSpot = new and
 			self.spotInfo = true and
-			result = ture
+			result = true
 	}
 
 	Contract RentToDriverService::uploadCertificate(certificate : String) : Boolean {

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="QFTP" version="12.0.0.2017041100">
+  <ownedViewpoints name="QoSCompoundConstraint" modelFileExtension="qftp">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="QoSCompoundConstraint" domainClass="QFTP::QoSCompoundConstraint" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="QoSConstraintNode" semanticCandidatesExpression="feature:constraint" domainClass="QFTP::QoSConstraint">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:qualification" labelPosition="node" resizeKind="NSEW" width="10" height="10">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="QoSRequiredNode" domainClass="QFTP::QoSRequired">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:qualification" labelPosition="node" resizeKind="NSEW" width="10" height="10">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="QoSContractNode" domainClass="QFTP::QoSContract">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:qualification" labelPosition="node" resizeKind="NSEW" width="10" height="10">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="QoSOfferedNode" domainClass="QFTP::QoSOffered">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:qualification" labelPosition="node" resizeKind="NSEW" width="10" height="10">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="ContractEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']" targetFinderExpression="feature:contract">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RequireAccordedEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']" targetFinderExpression="feature:requireAccorded">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="OfferAccordedEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']" targetFinderExpression="feature:offerAccorded">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="QRequiredEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']" targetFinderExpression="feature:qRequired">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="QOfferedEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']" targetFinderExpression="feature:qOffered">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="NextEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']" targetFinderExpression="feature:next">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="PreviousEdge" sourceMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']" targetMapping="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode'] //@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']" targetFinderExpression="feature:previous">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createQoSConstraint" label="QoSConstraint" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSConstraintNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="QFTP::QoSConstraint" referenceName="constraint">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="qualification"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createQoSRequired" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSRequiredNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="QFTP::QoSRequired" referenceName="constraint">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="qualification"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createQoSContract" label="QoSContract" nodeMappings="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSContractNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="QFTP::QoSContract" referenceName="constraint">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="constraint"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createQoSOffered" label="QoSOffered" nodeMappings="//@ownedViewpoints[name='QoSCompoundConstraint']/@ownedRepresentations[name='QoSCompoundConstraint']/@defaultLayer/@nodeMappings[name='QoSOfferedNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="QFTP::QoSOffered" referenceName="constraint">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="qualification"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

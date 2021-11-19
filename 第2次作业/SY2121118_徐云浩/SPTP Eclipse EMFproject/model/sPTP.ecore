@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sPTP" nsURI="http://www.example.org/sPTP" nsPrefix="sPTP">
+  <eClassifiers xsi:type="ecore:EClass" name="Instance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" upperBound="-1"
+        eType="#//Descriptor"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="water" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="soid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="homan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="electric" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Descriptor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="resource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceInstance" eSuperTypes="#//Instance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceserviceinstance"
+        upperBound="-1" eType="#//ResourceServiceInstance" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Resource" eSuperTypes="#//Descriptor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceservice" upperBound="-1"
+        eType="#//ResourceService" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceServiceInstance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="#//ResourceService"
+        eOpposite="#//ResourceService/instance"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="water_control_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="land_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="homan_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="electric_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceService">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instance" upperBound="-1"
+        eType="#//ResourceServiceInstance" eOpposite="#//ResourceServiceInstance/type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="waterService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="landService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="homan_Service" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="electicService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventOccurence">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StimulusReception" eSuperTypes="#//EventOccurence"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StimulusGeneration" eSuperTypes="#//EventOccurence"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ScenarioEndEvent" eSuperTypes="#//EventOccurence"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ScenarioStartEvent" eSuperTypes="#//EventOccurence"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UsageDemand" eSuperTypes="#//EventOccurence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceusage" upperBound="-1"
+        eType="#//ResourceUsage" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceUsage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StaticUsage" eSuperTypes="#//ResourceUsage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DynamicUsage" eSuperTypes="#//ResourceUsage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Client" eSuperTypes="#//StaticUsage #//Instance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedResources" lowerBound="1"
+        upperBound="-1" eType="#//ResourceInstance"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xiaoming" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xiaohong" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xiaowang" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="xiaozhang" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scenario" eSuperTypes="#//DynamicUsage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="step" lowerBound="1" upperBound="-1"
+        eType="#//ActionExecution" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionExecution" eSuperTypes="#//Scenario">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="execution" upperBound="-1"
+        eType="#//ActionExecution" eOpposite="#//ActionExecution/successor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="successor" upperBound="-1"
+        eType="#//ActionExecution" eOpposite="#//ActionExecution/execution"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="signal1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="signal2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="signal3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="signal4" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sptp">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventoccurence" upperBound="-1"
+        eType="#//EventOccurence" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instance" upperBound="-1"
+        eType="#//Instance" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="descriptor" upperBound="-1"
+        eType="#//Descriptor" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

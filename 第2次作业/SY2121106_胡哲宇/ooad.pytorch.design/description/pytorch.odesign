@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="pytorch" version="12.0.0.2017041100">
+  <ownedViewpoints name="neural network" modelFileExtension="pytorch">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Neural network diagram" domainClass="pytorch::NeuralNetwork">
+      <metamodel href="../../ooad.pytorch/model/pytorch.ecore#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="IdentityNode" label="Identity" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Identity">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="LinearNode" label="Linear" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Linear">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BilinearNode" label="Bilinear" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Bilinear">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Conv1dNode" label="Conv1d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Conv1d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Conv2dNode" label="Conv2d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Conv2d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Conv3dNode" label="Conv3d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Conv3d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="MaxPool1dNode" label="MaxPool1d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::MaxPool1d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="MaxPool2dNode" label="MaxPool2d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::MaxPool2d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="MaxPool3dNode" label="MaxPool3d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::MaxPool3d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="AvgPool1dNode" label="AvgPool1d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::AvgPool1d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="AvgPool2dNode" label="AvgPool2d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::AvgPool2d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="AvgPool3dNode" label="AvgPool3d" semanticCandidatesExpression="feature:modules" domainClass="pytorch::AvgPool3d">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SigmoidNode" label="Sigmoid" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Sigmoid">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ReLUNode" label="ReLU" semanticCandidatesExpression="feature:modules" domainClass="pytorch::ReLU">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="LeakyReLUNode" label="LeakyReLU" semanticCandidatesExpression="feature:modules" domainClass="pytorch::LeakyReLU">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SoftmaxNode" label="Softmax" semanticCandidatesExpression="feature:modules" domainClass="pytorch::Softmax">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="nextEdge" label="nextEdge" deletionDescription="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='unsetNext']" sourceMapping="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool1dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool2dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool3dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='BilinearNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv1dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv3dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='IdentityNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LeakyReLUNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool1dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool3dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='ReLUNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='SigmoidNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='SoftmaxNode']" targetMapping="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool2dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool3dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='BilinearNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv1dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv3dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='IdentityNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LeakyReLUNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool1dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool3dNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='ReLUNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='SigmoidNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='SoftmaxNode'] //@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool1dNode']" targetFinderExpression="feature:next">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createIdentity" label="Identity" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='IdentityNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Identity" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'identity'+container.modules->filter(pytorch::Identity)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createLinear" label="Linear" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Linear" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'linear'+container.modules->filter(pytorch::Linear)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createBilinear" label="Bilinear" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='BilinearNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Bilinear" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'bilinear'+container.modules->filter(pytorch::Bilinear)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createConv1d" label="Conv1d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv1dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Conv1d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'conv1d'+container.modules->filter(pytorch::Conv1d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createConv2d" label="Conv2d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Conv2d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'conv2d'+container.modules->filter(pytorch::Conv2d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createConv3d" label="Conv3d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv3dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Conv3d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'conv3d'+container.modules->filter(pytorch::Conv3d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createMaxPool1d" label="MaxPool1d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool1dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::MaxPool1d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'maxPool1d'+container.modules->filter(pytorch::MaxPool1d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createMaxPool2d" label="MaxPool2d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::MaxPool2d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'maxPool2d'+container.modules->filter(pytorch::MaxPool2d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createMaxPool3d" label="MaxPool3d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool3dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::MaxPool3d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'maxPool3d'+container.modules->filter(pytorch::MaxPool3d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvgPool1d" label="AvgPool1d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool1dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::AvgPool1d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'avgPool1d'+container.modules->filter(pytorch::AvgPool1d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvgPool2d" label="AvgPool2d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool2dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::AvgPool2d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'avgPool2d'+container.modules->filter(pytorch::AvgPool2d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAvgPool3d" label="AvgPool3d" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='AvgPool3dNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::AvgPool3d" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'avgPool3d'+container.modules->filter(pytorch::AvgPool3d)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createSigmoid" label="Sigmoid" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='SigmoidNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Sigmoid" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'sigmoid'+container.modules->filter(pytorch::Sigmoid)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createReLU" label="ReLU" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='ReLUNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::ReLU" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'relu'+container.modules->filter(pytorch::ReLU)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createLeakyReLU" label="LeakyReLU" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LeakyReLUNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::LeakyReLU" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'LeakyReLU'+container.modules->filter(pytorch::LeakyReLU)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createSoftmax" label="Softmax" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='SoftmaxNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pytorch::Softmax" referenceName="modules">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'softmax'+container.modules->filter(pytorch::Softmax)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setPrev">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="prev" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setNext" edgeMappings="//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="next" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetNext">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="next"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="ooad.pytorch.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

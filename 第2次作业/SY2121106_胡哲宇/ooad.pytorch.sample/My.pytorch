@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pytorch:NeuralNetwork xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pytorch="http://www.example.org/pytorch" name="AlexNet">
+  <modules xsi:type="pytorch:Conv2d" name="conv1" next="//@modules.1"/>
+  <modules xsi:type="pytorch:MaxPool2d" name="pool1" next="//@modules.2" prev="//@modules.0"/>
+  <modules xsi:type="pytorch:Conv2d" name="conv2" next="//@modules.3" prev="//@modules.1"/>
+  <modules xsi:type="pytorch:MaxPool2d" name="pool2" next="//@modules.4" prev="//@modules.2"/>
+  <modules xsi:type="pytorch:Conv2d" name="conv3" next="//@modules.5" prev="//@modules.3"/>
+  <modules xsi:type="pytorch:Conv2d" name="conv4" next="//@modules.6" prev="//@modules.4"/>
+  <modules xsi:type="pytorch:Conv2d" name="conv5" next="//@modules.7" prev="//@modules.5"/>
+  <modules xsi:type="pytorch:MaxPool2d" name="pool3" next="//@modules.8" prev="//@modules.6"/>
+  <modules xsi:type="pytorch:Linear" name="linear1" next="//@modules.9" prev="//@modules.7"/>
+  <modules xsi:type="pytorch:Linear" name="linear2" next="//@modules.10" prev="//@modules.8"/>
+  <modules xsi:type="pytorch:Linear" name="linear3" prev="//@modules.9"/>
+</pytorch:NeuralNetwork>

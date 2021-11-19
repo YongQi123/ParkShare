@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:sPTP="http://www.example.org/sPTP" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_haXFMEgrEeyJ9Jc5fFQr7g" selectedViews="_kfEMUEgrEeyJ9Jc5fFQr7g" version="14.3.1.202003261200">
+    <semanticResources>My.sptp</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_kfEMUEgrEeyJ9Jc5fFQr7g">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Gh-cwEhHEeyzgpIHIB_iHQ" name="new sptp diagram" repPath="#_GhlbMEhHEeyzgpIHIB_iHQ" changeId="df1834b2-1bef-4356-ab09-80fb133170e0">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']"/>
+        <target xmi:type="sPTP:Sptp" href="My.sptp#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_GhlbMEhHEeyzgpIHIB_iHQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_GiO7cEhHEeyzgpIHIB_iHQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_GiO7cUhHEeyzgpIHIB_iHQ" type="Sirius" element="_GhlbMEhHEeyzgpIHIB_iHQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_GjUgkEhHEeyzgpIHIB_iHQ" visible="false" type="2001" element="_GifaIEhHEeyzgpIHIB_iHQ">
+          <children xmi:type="notation:Node" xmi:id="_Gjb1UEhHEeyzgpIHIB_iHQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Gjb1UUhHEeyzgpIHIB_iHQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Gjs7EEhHEeyzgpIHIB_iHQ" type="3003" element="_GimH0EhHEeyzgpIHIB_iHQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Gjs7EUhHEeyzgpIHIB_iHQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gjs7EkhHEeyzgpIHIB_iHQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_GjUgkUhHEeyzgpIHIB_iHQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GjUgkkhHEeyzgpIHIB_iHQ" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cOaugEhcEey-H_Md893sZQ" visible="false" type="2001" element="_cOPIUUhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_cObVkEhcEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cObVkUhcEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cOcjsEhcEey-H_Md893sZQ" type="3003" element="_cOPvYEhcEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cOcjsUhcEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cOcjskhcEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cOaugUhcEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cOaugkhcEey-H_Md893sZQ" x="21" y="7" width="155" height="99"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cOb8oEhcEey-H_Md893sZQ" type="2001" element="_cOQWcUhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_cOb8o0hcEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cOb8pEhcEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lsFUEEhiEey-H_Md893sZQ" type="3005" element="_lrpPMUhiEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lsFUEUhiEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lsFUEkhiEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cOb8oUhcEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cOb8okhcEey-H_Md893sZQ" x="-42" y="-7" width="169" height="113"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gHKPwEheEey-H_Md893sZQ" visible="false" type="2001" element="_gGsVtEheEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_gHKPw0heEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gHKPxEheEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gHK20kheEey-H_Md893sZQ" type="3003" element="_gGux8EheEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gHK200heEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gHK21EheEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gHKPwUheEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gHKPwkheEey-H_Md893sZQ" x="784" y="448" width="120" height="92"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gHKPxUheEey-H_Md893sZQ" visible="false" type="2001" element="_gGux8kheEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_gHK20EheEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gHK20UheEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gHK21UheEey-H_Md893sZQ" type="3003" element="_gGvZAEheEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gHK21kheEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gHK210heEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gHKPxkheEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gHKPx0heEey-H_Md893sZQ" x="784" y="182" width="120" height="92"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eufhwEhgEey-H_Md893sZQ" type="2001" element="_euBnsEhgEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_eufhw0hgEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eufhxEhgEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_A0jgwEhkEey-H_Md893sZQ" type="3005" element="_A0MUYEhkEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_A0jgwUhkEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A0jgwkhkEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_eufhwUhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eufhwkhgEey-H_Md893sZQ" x="-280" y="266" width="141" height="91"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eugI0EhgEey-H_Md893sZQ" type="2001" element="_euCOwEhgEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_eugI00hgEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eugI1EhgEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I39WgEhkEey-H_Md893sZQ" type="3005" element="_I3mKI0hkEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_I39WgUhkEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I39WgkhkEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_eugI0UhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eugI0khgEey-H_Md893sZQ" x="294" y="266" width="141" height="85"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eugI1UhgEey-H_Md893sZQ" type="2001" element="_euCOw0hgEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_eugI2EhgEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eugI2UhgEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I39Wg0hkEey-H_Md893sZQ" type="3005" element="_I3mKJkhkEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_I39WhEhkEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I39WhUhkEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_eugI1khgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eugI10hgEey-H_Md893sZQ" x="112" y="259" width="127" height="78"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eugI2khgEey-H_Md893sZQ" type="2001" element="_euCOxkhgEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_eugI3UhgEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eugI3khgEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I39WhkhkEey-H_Md893sZQ" type="3005" element="_I3mKKUhkEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_I39Wh0hkEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I39WiEhkEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_eugI20hgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eugI3EhgEey-H_Md893sZQ" x="-49" y="259" width="141" height="98"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_eugI30hgEey-H_Md893sZQ" visible="false" type="2001" element="_euCOyUhgEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_eugI4khgEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eugI40hgEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_euhW8EhgEey-H_Md893sZQ" type="3003" element="_euCOykhgEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_euhW8UhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_euhW8khgEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_eugI4EhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eugI4UhgEey-H_Md893sZQ" x="273" y="28" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vP8voEhlEey-H_Md893sZQ" type="2001" element="_vPmKVEhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_vP8vo0hlEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vP8vpEhlEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CmpCEEhnEey-H_Md893sZQ" type="3005" element="_CmLvGkhnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_CmpCEUhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmpCEkhnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vP8voUhlEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP8vokhlEey-H_Md893sZQ" x="483" y="-126" width="181" height="218"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vP8vpUhlEey-H_Md893sZQ" type="2001" element="_vPmKVUhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_vP8vqEhlEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vP8vqUhlEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vP-k0khlEey-H_Md893sZQ" type="3005" element="_vPnYcEhlEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vP-k00hlEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP-k1EhlEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vP8vpkhlEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP8vp0hlEey-H_Md893sZQ" x="497" y="322" width="230" height="260"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vP99wEhlEey-H_Md893sZQ" type="2001" element="_vPnYckhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_vP99w0hlEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vP99xEhlEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CmpCE0hnEey-H_Md893sZQ" type="3005" element="_CmMWIkhnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_CmpCFEhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmpCFUhnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vP99wUhlEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP99wkhlEey-H_Md893sZQ" x="819" y="336" width="204" height="232"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vP99xUhlEey-H_Md893sZQ" type="2001" element="_vPnYc0hlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_vP99yEhlEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vP99yUhlEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CmppIEhnEey-H_Md893sZQ" type="3005" element="_CmMWJEhnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_CmppIUhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmppIkhnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vP99xkhlEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP99x0hlEey-H_Md893sZQ" x="1078" y="350" width="239" height="196"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_vP99ykhlEey-H_Md893sZQ" type="2001" element="_vPnYdEhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_vP-k0EhlEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_vP-k0UhlEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CmppI0hnEey-H_Md893sZQ" type="3005" element="_CmMWJkhnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_CmppJEhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmppJUhnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_vP99y0hlEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP99zEhlEey-H_Md893sZQ" x="1386" y="350" width="183" height="196"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_h9wO4EhnEey-H_Md893sZQ" type="2001" element="_h9JK5EhnEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_h9wO40hnEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_h9wO5EhnEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9xdAkhnEey-H_Md893sZQ" type="3005" element="_h9JK5UhnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_h9xdA0hnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9xdBEhnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_h9wO4UhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9wO4khnEey-H_Md893sZQ" x="1078" y="-77" width="274" height="183"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_h9w18EhnEey-H_Md893sZQ" type="2001" element="_h9JK50hnEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_h9w180hnEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_h9w19EhnEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9xdBUhnEey-H_Md893sZQ" type="3005" element="_h9JK6EhnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_h9xdBkhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9xdB0hnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_h9w18UhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9w18khnEey-H_Md893sZQ" x="1386" y="-98" width="183" height="204"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_h9w19UhnEey-H_Md893sZQ" type="2001" element="_h9JK6khnEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_h9xdAEhnEey-H_Md893sZQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_h9xdAUhnEey-H_Md893sZQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9xdCEhnEey-H_Md893sZQ" type="3005" element="_h9JK60hnEey-H_Md893sZQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_h9xdCUhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9xdCkhnEey-H_Md893sZQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_h9w19khnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9w190hnEey-H_Md893sZQ" x="840" y="-98" width="221" height="239"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_GiO7ckhHEeyzgpIHIB_iHQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_Ho60sEhdEey-H_Md893sZQ" visible="false" type="4001" element="_Ho5mlEhdEey-H_Md893sZQ" source="_cOaugEhcEey-H_Md893sZQ" target="_cOb8oEhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_Ho7bwEhdEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ho7bwUhdEey-H_Md893sZQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Ho7bwkhdEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ho7bw0hdEey-H_Md893sZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Ho7bxEhdEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ho7bxUhdEey-H_Md893sZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Ho60sUhdEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Ho60skhdEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="20"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ho60s0hdEey-H_Md893sZQ" points="[0, 0, -389, 7]$[389, -7, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ho7bxkhdEey-H_Md893sZQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ho7bx0hdEey-H_Md893sZQ" id="(2.2175694128356853,2.47787610619469)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_xVfkAEheEey-H_Md893sZQ" visible="false" type="4001" element="_xVeV5kheEey-H_Md893sZQ" source="_gHKPxUheEey-H_Md893sZQ" target="_gHKPwEheEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_xVfkBEheEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVfkBUheEey-H_Md893sZQ" x="-10" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xVfkBkheEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVfkB0heEey-H_Md893sZQ" x="7" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xVfkCEheEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVfkCUheEey-H_Md893sZQ" x="9" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_xVfkAUheEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xVfkAkheEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xVfkA0heEey-H_Md893sZQ" points="[-23, 77, 54, -189]$[-73, 251, 4, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xVfkCkheEey-H_Md893sZQ" id="(0.7666666666666667,0.16304347826086957)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xVfkC0heEey-H_Md893sZQ" id="(0.125,0.16304347826086957)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_euhW80hgEey-H_Md893sZQ" visible="false" type="4001" element="_euC100hgEey-H_Md893sZQ" source="_eufhwEhgEey-H_Md893sZQ" target="_eugI30hgEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_euhW90hgEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_euhW-EhgEey-H_Md893sZQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_euhW-UhgEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_euhW-khgEey-H_Md893sZQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_euhW-0hgEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_euhW_EhgEey-H_Md893sZQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_euhW9EhgEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_euhW9UhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="20"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_euhW9khgEey-H_Md893sZQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_euhW_UhgEey-H_Md893sZQ" id="(0.24439332949971249,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_euhW_khgEey-H_Md893sZQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_7qv1sEhgEey-H_Md893sZQ" type="4001" element="_7qSiukhgEey-H_Md893sZQ" source="_eufhwEhgEey-H_Md893sZQ" target="_cOb8oEhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_7qv1tEhgEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qv1tUhgEey-H_Md893sZQ" x="7" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qv1tkhgEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qv1t0hgEey-H_Md893sZQ" x="-11" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qv1uEhgEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qv1uUhgEey-H_Md893sZQ" x="-7" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7qv1sUhgEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7qv1skhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="20"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7qv1s0hgEey-H_Md893sZQ" points="[103, -91, -475, -145]$[113, -99, -465, -153]$[206, -196, -372, -250]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qv1ukhgEey-H_Md893sZQ" id="(0.24439332949971249,1.0070332480818416)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qv1u0hgEey-H_Md893sZQ" id="(2.2175694128356853,2.47787610619469)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_7qv1vEhgEey-H_Md893sZQ" type="4001" element="_7qTJwkhgEey-H_Md893sZQ" source="_eugI0EhgEey-H_Md893sZQ" target="_cOb8oEhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_7qv1wEhgEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qv1wUhgEey-H_Md893sZQ" x="-37" y="33"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qv1wkhgEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qv1w0hgEey-H_Md893sZQ" x="-19" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qv1xEhgEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qv1xUhgEey-H_Md893sZQ" x="-88" y="-5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7qv1vUhgEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7qv1vkhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7qv1v0hgEey-H_Md893sZQ" points="[-28, 163, 186, 176]$[-77, 118, 137, 131]$[-202, -2, 12, 11]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qwcwEhgEey-H_Md893sZQ" id="(0.24439332949971249,-2.289218067022827)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qwcwUhgEey-H_Md893sZQ" id="(0.9230769230769231,0.8584070796460176)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_7qwcwkhgEey-H_Md893sZQ" type="4001" element="_7qTJx0hgEey-H_Md893sZQ" source="_eugI1UhgEey-H_Md893sZQ" target="_cOb8oEhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_7qwcxkhgEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qwcx0hgEey-H_Md893sZQ" x="9" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qwcyEhgEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qwcyUhgEey-H_Md893sZQ" x="-9" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qwcykhgEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qwcy0hgEey-H_Md893sZQ" x="-7" y="-7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7qwcw0hgEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7qwcxEhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7qwcxUhgEey-H_Md893sZQ" points="[-4, -7, -186, -152]$[-38, -77, -220, -222]$[-65, -105, -247, -250]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qwczEhgEey-H_Md893sZQ" id="(0.2992125984251969,0.09090909090909091)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qwczUhgEey-H_Md893sZQ" id="(2.2175694128356853,2.47787610619469)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_7qwczkhgEey-H_Md893sZQ" type="4001" element="_7qTJzEhgEey-H_Md893sZQ" source="_eugI2khgEey-H_Md893sZQ" target="_cOb8oEhcEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_7qwc0khgEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qwc00hgEey-H_Md893sZQ" x="-51" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qwc1EhgEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qwc1UhgEey-H_Md893sZQ" x="-4" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7qwc1khgEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7qwc10hgEey-H_Md893sZQ" x="-86" y="5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7qwcz0hgEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_7qwc0EhgEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7qwc0UhgEey-H_Md893sZQ" points="[0, -8, -25, 162]$[0, -29, -25, 141]$[4, -29, -21, 141]$[4, -71, -21, 99]$[23, -161, -2, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qwc2EhgEey-H_Md893sZQ" id="(0.44680851063829785,0.08695652173913045)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7qwc2UhgEey-H_Md893sZQ" id="(0.47928994082840237,0.920353982300885)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vP-k1UhlEey-H_Md893sZQ" type="4001" element="_vPn_jEhlEey-H_Md893sZQ" source="_vP8vpUhlEey-H_Md893sZQ" target="_vP8voEhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_vP-k2UhlEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP-k2khlEey-H_Md893sZQ" x="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vP-k20hlEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP-k3EhlEey-H_Md893sZQ" x="-5" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vP_L4EhlEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vP_L4UhlEey-H_Md893sZQ" x="-6" y="-5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vP-k1khlEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vP-k10hlEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vP-k2EhlEey-H_Md893sZQ" points="[0, -13, 19, 428]$[-11, -244, 8, 197]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vP_L4khlEey-H_Md893sZQ" id="(0.7652173913043478,0.05)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vP_L40hlEey-H_Md893sZQ" id="(0.9447513812154696,0.09174311926605504)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_CmppJkhnEey-H_Md893sZQ" type="4001" element="_CmM9PkhnEey-H_Md893sZQ" source="_vP8voEhlEey-H_Md893sZQ" target="_vP8vpUhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_CmppKkhnEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmppK0hnEey-H_Md893sZQ" x="-9" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CmppLEhnEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmppLUhnEey-H_Md893sZQ" x="9" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CmppLkhnEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CmppL0hnEey-H_Md893sZQ" x="10" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_CmppJ0hnEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_CmppKEhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CmppKUhnEey-H_Md893sZQ" points="[-4, 2, -2, -235]$[-4, 233, -2, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CmppMEhnEey-H_Md893sZQ" id="(0.32044198895027626,0.9862385321100918)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CmppMUhnEey-H_Md893sZQ" id="(0.1826086956521739,0.015384615384615387)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_h9yEEEhnEey-H_Md893sZQ" type="4001" element="_h9KZDEhnEey-H_Md893sZQ" source="_h9w19UhnEey-H_Md893sZQ" target="_vP99wEhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_h9yEFEhnEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEFUhnEey-H_Md893sZQ" x="-161" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9yEFkhnEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEF0hnEey-H_Md893sZQ" x="153" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9yEGEhnEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEGUhnEey-H_Md893sZQ" x="21" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_h9yEEUhnEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_h9yEEkhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h9yEE0hnEey-H_Md893sZQ" points="[17, 239, -33, -427]$[50, 666, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h9yEGkhnEey-H_Md893sZQ" id="(0.1402714932126697,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h9yEG0hnEey-H_Md893sZQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_h9yEHEhnEey-H_Md893sZQ" type="4001" element="_h9KZEUhnEey-H_Md893sZQ" source="_h9wO4EhnEey-H_Md893sZQ" target="_vP99xUhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_h9yEIEhnEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEIUhnEey-H_Md893sZQ" x="-16" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9yEIkhnEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEI0hnEey-H_Md893sZQ" x="16" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9yEJEhnEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEJUhnEey-H_Md893sZQ" x="14" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_h9yEHUhnEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_h9yEHkhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h9yEH0hnEey-H_Md893sZQ" points="[-16, 127, 57, -479]$[-73, 606, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h9yEJkhnEey-H_Md893sZQ" id="(0.7007299270072992,0.09289617486338798)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h9yEJ0hnEey-H_Md893sZQ" id="(0.497907949790795,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_h9yEKEhnEey-H_Md893sZQ" type="4001" element="_h9LAE0hnEey-H_Md893sZQ" source="_h9w18EhnEey-H_Md893sZQ" target="_vP99ykhlEey-H_Md893sZQ">
+          <children xmi:type="notation:Node" xmi:id="_h9yELEhnEey-H_Md893sZQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yELUhnEey-H_Md893sZQ" x="15" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9yELkhnEey-H_Md893sZQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEL0hnEey-H_Md893sZQ" x="-22" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9yEMEhnEey-H_Md893sZQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9yEMUhnEey-H_Md893sZQ" x="-14" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_h9yEKUhnEey-H_Md893sZQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_h9yEKkhnEey-H_Md893sZQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h9yEK0hnEey-H_Md893sZQ" points="[275, -241, 5, -343]$[179, 67, -91, -35]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h9yrIEhnEey-H_Md893sZQ" id="(-0.9781420765027321,2.176470588235294)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h9yrIUhnEey-H_Md893sZQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_GjDa0EhHEeyzgpIHIB_iHQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_GjDa0UhHEeyzgpIHIB_iHQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_GifaIEhHEeyzgpIHIB_iHQ" name="Invalid feature as name" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="sPTP:UsageDemand" href="My.sptp#//@eventoccurence.0"/>
+      <semanticElements xmi:type="sPTP:UsageDemand" href="My.sptp#//@eventoccurence.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_GimH0EhHEeyzgpIHIB_iHQ" labelSize="12" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='EventOccurence']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='EventOccurence']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cOPIUUhcEey-H_Md893sZQ" name="client" visible="false" outgoingEdges="_Ho5mlEhdEey-H_Md893sZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <semanticElements xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_cOPvYEhcEey-H_Md893sZQ" labelSize="12" labelPosition="node" color="255,245,181">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='Client']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='Client']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cOQWcUhcEey-H_Md893sZQ" name="RI" incomingEdges="_Ho5mlEhdEey-H_Md893sZQ _7qSiukhgEey-H_Md893sZQ _7qTJwkhgEey-H_Md893sZQ _7qTJx0hgEey-H_Md893sZQ _7qTJzEhgEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceInstance" href="My.sptp#//@instance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceInstance" href="My.sptp#//@instance.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_lrpPMUhiEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/ResourceInstance.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='ResourceInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='ResourceInstance']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ho5mlEhdEey-H_Md893sZQ" visible="false" sourceNode="_cOPIUUhcEey-H_Md893sZQ" targetNode="_cOQWcUhcEey-H_Md893sZQ">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ho5mlUhdEey-H_Md893sZQ" size="2" strokeColor="252,233,79">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ho5mlkhdEey-H_Md893sZQ" labelSize="20"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gGsVtEheEey-H_Md893sZQ" name="RIS" visible="false" incomingEdges="_xVeV5kheEey-H_Md893sZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gGux8EheEey-H_Md893sZQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='RSI']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='RSI']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_gGux8kheEey-H_Md893sZQ" name="RS" visible="false" outgoingEdges="_xVeV5kheEey-H_Md893sZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <semanticElements xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_gGvZAEheEey-H_Md893sZQ" labelSize="12" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='RS']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='RS']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_xVeV5kheEey-H_Md893sZQ" visible="false" sourceNode="_gGux8kheEey-H_Md893sZQ" targetNode="_gGsVtEheEey-H_Md893sZQ">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_xVeV50heEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='instance']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_xVeV6EheEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='instance']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_euBnsEhgEey-H_Md893sZQ" name="xiaoming" outgoingEdges="_euC100hgEey-H_Md893sZQ _7qSiukhgEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <semanticElements xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_A0MUYEhkEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaoming']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaoming']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_euCOwEhgEey-H_Md893sZQ" name="xiaohong" outgoingEdges="_7qTJwkhgEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <semanticElements xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_I3mKI0hkEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaohong']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaohong']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_euCOw0hgEey-H_Md893sZQ" name="xiaowang" outgoingEdges="_7qTJx0hgEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <semanticElements xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_I3mKJkhkEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaowang']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaowang']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_euCOxkhgEey-H_Md893sZQ" name="xiaozhang" outgoingEdges="_7qTJzEhgEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <semanticElements xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_I3mKKUhkEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaozhang']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='xiaozhang']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_euCOyUhgEey-H_Md893sZQ" name="ResourceInstance1" visible="false" incomingEdges="_euC100hgEey-H_Md893sZQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceInstance" href="My.sptp#//@instance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceInstance" href="My.sptp#//@instance.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_euCOykhgEey-H_Md893sZQ" labelSize="12" labelPosition="node" color="224,133,3">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='ResourceInstance1']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='ResourceInstance1']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_euC100hgEey-H_Md893sZQ" visible="false" sourceNode="_euBnsEhgEey-H_Md893sZQ" targetNode="_euCOyUhgEey-H_Md893sZQ">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_euC11EhgEey-H_Md893sZQ" size="2" strokeColor="252,233,79">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_euC11UhgEey-H_Md893sZQ" labelSize="20"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7qSiukhgEey-H_Md893sZQ" sourceNode="_euBnsEhgEey-H_Md893sZQ" targetNode="_cOQWcUhcEey-H_Md893sZQ">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7qSiu0hgEey-H_Md893sZQ" size="2" strokeColor="252,233,79">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources1']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7qSivEhgEey-H_Md893sZQ" labelSize="20"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources1']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7qTJwkhgEey-H_Md893sZQ" sourceNode="_euCOwEhgEey-H_Md893sZQ" targetNode="_cOQWcUhcEey-H_Md893sZQ">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7qTJw0hgEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources2']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7qTJxEhgEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources2']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7qTJx0hgEey-H_Md893sZQ" sourceNode="_euCOw0hgEey-H_Md893sZQ" targetNode="_cOQWcUhcEey-H_Md893sZQ">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7qTJyEhgEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources3']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7qTJyUhgEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources3']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7qTJzEhgEey-H_Md893sZQ" sourceNode="_euCOxkhgEey-H_Md893sZQ" targetNode="_cOQWcUhcEey-H_Md893sZQ">
+      <target xmi:type="sPTP:Client" href="My.sptp#//@instance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7qTJzUhgEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources4']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7qTJzkhgEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='usedResources4']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vPmKVEhlEey-H_Md893sZQ" name="water_bureau" outgoingEdges="_CmM9PkhnEey-H_Md893sZQ" incomingEdges="_vPn_jEhlEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CmLvGkhnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/sanjiaoxing.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='water_bureau']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='water_bureau']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vPmKVUhlEey-H_Md893sZQ" name="waterservice" outgoingEdges="_vPn_jEhlEey-H_Md893sZQ" incomingEdges="_CmM9PkhnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <semanticElements xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_vPnYcEhlEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='waterservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='waterservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vPnYckhlEey-H_Md893sZQ" name="landservice" incomingEdges="_h9KZDEhnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <semanticElements xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CmMWIkhnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='landservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='landservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vPnYc0hlEey-H_Md893sZQ" name="homanservice" incomingEdges="_h9KZEUhnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <semanticElements xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CmMWJEhnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='homanservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='homanservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_vPnYdEhlEey-H_Md893sZQ" name="electricservice" incomingEdges="_h9LAE0hnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <semanticElements xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CmMWJkhnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/yuan.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='electricservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='electricservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_vPn_jEhlEey-H_Md893sZQ" sourceNode="_vPmKVUhlEey-H_Md893sZQ" targetNode="_vPmKVEhlEey-H_Md893sZQ">
+      <target xmi:type="sPTP:ResourceService" href="My.sptp#//@descriptor.0/@resourceservice.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_vPn_jUhlEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='instance']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_vPn_jkhlEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='instance']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_CmM9PkhnEey-H_Md893sZQ" sourceNode="_vPmKVEhlEey-H_Md893sZQ" targetNode="_vPmKVUhlEey-H_Md893sZQ">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_CmNkQEhnEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='water']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_CmNkQUhnEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='water']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_h9JK5EhnEey-H_Md893sZQ" name="homan_bureau" outgoingEdges="_h9KZEUhnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_h9JK5UhnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/sanjiaoxing.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='homan_bureau']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='homan_bureau']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_h9JK50hnEey-H_Md893sZQ" name="electirc_bureau" outgoingEdges="_h9LAE0hnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_h9JK6EhnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/sanjiaoxing.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='electirc_bureau']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='electirc_bureau']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_h9JK6khnEey-H_Md893sZQ" name="land_bureau" outgoingEdges="_h9KZDEhnEey-H_Md893sZQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <semanticElements xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_h9JK60hnEey-H_Md893sZQ" labelSize="12" labelPosition="node" workspacePath="/sptp.design/photo/sanjiaoxing.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='land_bureau']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@nodeMappings[name='land_bureau']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_h9KZDEhnEey-H_Md893sZQ" sourceNode="_h9JK6khnEey-H_Md893sZQ" targetNode="_vPnYckhlEey-H_Md893sZQ">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_h9KZDUhnEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='land']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_h9KZDkhnEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='land']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_h9KZEUhnEey-H_Md893sZQ" sourceNode="_h9JK5EhnEey-H_Md893sZQ" targetNode="_vPnYc0hlEey-H_Md893sZQ">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_h9KZEkhnEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='homan']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_h9LAEEhnEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='homan']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_h9LAE0hnEey-H_Md893sZQ" sourceNode="_h9JK50hnEey-H_Md893sZQ" targetNode="_vPnYdEhlEey-H_Md893sZQ">
+      <target xmi:type="sPTP:ResourceServiceInstance" href="My.sptp#//@instance.0/@resourceserviceinstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_h9LAFEhnEey-H_Md893sZQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='electric']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_h9LAFUhnEey-H_Md893sZQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer/@edgeMappings[name='electric']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_GhulIEhHEeyzgpIHIB_iHQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/sptp.design/description/My.odesign#//@ownedViewpoints[name='sptp']/@ownedRepresentations[name='sptp%20diagram']/@defaultLayer"/>
+    <target xmi:type="sPTP:Sptp" href="My.sptp#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

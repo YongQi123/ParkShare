@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:pytorch="http://www.example.org/pytorch" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.example.org/pytorch platform:/resource/ooad.pytorch/model/pytorch.ecore http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_K-x9MEawEeyS2otOymhxpA" selectedViews="_gGdS0Ea2EeydPrYuP1RIUg" version="14.5.1.202106111100">
+    <semanticResources>My.pytorch</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_XPH4AEaxEeyS2otOymhxpA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_x5sAsEayEeyfacxiAUsUsQ" name="AlexNet diagram" repPath="#_x5GK0EayEeyfacxiAUsUsQ" changeId="f298d522-bdec-418f-a956-07eb00b2f1dd">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']"/>
+        <target xmi:type="pytorch:NeuralNetwork" href="My.pytorch#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_gGdS0Ea2EeydPrYuP1RIUg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_L7m4MUa4EeydPrYuP1RIUg" name="new Neural network diagram" repPath="#_L7mRIEa4EeydPrYuP1RIUg" changeId="17a69792-7d79-4b23-8aaa-7942728f6bf2">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']"/>
+        <target xmi:type="pytorch:NeuralNetwork" href="My.pytorch#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_x5GK0EayEeyfacxiAUsUsQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_x6PaUEayEeyfacxiAUsUsQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_x6PaUUayEeyfacxiAUsUsQ" type="Sirius" element="_x5GK0EayEeyfacxiAUsUsQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_x7QuAEayEeyfacxiAUsUsQ" type="2001" element="_x6c1sEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7ZQ4EayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7ZQ4UayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7pvkEayEeyfacxiAUsUsQ" type="3003" element="_x6kKcEayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7pvkUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7pvkkayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7QuAUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7QuAkayEeyfacxiAUsUsQ" y="220" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7kQAEayEeyfacxiAUsUsQ" type="2001" element="_x6nNwEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7kQA0ayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7kQBEayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7qWoEayEeyfacxiAUsUsQ" type="3003" element="_x6n00EayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7qWoUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7qWokayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7kQAUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7kQAkayEeyfacxiAUsUsQ" y="112" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7k3EEayEeyfacxiAUsUsQ" type="2001" element="_x6n00kayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7k3E0ayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7k3FEayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7qWo0ayEeyfacxiAUsUsQ" type="3003" element="_x6n000ayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7qWpEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7qWpUayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7k3EUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7k3EkayEeyfacxiAUsUsQ" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7k3FUayEeyfacxiAUsUsQ" type="2001" element="_x6ob4UayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7leIEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7leIUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7q9sEayEeyfacxiAUsUsQ" type="3003" element="_x6pC8EayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7q9sUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7q9skayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7k3FkayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7k3F0ayEeyfacxiAUsUsQ" y="1100" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7leIkayEeyfacxiAUsUsQ" type="2001" element="_x6pC8kayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7mFMEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7mFMUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7rkwEayEeyfacxiAUsUsQ" type="3003" element="_x6pqAEayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7rkwUayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7rkwkayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7leI0ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7leJEayEeyfacxiAUsUsQ" y="880" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7mFMkayEeyfacxiAUsUsQ" type="2001" element="_x6pqAkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7msQEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7msQUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7rkw0ayEeyfacxiAUsUsQ" type="3003" element="_x6qREEayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7rkxEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7rkxUayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7mFM0ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7mFNEayEeyfacxiAUsUsQ" y="660" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7msQkayEeyfacxiAUsUsQ" type="2001" element="_x6qREkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7nTUEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7nTUUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7sL0EayEeyfacxiAUsUsQ" type="3003" element="_x6qRE0ayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7sL0UayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7sL0kayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7msQ0ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7msREayEeyfacxiAUsUsQ" y="552" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7nTUkayEeyfacxiAUsUsQ" type="2001" element="_x6q4IUayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7n6YEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7n6YUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7sL00ayEeyfacxiAUsUsQ" type="3003" element="_x6q4IkayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7sL1EayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7sL1UayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7nTU0ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7nTVEayEeyfacxiAUsUsQ" y="440" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7n6YkayEeyfacxiAUsUsQ" type="2001" element="_x6rfMEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7n6ZUayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7n6ZkayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7sL1kayEeyfacxiAUsUsQ" type="3003" element="_x6rfMUayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7sL10ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7sL2EayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7n6Y0ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7n6ZEayEeyfacxiAUsUsQ" y="992" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7n6Z0ayEeyfacxiAUsUsQ" type="2001" element="_x6sGQEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7ohcEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7ohcUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7sL2UayEeyfacxiAUsUsQ" type="3003" element="_x6sGQUayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7sL2kayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7sL20ayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7n6aEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7n6aUayEeyfacxiAUsUsQ" y="768" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_x7ohckayEeyfacxiAUsUsQ" type="2001" element="_x6sGQ0ayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x7pIgEayEeyfacxiAUsUsQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_x7pIgUayEeyfacxiAUsUsQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x7sy4EayEeyfacxiAUsUsQ" type="3003" element="_x6sGREayEeyfacxiAUsUsQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x7sy4UayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7sy4kayEeyfacxiAUsUsQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_x7ohc0ayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7ohdEayEeyfacxiAUsUsQ" y="328" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_x6PaUkayEeyfacxiAUsUsQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_x8Ud8EayEeyfacxiAUsUsQ" type="4001" element="_x646kEayEeyfacxiAUsUsQ" source="_x7k3FUayEeyfacxiAUsUsQ" target="_x7n6YkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8Ud9EayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8Ud9UayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8Ud9kayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8Ud90ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8Ud-EayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8Ud-UayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8Ud8UayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8Ud8kayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8Ud80ayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8Ud-kayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8Ud-0ayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8Ud_EayEeyfacxiAUsUsQ" type="4001" element="_x646lUayEeyfacxiAUsUsQ" source="_x7leIkayEeyfacxiAUsUsQ" target="_x7n6Z0ayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8UeAEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8UeAUayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8UeAkayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8UeA0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8VFAEayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8VFAUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8Ud_UayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8Ud_kayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8Ud_0ayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8VFAkayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8VFA0ayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8VFBEayEeyfacxiAUsUsQ" type="4001" element="_x65hokayEeyfacxiAUsUsQ" source="_x7mFMkayEeyfacxiAUsUsQ" target="_x7msQkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8VFCEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8VFCUayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8VFCkayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8VFC0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8VFDEayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8VFDUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8VFBUayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8VFBkayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8VFB0ayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8VsEEayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8VsEUayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8VsEkayEeyfacxiAUsUsQ" type="4001" element="_x66IskayEeyfacxiAUsUsQ" source="_x7msQkayEeyfacxiAUsUsQ" target="_x7nTUkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8VsFkayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8VsF0ayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8WTIEayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8WTIUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8WTIkayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8WTI0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8VsE0ayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8VsFEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8VsFUayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8WTJEayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8WTJUayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8W6MEayEeyfacxiAUsUsQ" type="4001" element="_x66vwEayEeyfacxiAUsUsQ" source="_x7nTUkayEeyfacxiAUsUsQ" target="_x7ohckayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8XhQEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8XhQUayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8YIUEayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8YIUUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8YIUkayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8YIU0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8W6MUayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8W6MkayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8W6M0ayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8YIVEayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8YIVUayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8YIVkayEeyfacxiAUsUsQ" type="4001" element="_x66vxUayEeyfacxiAUsUsQ" source="_x7QuAEayEeyfacxiAUsUsQ" target="_x7kQAEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8YvYEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8YvYUayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8YvYkayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8YvY0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8YvZEayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8YvZUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8YIV0ayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8YIWEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8YIWUayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8YvZkayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8YvZ0ayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8ZWcEayEeyfacxiAUsUsQ" type="4001" element="_x67W1EayEeyfacxiAUsUsQ" source="_x7kQAEayEeyfacxiAUsUsQ" target="_x7k3EEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8ZWdEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8ZWdUayEeyfacxiAUsUsQ" x="14" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8ZWdkayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8ZWd0ayEeyfacxiAUsUsQ" x="-54" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8ZWeEayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8ZWeUayEeyfacxiAUsUsQ" x="-107" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8ZWcUayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8ZWckayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8ZWc0ayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8ZWekayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8ZWe0ayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8Z9hEayEeyfacxiAUsUsQ" type="4001" element="_x6795UayEeyfacxiAUsUsQ" source="_x7n6YkayEeyfacxiAUsUsQ" target="_x7leIkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8Z9iEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8Z9iUayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8Z9ikayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8Z9i0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8Z9jEayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8Z9jUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8Z9hUayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8Z9hkayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8Z9h0ayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8akkEayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8akkUayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8akkkayEeyfacxiAUsUsQ" type="4001" element="_x68k8kayEeyfacxiAUsUsQ" source="_x7n6Z0ayEeyfacxiAUsUsQ" target="_x7mFMkayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8aklkayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8akl0ayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8bLoEayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8bLoUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8bLokayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8bLo0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8akk0ayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8aklEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8aklUayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8bLpEayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8bLpUayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8bLpkayEeyfacxiAUsUsQ" type="4001" element="_x69MAEayEeyfacxiAUsUsQ" source="_x7ohckayEeyfacxiAUsUsQ" target="_x7QuAEayEeyfacxiAUsUsQ">
+          <children xmi:type="notation:Node" xmi:id="_x8bysEayEeyfacxiAUsUsQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8bysUayEeyfacxiAUsUsQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8byskayEeyfacxiAUsUsQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8bys0ayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8bytEayEeyfacxiAUsUsQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8bytUayEeyfacxiAUsUsQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8bLp0ayEeyfacxiAUsUsQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8bLqEayEeyfacxiAUsUsQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8bLqUayEeyfacxiAUsUsQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8bytkayEeyfacxiAUsUsQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8byt0ayEeyfacxiAUsUsQ" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_x69zEEayEeyfacxiAUsUsQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_x6-aIEayEeyfacxiAUsUsQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6c1sEayEeyfacxiAUsUsQ" name="linear1" outgoingEdges="_x66vxUayEeyfacxiAUsUsQ" incomingEdges="_x69MAEayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6kKcEayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']"/>
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.8"/>
+      <semanticElements xmi:type="pytorch:Linear" href="My.pytorch#//@modules.8"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6nNwEayEeyfacxiAUsUsQ" name="linear2" outgoingEdges="_x67W1EayEeyfacxiAUsUsQ" incomingEdges="_x66vxUayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6n00EayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']"/>
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.9"/>
+      <semanticElements xmi:type="pytorch:Linear" href="My.pytorch#//@modules.9"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6n00kayEeyfacxiAUsUsQ" name="linear3" incomingEdges="_x67W1EayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6n000ayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']"/>
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.10"/>
+      <semanticElements xmi:type="pytorch:Linear" href="My.pytorch#//@modules.10"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6ob4UayEeyfacxiAUsUsQ" name="conv1" outgoingEdges="_x646kEayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6pC8EayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.0"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.0"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6pC8kayEeyfacxiAUsUsQ" name="conv2" outgoingEdges="_x646lUayEeyfacxiAUsUsQ" incomingEdges="_x6795UayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6pqAEayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.2"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.2"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6pqAkayEeyfacxiAUsUsQ" name="conv3" outgoingEdges="_x65hokayEeyfacxiAUsUsQ" incomingEdges="_x68k8kayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6qREEayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.4"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.4"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6qREkayEeyfacxiAUsUsQ" name="conv4" outgoingEdges="_x66IskayEeyfacxiAUsUsQ" incomingEdges="_x65hokayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6qRE0ayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.5"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.5"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6q4IUayEeyfacxiAUsUsQ" name="conv5" outgoingEdges="_x66vwEayEeyfacxiAUsUsQ" incomingEdges="_x66IskayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6q4IkayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.6"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.6"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6rfMEayEeyfacxiAUsUsQ" name="pool1" outgoingEdges="_x6795UayEeyfacxiAUsUsQ" incomingEdges="_x646kEayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6rfMUayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']"/>
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.1"/>
+      <semanticElements xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.1"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6sGQEayEeyfacxiAUsUsQ" name="pool2" outgoingEdges="_x68k8kayEeyfacxiAUsUsQ" incomingEdges="_x646lUayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6sGQUayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']"/>
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.3"/>
+      <semanticElements xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.3"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_x6sGQ0ayEeyfacxiAUsUsQ" name="pool3" outgoingEdges="_x69MAEayEeyfacxiAUsUsQ" incomingEdges="_x66vwEayEeyfacxiAUsUsQ" width="10" height="5" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:Square" uid="_x6sGREayEeyfacxiAUsUsQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']"/>
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.7"/>
+      <semanticElements xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.7"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x646kEayEeyfacxiAUsUsQ" sourceNode="_x6ob4UayEeyfacxiAUsUsQ" targetNode="_x6rfMEayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x646kUayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x646kkayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.0"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x646lUayEeyfacxiAUsUsQ" sourceNode="_x6pC8kayEeyfacxiAUsUsQ" targetNode="_x6sGQEayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x646lkayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x646l0ayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.2"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x65hokayEeyfacxiAUsUsQ" sourceNode="_x6pqAkayEeyfacxiAUsUsQ" targetNode="_x6qREkayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x65ho0ayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x65hpEayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.4"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x66IskayEeyfacxiAUsUsQ" sourceNode="_x6qREkayEeyfacxiAUsUsQ" targetNode="_x6q4IUayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x66Is0ayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x66ItEayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.5"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x66vwEayEeyfacxiAUsUsQ" sourceNode="_x6q4IUayEeyfacxiAUsUsQ" targetNode="_x6sGQ0ayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x66vwUayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x66vwkayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.6"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x66vxUayEeyfacxiAUsUsQ" sourceNode="_x6c1sEayEeyfacxiAUsUsQ" targetNode="_x6nNwEayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x67W0EayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x67W0UayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.8"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x67W1EayEeyfacxiAUsUsQ" sourceNode="_x6nNwEayEeyfacxiAUsUsQ" targetNode="_x6n00kayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x67W1UayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x67W1kayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.9"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x6795UayEeyfacxiAUsUsQ" sourceNode="_x6rfMEayEeyfacxiAUsUsQ" targetNode="_x6pC8kayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x6795kayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x67950ayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.1"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x68k8kayEeyfacxiAUsUsQ" sourceNode="_x6sGQEayEeyfacxiAUsUsQ" targetNode="_x6pqAkayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x68k80ayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x68k9EayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.3"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_x69MAEayEeyfacxiAUsUsQ" sourceNode="_x6sGQ0ayEeyfacxiAUsUsQ" targetNode="_x6c1sEayEeyfacxiAUsUsQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_x69MAUayEeyfacxiAUsUsQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_x69MAkayEeyfacxiAUsUsQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.7"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_x5SYEEayEeyfacxiAUsUsQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer"/>
+    <target xmi:type="pytorch:NeuralNetwork" href="My.pytorch#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_L7mRIEa4EeydPrYuP1RIUg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_L7nfQUa4EeydPrYuP1RIUg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_L7nfQka4EeydPrYuP1RIUg" type="Sirius" element="_L7mRIEa4EeydPrYuP1RIUg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_L7u0AEa4EeydPrYuP1RIUg" type="2001" element="_L7otYEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7u0A0a4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7u0BEa4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7yebEa4EeydPrYuP1RIUg" type="3003" element="_L7pUcEa4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7yebUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7yebka4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7u0AUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7u0Aka4EeydPrYuP1RIUg" y="220" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7vbEEa4EeydPrYuP1RIUg" type="2001" element="_L7pUcka4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7vbE0a4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7vbFEa4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7yeb0a4EeydPrYuP1RIUg" type="3003" element="_L7pUc0a4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7yecEa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7yecUa4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7vbEUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7vbEka4EeydPrYuP1RIUg" y="112" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7wCIEa4EeydPrYuP1RIUg" type="2001" element="_L7pUdUa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7wpMEa4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7wpMUa4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7zFcEa4EeydPrYuP1RIUg" type="3003" element="_L7pUdka4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7zFcUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7zFcka4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7wCIUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7wCIka4EeydPrYuP1RIUg" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7xQQka4EeydPrYuP1RIUg" type="2001" element="_L7p7g0a4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7xQRUa4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7xQRka4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7zsgEa4EeydPrYuP1RIUg" type="3003" element="_L7p7hEa4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7zsgUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7zsgka4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7xQQ0a4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7xQREa4EeydPrYuP1RIUg" y="1100" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7xQR0a4EeydPrYuP1RIUg" type="2001" element="_L7p7hka4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7xQSka4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7xQS0a4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7zsg0a4EeydPrYuP1RIUg" type="3003" element="_L7p7h0a4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7zshEa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7zshUa4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7xQSEa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7xQSUa4EeydPrYuP1RIUg" y="880" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7xQTEa4EeydPrYuP1RIUg" type="2001" element="_L7qikUa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7x3UEa4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7x3UUa4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7zshka4EeydPrYuP1RIUg" type="3003" element="_L7qikka4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7zsh0a4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7zsiEa4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7xQTUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7xQTka4EeydPrYuP1RIUg" y="660" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7x3Uka4EeydPrYuP1RIUg" type="2001" element="_L7qilEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7x3VUa4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7x3Vka4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7zsiUa4EeydPrYuP1RIUg" type="3003" element="_L7qilUa4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L7zsika4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7zsi0a4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7x3U0a4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7x3VEa4EeydPrYuP1RIUg" y="552" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7x3V0a4EeydPrYuP1RIUg" type="2001" element="_L7rJoEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7x3Wka4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7x3W0a4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L70TkEa4EeydPrYuP1RIUg" type="3003" element="_L7rJoUa4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L70TkUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L70Tkka4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7x3WEa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7x3WUa4EeydPrYuP1RIUg" y="440" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7x3YUa4EeydPrYuP1RIUg" type="2001" element="_L7rJpka4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7yeYEa4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7yeYUa4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L70Tlka4EeydPrYuP1RIUg" type="3003" element="_L7rJp0a4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L70Tl0a4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L70TmEa4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7x3Yka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7x3Y0a4EeydPrYuP1RIUg" y="992" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7yeYka4EeydPrYuP1RIUg" type="2001" element="_L7rJqUa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7yeZUa4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7yeZka4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L70TmUa4EeydPrYuP1RIUg" type="3003" element="_L7rwsEa4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L70Tmka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L70Tm0a4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7yeY0a4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7yeZEa4EeydPrYuP1RIUg" y="768" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7yeZ0a4EeydPrYuP1RIUg" type="2001" element="_L7rwska4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7yeaka4EeydPrYuP1RIUg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_L7yea0a4EeydPrYuP1RIUg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L70TnEa4EeydPrYuP1RIUg" type="3003" element="_L7rws0a4EeydPrYuP1RIUg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_L70TnUa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L70Tnka4EeydPrYuP1RIUg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L7yeaEa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7yeaUa4EeydPrYuP1RIUg" y="328" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_L7nfQ0a4EeydPrYuP1RIUg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_L706oEa4EeydPrYuP1RIUg" type="4001" element="_L7rwtUa4EeydPrYuP1RIUg" source="_L7xQQka4EeydPrYuP1RIUg" target="_L7x3YUa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L706pEa4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L706pUa4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L706pka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L706p0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L706qEa4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L706qUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L706oUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L706oka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L706o0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L706qka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L706q0a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L706rEa4EeydPrYuP1RIUg" type="4001" element="_L7sXxEa4EeydPrYuP1RIUg" source="_L7xQR0a4EeydPrYuP1RIUg" target="_L7yeYka4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L706sEa4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L706sUa4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L706ska4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L706s0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L71hsEa4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L71hsUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L706rUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L706rka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L706r0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L71hska4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L71hs0a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L71htEa4EeydPrYuP1RIUg" type="4001" element="_L7sXyUa4EeydPrYuP1RIUg" source="_L7xQTEa4EeydPrYuP1RIUg" target="_L7x3Uka4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L71huEa4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L71huUa4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L71huka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L71hu0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L71hvEa4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L71hvUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L71htUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L71htka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L71ht0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L71hvka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L71hv0a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L72IwEa4EeydPrYuP1RIUg" type="4001" element="_L7s-1Ea4EeydPrYuP1RIUg" source="_L7x3Uka4EeydPrYuP1RIUg" target="_L7x3V0a4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L72v0Ea4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L72v0Ua4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L72v0ka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L72v00a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L73W4Ea4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L73W4Ua4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L72IwUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L72Iwka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L72Iw0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L73W4ka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L73W40a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L73W5Ea4EeydPrYuP1RIUg" type="4001" element="_L7s-2Ua4EeydPrYuP1RIUg" source="_L7x3V0a4EeydPrYuP1RIUg" target="_L7yeZ0a4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L7398Ea4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7398Ua4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7398ka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L73980a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L7399Ea4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7399Ua4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L73W5Ua4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L73W5ka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L73W50a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L7399ka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L73990a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L739-Ea4EeydPrYuP1RIUg" type="4001" element="_L7s-3ka4EeydPrYuP1RIUg" source="_L7u0AEa4EeydPrYuP1RIUg" target="_L7vbEEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L739_Ea4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L739_Ua4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L74lAEa4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L74lAUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L74lAka4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L74lA0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L739-Ua4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L739-ka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L739-0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L74lBEa4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L74lBUa4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L74lBka4EeydPrYuP1RIUg" type="4001" element="_L7s-40a4EeydPrYuP1RIUg" source="_L7vbEEa4EeydPrYuP1RIUg" target="_L7wCIEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L74lCka4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L74lC0a4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L74lDEa4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L74lDUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L74lDka4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L74lD0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L74lB0a4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L74lCEa4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L74lCUa4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L74lEEa4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L74lEUa4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L75MFEa4EeydPrYuP1RIUg" type="4001" element="_L7tl6Ua4EeydPrYuP1RIUg" source="_L7x3YUa4EeydPrYuP1RIUg" target="_L7xQR0a4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L75MGEa4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75MGUa4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L75MGka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75MG0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L75MHEa4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75MHUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L75MFUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L75MFka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L75MF0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L75MHka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L75MH0a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L75MIEa4EeydPrYuP1RIUg" type="4001" element="_L7tl7ka4EeydPrYuP1RIUg" source="_L7yeYka4EeydPrYuP1RIUg" target="_L7xQTEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L75MJEa4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75MJUa4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L75MJka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75MJ0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L75MKEa4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75MKUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L75MIUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L75MIka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L75MI0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L75MKka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L75MK0a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_L75zIEa4EeydPrYuP1RIUg" type="4001" element="_L7tl80a4EeydPrYuP1RIUg" source="_L7yeZ0a4EeydPrYuP1RIUg" target="_L7u0AEa4EeydPrYuP1RIUg">
+          <children xmi:type="notation:Node" xmi:id="_L75zJEa4EeydPrYuP1RIUg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75zJUa4EeydPrYuP1RIUg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L75zJka4EeydPrYuP1RIUg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75zJ0a4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L75zKEa4EeydPrYuP1RIUg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L75zKUa4EeydPrYuP1RIUg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L75zIUa4EeydPrYuP1RIUg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L75zIka4EeydPrYuP1RIUg" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L75zI0a4EeydPrYuP1RIUg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L75zKka4EeydPrYuP1RIUg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L75zK0a4EeydPrYuP1RIUg" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_L7uM9Ea4EeydPrYuP1RIUg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_L7uM9Ua4EeydPrYuP1RIUg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7otYEa4EeydPrYuP1RIUg" name="linear1" outgoingEdges="_L7s-3ka4EeydPrYuP1RIUg" incomingEdges="_L7tl80a4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.8"/>
+      <semanticElements xmi:type="pytorch:Linear" href="My.pytorch#//@modules.8"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7pUcEa4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7pUcka4EeydPrYuP1RIUg" name="linear2" outgoingEdges="_L7s-40a4EeydPrYuP1RIUg" incomingEdges="_L7s-3ka4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.9"/>
+      <semanticElements xmi:type="pytorch:Linear" href="My.pytorch#//@modules.9"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7pUc0a4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7pUdUa4EeydPrYuP1RIUg" name="linear3" incomingEdges="_L7s-40a4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.10"/>
+      <semanticElements xmi:type="pytorch:Linear" href="My.pytorch#//@modules.10"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7pUdka4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='LinearNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7p7g0a4EeydPrYuP1RIUg" name="conv1" outgoingEdges="_L7rwtUa4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.0"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7p7hEa4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7p7hka4EeydPrYuP1RIUg" name="conv2" outgoingEdges="_L7sXxEa4EeydPrYuP1RIUg" incomingEdges="_L7tl6Ua4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.2"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.2"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7p7h0a4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7qikUa4EeydPrYuP1RIUg" name="conv3" outgoingEdges="_L7sXyUa4EeydPrYuP1RIUg" incomingEdges="_L7tl7ka4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.4"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.4"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7qikka4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7qilEa4EeydPrYuP1RIUg" name="conv4" outgoingEdges="_L7s-1Ea4EeydPrYuP1RIUg" incomingEdges="_L7sXyUa4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.5"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.5"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7qilUa4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7rJoEa4EeydPrYuP1RIUg" name="conv5" outgoingEdges="_L7s-2Ua4EeydPrYuP1RIUg" incomingEdges="_L7s-1Ea4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.6"/>
+      <semanticElements xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.6"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7rJoUa4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='Conv2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7rJpka4EeydPrYuP1RIUg" name="pool1" outgoingEdges="_L7tl6Ua4EeydPrYuP1RIUg" incomingEdges="_L7rwtUa4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.1"/>
+      <semanticElements xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.1"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7rJp0a4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7rJqUa4EeydPrYuP1RIUg" name="pool2" outgoingEdges="_L7tl7ka4EeydPrYuP1RIUg" incomingEdges="_L7sXxEa4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.3"/>
+      <semanticElements xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.3"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7rwsEa4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_L7rwska4EeydPrYuP1RIUg" name="pool3" outgoingEdges="_L7tl80a4EeydPrYuP1RIUg" incomingEdges="_L7s-2Ua4EeydPrYuP1RIUg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.7"/>
+      <semanticElements xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.7"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_L7rws0a4EeydPrYuP1RIUg" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@nodeMappings[name='MaxPool2dNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7rwtUa4EeydPrYuP1RIUg" sourceNode="_L7p7g0a4EeydPrYuP1RIUg" targetNode="_L7rJpka4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7sXwEa4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7sXwUa4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7sXxEa4EeydPrYuP1RIUg" sourceNode="_L7p7hka4EeydPrYuP1RIUg" targetNode="_L7rJqUa4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7sXxUa4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7sXxka4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7sXyUa4EeydPrYuP1RIUg" sourceNode="_L7qikUa4EeydPrYuP1RIUg" targetNode="_L7qilEa4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7s-0Ea4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7s-0Ua4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7s-1Ea4EeydPrYuP1RIUg" sourceNode="_L7qilEa4EeydPrYuP1RIUg" targetNode="_L7rJoEa4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7s-1Ua4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7s-1ka4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7s-2Ua4EeydPrYuP1RIUg" sourceNode="_L7rJoEa4EeydPrYuP1RIUg" targetNode="_L7rwska4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Conv2d" href="My.pytorch#//@modules.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7s-2ka4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7s-20a4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7s-3ka4EeydPrYuP1RIUg" sourceNode="_L7otYEa4EeydPrYuP1RIUg" targetNode="_L7pUcka4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.8"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7s-30a4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7s-4Ea4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7s-40a4EeydPrYuP1RIUg" sourceNode="_L7pUcka4EeydPrYuP1RIUg" targetNode="_L7pUdUa4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:Linear" href="My.pytorch#//@modules.9"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7tl4Ea4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7tl4Ua4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7tl6Ua4EeydPrYuP1RIUg" sourceNode="_L7rJpka4EeydPrYuP1RIUg" targetNode="_L7p7hka4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7tl6ka4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7tl60a4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7tl7ka4EeydPrYuP1RIUg" sourceNode="_L7rJqUa4EeydPrYuP1RIUg" targetNode="_L7qikUa4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7tl70a4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7tl8Ea4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L7tl80a4EeydPrYuP1RIUg" sourceNode="_L7rwska4EeydPrYuP1RIUg" targetNode="_L7otYEa4EeydPrYuP1RIUg">
+      <target xmi:type="pytorch:MaxPool2d" href="My.pytorch#//@modules.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L7uM8Ea4EeydPrYuP1RIUg" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L7uM8Ua4EeydPrYuP1RIUg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer/@edgeMappings[name='nextEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_L7m4MEa4EeydPrYuP1RIUg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/ooad.pytorch.design/description/pytorch.odesign#//@ownedViewpoints[name='neural%20network']/@ownedRepresentations[name='Neural%20network%20diagram']/@defaultLayer"/>
+    <target xmi:type="pytorch:NeuralNetwork" href="My.pytorch#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

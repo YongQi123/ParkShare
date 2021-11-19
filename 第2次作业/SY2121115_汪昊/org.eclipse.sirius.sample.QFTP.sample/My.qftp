@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QFTP:QoSCompoundConstraint xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:QFTP="http://www.eclipse.org/sirius/sample/QFTP">
+  <constraint xsi:type="QFTP:QoSRequired" qualification="BestEffort" next="//@constraint.2" contract="//@constraint.2" qOffered="//@constraint.1"/>
+  <constraint xsi:type="QFTP:QoSOffered" qualification="ThresholdBestEffort" next="//@constraint.3" contract="//@constraint.3" qRequired="//@constraint.0"/>
+  <constraint xsi:type="QFTP:QoSContract" qualification="CompulsoryBestEffort" previous="//@constraint.0" requireAccorded="//@constraint.0"/>
+  <constraint xsi:type="QFTP:QoSContract" previous="//@constraint.1" offerAccorded="//@constraint.1"/>
+  <constraint/>
+  <constraint xsi:type="QFTP:QoSRequired"/>
+  <constraint xsi:type="QFTP:QoSContract"/>
+  <constraint xsi:type="QFTP:QoSOffered"/>
+</QFTP:QoSCompoundConstraint>

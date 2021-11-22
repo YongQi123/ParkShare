@@ -26,6 +26,13 @@
 
 ### 系统顺序图截图与说明
 
+- searchParkingSpot 顺序图
+
+![ae11673bb3460b19ee0238155f6b096](https://user-images.githubusercontent.com/49605687/142857448-ba12c8cd-63d0-4aa9-b7d0-cf63d56b1d85.png)
+
+- register 顺序图
+
+![ac9ce84be65665b3facc55916a3e10b](https://user-images.githubusercontent.com/49605687/142857487-01735aff-c4d7-48a8-85fb-2131ba0ebed6.png)
 
 
 ### 选用 Architectural Pattern 的理由和具体情况

@@ -85,7 +85,15 @@ Data access layer包括了数据的存储
 
 
 - ShowParkingSpotStatus 顺序图
-![ShowParkingSpotStatus](https://user-images.githubusercontent.com/49606344/143456867-d4f1d0f4-6098-4689-b30a-fa60a52bafae.jpg)
+  ![ShowParkingSpotStatus](https://user-images.githubusercontent.com/49606344/143456867-d4f1d0f4-6098-4689-b30a-fa60a52bafae.jpg)
+
+- RentFromOwener顺序图
+
+  ![RentFromOwner](img\RentFromOwner.png)
+
+- RentToDriver顺序图
+
+  ![RentTodriver顺序图](img\RentTodriver顺序图.png)
 
 
 ### 选用 Architectural Pattern 的理由和具体情况

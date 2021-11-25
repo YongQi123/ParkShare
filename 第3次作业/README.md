@@ -89,11 +89,11 @@ Data access layer包括了数据的存储
 
 - RentFromOwener顺序图
 
-  ![RentFromOwner](img\RentFromOwner.png)
+  ![RentFromOwner](img/RentFromOwner.png)
 
 - RentToDriver顺序图
 
-  ![RentTodriver顺序图](img\RentTodriver顺序图.png)
+  ![RentTodriver顺序图](img/RentTodriver顺序图.png)
 
 
 ### 选用 Architectural Pattern 的理由和具体情况

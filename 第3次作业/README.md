@@ -84,6 +84,10 @@ Data access layer包括了数据的存储
 ![login](https://user-images.githubusercontent.com/49606344/143392430-75fedf26-6d71-4fcf-ae31-9dd21ca0879e.jpg)
 
 
+- ShowParkingSpotStatus 顺序图
+![ShowParkingSpotStatus](https://user-images.githubusercontent.com/49606344/143456867-d4f1d0f4-6098-4689-b30a-fa60a52bafae.jpg)
+
+
 ### 选用 Architectural Pattern 的理由和具体情况
 
 

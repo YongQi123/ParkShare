@@ -23,7 +23,7 @@ Data access layer包括了数据的存储
 
 #### Versoin 2
 
-![](img/System architecture diagram_2.png)
+![](E:\Program Files\RM2PT\ParkShare\ParkShare\第3次作业\img\System architecture diagram_2.png)
 
 | 更新说明                         |
 | -------------------------------- |

@@ -2,7 +2,7 @@
 
 #### Versoin 1
 
-![](img/System architecture diagram_1.png)
+![](img/System_architecture_diagram_1.png)
 
 本系统采用多层架构（Multitier architecture），包括了
 
@@ -23,7 +23,7 @@ Data access layer包括了数据的存储
 
 #### Versoin 2
 
-![](E:\Program Files\RM2PT\ParkShare\ParkShare\第3次作业\img\System architecture diagram_2.png)
+![](img/System_architecture_diagram_2.png)
 
 | 更新说明                         |
 | -------------------------------- |

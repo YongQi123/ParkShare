@@ -1,6 +1,36 @@
 ### 架构截图与说明
 
+#### Versoin 1
 
+![](img/System architecture diagram_1.png)
+
+本系统采用多层架构（Multitier architecture），包括了
+
+- **Presentation layer** 
+- **Application layer**
+- **Business layer** 
+- **Data access layer**
+
+Presentation layer 是用户操作界面
+
+Application layer涵盖了系统的功能，实现了各个用例的需求
+
+Business layer实现Application layer的功能，对用户操作进行记录，并保存到数据库中
+
+Data access layer包括了数据的存储
+
+每个层级都需要用户的认证信息。
+
+#### Versoin 2
+
+![](img/System architecture diagram_2.png)
+
+| 更新说明                         |
+| -------------------------------- |
+| 增加Web端应用                    |
+| 增加业务逻辑层和应用层之间的联系 |
+| 增加数据库                       |
+| 增加运行环境                     |
 
 ### 类图截图与说明
 
@@ -52,10 +82,6 @@
 
 - login 顺序图
 ![login](https://user-images.githubusercontent.com/49606344/143392430-75fedf26-6d71-4fcf-ae31-9dd21ca0879e.jpg)
-
-- ShowAssetsService 顺序图
-![ShowAssetsService](https://user-images.githubusercontent.com/49606344/143454413-5e4cbcf7-e179-45d5-8df8-2e392762a0e5.PNG)
-
 
 
 ### 选用 Architectural Pattern 的理由和具体情况

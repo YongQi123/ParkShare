@@ -84,10 +84,6 @@ Data access layer包括了数据的存储
 ![login](https://user-images.githubusercontent.com/49606344/143392430-75fedf26-6d71-4fcf-ae31-9dd21ca0879e.jpg)
 
 
-- ShowAssets 顺序图
-![ShowAssetsService](https://user-images.githubusercontent.com/49606344/143456756-fc84be65-96c2-413b-b57c-77e9951a4f5e.jpg)
-
-
 - ShowParkingSpotStatus 顺序图
 ![ShowParkingSpotStatus](https://user-images.githubusercontent.com/49606344/143456867-d4f1d0f4-6098-4689-b30a-fa60a52bafae.jpg)
 

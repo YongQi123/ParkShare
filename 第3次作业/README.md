@@ -34,6 +34,9 @@
 
 ![ac9ce84be65665b3facc55916a3e10b](https://user-images.githubusercontent.com/49605687/142857487-01735aff-c4d7-48a8-85fb-2131ba0ebed6.png)
 
+- login 顺序图
+![login](https://user-images.githubusercontent.com/49606344/143392430-75fedf26-6d71-4fcf-ae31-9dd21ca0879e.jpg)
+
 
 ### 选用 Architectural Pattern 的理由和具体情况
 

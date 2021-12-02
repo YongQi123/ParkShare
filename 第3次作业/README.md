@@ -72,6 +72,14 @@ Data access layer包括了数据的存储
 
 #### Version 3.1
 
+![](img/class_diagram_v3.png)
+
+这张图是用建造者模式（Builder Pattern）对类图进行的优化。
+
+#### Version 3.2
+
+![](img/class_diagram_v3.2.png)
+
 |     类      |                   说明                   |
 | :---------: | :--------------------------------------: |
 | RentService |    命令模式中的 Client，负责使用命令     |
@@ -80,28 +88,6 @@ Data access layer包括了数据的存储
 |  RentSpot   |             租用停车位的命令             |
 | ReturnSpot  |             归还停车位的命令             |
 | ParkingSpot | 命令模式中的 Receiver，负责真正执行命令  |
-
-这张图是用建造者模式（Builder Pattern）对类图进行的优化。
-
-#### Version 3.2
-
-![](img/class_diagram_v3.2.png)
-
-|             类              |                             说明                             |
-| :-------------------------: | :----------------------------------------------------------: |
-|            User             |       表示使用该系统的用户，拥有用户名、密码等基础属性       |
-|          SpotOwner          | 表示在系统中出租停车位的用户，抽象了个人出租者和停车场所有者的公共属性和行为 |
-|           Driver            |                     表示租用停车位的司机                     |
-|      PersonalSpotOwner      |                     表示个人停车位出租者                     |
-|      ParkingAreaOwner       |          表示停车场所有者，往往出租集中的大量停车位          |
-|         ParkingSpot         | 表示注册的一个停车位，拥有所有者 ID、注册时间、服务时间等属性 |
-|         ParkingArea         |         表示注册的一个停车场，可以一次注册整个停车场         |
-|      ParkingSpotStatus      |           表示停车位的当前状态：空闲、使用中、超时           |
-|     SpotServiceInterval     |   表示停车位的一个服务间隔，包括：周几、几点开始、几点结束   |
-|         RentRecord          |  表示一次租用记录，拥有司机 ID、车位 ID、预定开始时间等属性  |
-|         FineRecord          |     表示一次超时处罚记录，每条处罚记录对应于一条租用记录     |
-| TelephoneVerificationRecord |       验证电话号码的记录，包括每次验证的手机号的验证码       |
-|   EmailVerificationRecord   |      验证电子邮箱的记录，包括每次验证的邮箱地址和验证码      |
 
 ### 系统顺序图截图与说明
 

@@ -70,6 +70,19 @@ Data access layer包括了数据的存储
 | TelephoneVerificationRecord |       验证电话号码的记录，包括每次验证的手机号的验证码       |
 |   EmailVerificationRecord   |      验证电子邮箱的记录，包括每次验证的邮箱地址和验证码      |
 
+#### Version 3
+
+![](img/class_diagram_v3.png)
+
+|     类      |                   说明                   |
+| :---------: | :--------------------------------------: |
+| RentService |    命令模式中的 Client，负责使用命令     |
+|   Broker    | 命令模式中的 Invoker，负责保存和执行命令 |
+|    Order    |        命令抽象类，所有命令的父类        |
+|  RentSpot   |             租用停车位的命令             |
+| ReturnSpot  |             归还停车位的命令             |
+| ParkingSpot | 命令模式中的 Receiver，负责真正执行命令  |
+
 ### 系统顺序图截图与说明
 
 - searchParkingSpot 顺序图
@@ -110,5 +123,12 @@ Data access layer包括了数据的存储
 
 ### 选用 Design Pattern 的理由和具体情况
 
+#### 抽象工厂模式
+
 version2的register选用了**抽象工厂模式**，抽象工厂模式除了具有工厂方法模式的优点外，最主要的优点就是可以在类的内部对产品族进行约束。所谓的产品族，一般或多或少的都存在一定的关联，抽象工厂模式就可以在类内部对产品族的关联关系进行定义和描述，而不必专门引入一个新的类来进行管理。本系统的用户存在继承情况，并且后续开发可能会出现多级继承的结构，分属各个等级结构中的实现类之间存在着一定的关联或者约束，故使用抽象工厂模式进行系统类创建的优化。
 
+#### 命令模式
+
+类图的 Version 3 新增了**命令模式** (Command Pattern)，将每次租用和归还停车位抽象为命令，降低了命令发出者 (Driver) 与命令执行者 (ParkingSpot) 之间的耦合，后续还可以对租用和归还停车位的操作定制参数，支持更丰富的业务场景，并且能够更方便地实现撤销 (Undo) 和重做 (Redo) 操作。
+
+![](img/command_pattern.png)

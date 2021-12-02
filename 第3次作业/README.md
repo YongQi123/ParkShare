@@ -1,6 +1,6 @@
 ### 架构截图与说明
 
-#### Versoin 1
+#### Version 1
 
 ![](img/System_architecture_diagram_1.png)
 
@@ -21,7 +21,7 @@ Data access layer包括了数据的存储
 
 每个层级都需要用户的认证信息。
 
-#### Versoin 2
+#### Version 2
 
 ![](img/System_architecture_diagram_2.png)
 
@@ -76,9 +76,17 @@ Data access layer包括了数据的存储
 
 ![ae11673bb3460b19ee0238155f6b096](https://user-images.githubusercontent.com/49605687/142857448-ba12c8cd-63d0-4aa9-b7d0-cf63d56b1d85.png)
 
+
 - register 顺序图
 
+#### Version 1
 ![ac9ce84be65665b3facc55916a3e10b](https://user-images.githubusercontent.com/49605687/142857487-01735aff-c4d7-48a8-85fb-2131ba0ebed6.png)
+
+#### Version 2
+![image](https://user-images.githubusercontent.com/49605687/144353714-ce57af6a-c391-4b0c-98f8-d3af07c75096.png)
+
+
+
 
 - login 顺序图
 ![login](https://user-images.githubusercontent.com/49606344/143392430-75fedf26-6d71-4fcf-ae31-9dd21ca0879e.jpg)
@@ -101,4 +109,6 @@ Data access layer包括了数据的存储
 
 
 ### 选用 Design Pattern 的理由和具体情况
+
+version2的register选用了**抽象工厂模式**，抽象工厂模式除了具有工厂方法模式的优点外，最主要的优点就是可以在类的内部对产品族进行约束。所谓的产品族，一般或多或少的都存在一定的关联，抽象工厂模式就可以在类内部对产品族的关联关系进行定义和描述，而不必专门引入一个新的类来进行管理。本系统的用户存在继承情况，并且后续开发可能会出现多级继承的结构，分属各个等级结构中的实现类之间存在着一定的关联或者约束，故使用抽象工厂模式进行系统类创建的优化。
 

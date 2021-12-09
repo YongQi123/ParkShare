@@ -18,13 +18,11 @@
 
 
 输入端元模型截图：
-
-![输入端元模型截图](./photo\输入端元模型截图.png)
-
-输出端元模型截图：
 ![image](https://user-images.githubusercontent.com/76811277/145400136-49336310-7f0f-4390-852e-c1d649137148.png)
 
-![元模型输出端](./photo\元模型输出端.png)
+输出端元模型截图：
+
+![image](https://user-images.githubusercontent.com/76811277/145400244-476952af-fec0-4516-9bfe-b3f1a6989877.png)
 
 说明：这是在练习的时候确定的输出端元模型，因为无法把全部教程跑下来，所以暂时还未确定输出端元模型用什么比较有意义。
 

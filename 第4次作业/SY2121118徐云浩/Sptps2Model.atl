@@ -1,0 +1,10 @@
+module Sptps2Model;
+-- @path Sptps=/Sptps2Model/Sptps.ecore
+-- @path Models=/Sptps2Model/Models.ecore
+create OUT: Models from IN: Sptps;
+rule Sptps2Model {
+	from
+		s: Sptps!ResourceService
+	to
+		t: Models!model_two
+}

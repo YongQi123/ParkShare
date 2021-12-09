@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Sptps">
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceServiceInstance">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="water_control_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="land_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="homan_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="electric_bureau" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="water_type" lowerBound="1"
+        eType="#//ResourceService" containment="true" eOpposite="#//ResourceService/waterInstance"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="land_type" lowerBound="1"
+        eType="#//ResourceService" containment="true" eOpposite="#//ResourceService/landInstance"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="homan_type" lowerBound="1"
+        eType="#//ResourceService" containment="true" eOpposite="#//ResourceService/homanInstance"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="electric_type" lowerBound="1"
+        eType="#//ResourceService" containment="true" eOpposite="#//ResourceService/electricInstance"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceService">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="waterService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="landService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="homanService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="electricService" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="waterInstance" upperBound="-1"
+        eType="#//ResourceServiceInstance" containment="true" eOpposite="#//ResourceServiceInstance/water_type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="landInstance" upperBound="-1"
+        eType="#//ResourceServiceInstance" containment="true" eOpposite="#//ResourceServiceInstance/land_type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="homanInstance" upperBound="-1"
+        eType="#//ResourceServiceInstance" containment="true" eOpposite="#//ResourceServiceInstance/homan_type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="electricInstance" upperBound="-1"
+        eType="#//ResourceServiceInstance" containment="true" eOpposite="#//ResourceServiceInstance/electric_type"/>
+  </eClassifiers>
+</ecore:EPackage>

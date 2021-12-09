@@ -4,7 +4,7 @@
 
 原因：教程跑了四五次，每次到生成xmi的部分就无法生成xmi，具体问题如下：
 
-![xmi错误截图](./photo\xmi错误截图.png)
+![image](https://user-images.githubusercontent.com/76811277/145399908-caa42773-6ced-4824-9fac-8790a1c9d04e.png)
 
 也就是说刚新建xmi就自动关闭了，所以xmi是空白的。
 

@@ -1,0 +1,4 @@
+module QFTP.alt;
+-- @path QoSCompoundConstraint=/org.eclipse.sirius.sample.QFTP/QoSCompoundConstraint.ecore
+-- @path QoSConstraint=/org.eclipse.sirius.sample.QFTP/QoSConstraint.ecore
+create OUT: QoSConstraint from IN: QoSCompoundConstraint;

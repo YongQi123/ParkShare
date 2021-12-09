@@ -3,14 +3,13 @@
 未完成的部分是xmi的生成。
 
 原因：教程跑了四五次，每次到生成xmi的部分就无法生成xmi，具体问题如下：
-
-![image](https://user-images.githubusercontent.com/76811277/145399908-caa42773-6ced-4824-9fac-8790a1c9d04e.png)
+![image](https://user-images.githubusercontent.com/76811277/145400034-70ea60e1-2527-48cd-8ddd-bd8214d4863c.png)
 
 也就是说刚新建xmi就自动关闭了，所以xmi是空白的。
 
 找了几个小时原因，应该是元模型建立时候的原因：
 
-![Sptp-text](./photo\Sptp-text.png)
+![image](https://user-images.githubusercontent.com/76811277/145399908-caa42773-6ced-4824-9fac-8790a1c9d04e.png)
 
 比起教程中的截图少了两行：<xmi:XMI 和</xmi 所以这就是无法生成xmi文件的原因，但是这个问题无法解决，我直接在这两个元模型的text文档中加入这两行，结果还是一样无法运行。（问了几个同学，都没有遇到这种情况。）所以作业只能完成到这里。
 

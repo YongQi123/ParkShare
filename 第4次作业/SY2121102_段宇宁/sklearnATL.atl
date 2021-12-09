@@ -1,0 +1,11 @@
+module sklearnATL;
+-- @path component=/skLearn/sklearn.ecore
+-- @path model=/skLearn/model.ecore
+create OUT: model from IN: component;
+
+rule modelConstruct {
+	from
+		s: component!component 
+	to
+		t: model!component
+}

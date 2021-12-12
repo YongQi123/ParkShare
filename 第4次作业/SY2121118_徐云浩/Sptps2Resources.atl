@@ -1,0 +1,12 @@
+module Sptps2Resources;
+-- @path Sptps=/Sptps2Resources/Sptps.ecore
+-- @path Resources=/Sptps2Resources/Resources.ecore
+create OUT: Resources from IN: Sptps;
+rule ResourceServiceInstance2type_one {
+	from
+		s: Sptps!ResourceServiceInstance
+	to
+		t: Resouces!type_one (
+			resourceName <- s.water_control_bureau
+		)
+}

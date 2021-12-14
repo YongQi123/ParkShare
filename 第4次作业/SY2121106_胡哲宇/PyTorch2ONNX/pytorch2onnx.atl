@@ -1,0 +1,48 @@
+-- @path pytorch=/PyTorch2ONNX/pytorch.ecore
+-- @path onnx=/PyTorch2ONNX/onnx.ecore
+
+module pytorch2onnx;
+
+create OUT: onnx from IN: pytorch;
+
+
+helper context pytorch!Module def: input(): Sequence(String) =
+	if self.prev.oclIsUndefined() or self.prev->isEmpty() then
+		Sequence{'graph input'}
+	else
+		self.prev->flatten()->collect(e | e.name + '->' + self.name)
+	endif;
+
+
+helper context pytorch!Module def: output(): Sequence(String) =
+	if self.next->oclIsUndefined() or self.next->isEmpty() then
+		Sequence{'graph output'}
+	else
+		self.next->flatten()->collect(e | self.name + '->' + e.name)
+	endif;
+
+
+rule NeuralNetwork2Graph {
+	from
+		s: pytorch!NeuralNetwork
+	to
+		t: onnx!Graph (
+			name <- s.name,
+			node <- s.modules->flatten()->collect(e | thisModule.Module2Node(e)),
+			input <- Sequence{'graph input'},
+			output <- Sequence{'graph output'}
+		)
+}
+
+
+lazy rule Module2Node {
+	from
+		s: pytorch!Module
+	to
+		t: onnx!Graph (
+			name <- s.name,
+			op_type <- s.toString(),
+			input <- s.input(),
+			output <- s.output()
+		)
+}

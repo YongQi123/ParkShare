@@ -4,9 +4,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="workStream" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="classifier" eType="#//MLPClassifier"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="regressor" eType="#//MLPRegressor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="optimizer" eType="#//SGDOptimizer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MLPClassifier" eType="#//MLPClassifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MLPRegressor" eType="#//MLPRegressor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SGDOptimizer" eType="#//SGDOptimizer"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BaseMultilayerPerceptron" abstract="true"
       eSuperTypes="#//workStream"/>

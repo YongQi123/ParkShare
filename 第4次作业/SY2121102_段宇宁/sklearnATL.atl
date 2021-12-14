@@ -3,9 +3,22 @@ module sklearnATL;
 -- @path model=/skLearn/model.ecore
 create OUT: model from IN: component;
 
-rule modelConstruct {
+rule ClassifierConstruct {
 	from
-		s: component!component 
+		s: component!MLPClassifier 
 	to
-		t: model!component
+		t: model!Classifier
+}
+
+rule RegressorConstruct {
+	from
+		s: component!MLPRegressor 
+	to
+		t: model!Regressor
+}
+rule OptimizerConstruct {
+	from
+		s: component!SGDOptimizer 
+	to
+		t: model!Optimizer
 }

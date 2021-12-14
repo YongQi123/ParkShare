@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sklearn">
-  <eClassifiers xsi:type="ecore:EClass" name="component" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="workStream" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classifier" eType="#//MLPClassifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regressor" eType="#//MLPRegressor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="optimizer" eType="#//SGDOptimizer"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BaseMultilayerPerceptron" abstract="true"
-      eSuperTypes="#//component"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BaseEstimator" abstract="true" eSuperTypes="#//component"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ClassifierMixin" abstract="true" eSuperTypes="#//component"/>
+      eSuperTypes="#//workStream"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseEstimator" abstract="true" eSuperTypes="#//workStream"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierMixin" abstract="true" eSuperTypes="#//workStream"/>
   <eClassifiers xsi:type="ecore:EClass" name="LinearClassifierMixin" abstract="true"
-      eSuperTypes="#//component"/>
+      eSuperTypes="#//workStream"/>
   <eClassifiers xsi:type="ecore:EClass" name="LinearRegression" eSuperTypes="#//LinearClassifierMixin"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RegressorMixin" abstract="true" eSuperTypes="#//component"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BaseOptimizer" abstract="true" eSuperTypes="#//component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RegressorMixin" abstract="true" eSuperTypes="#//workStream"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseOptimizer" abstract="true" eSuperTypes="#//workStream"/>
   <eClassifiers xsi:type="ecore:EClass" name="SGDClassifier" eSuperTypes="#//LinearClassifierMixin"/>
   <eClassifiers xsi:type="ecore:EClass" name="SGDRegressor" eSuperTypes="#//LinearClassifierMixin"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MLPClassifier" eSuperTypes="#//ClassifierMixin"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MLPRegressor" eSuperTypes="#//BaseMultilayerPerceptron #//RegressorMixin"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SGDOptimizer" eSuperTypes="#//BaseOptimizer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MLPClassifier" eSuperTypes="#//ClassifierMixin">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="belong" eType="#//workStream"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MLPRegressor" eSuperTypes="#//BaseMultilayerPerceptron #//RegressorMixin">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="belong" eType="#//workStream"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SGDOptimizer" eSuperTypes="#//BaseOptimizer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="belong" eType="#//workStream"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdamOptimizer" eSuperTypes="#//BaseOptimizer"/>
 </ecore:EPackage>

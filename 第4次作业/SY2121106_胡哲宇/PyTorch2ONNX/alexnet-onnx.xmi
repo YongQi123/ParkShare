@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Graph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="onnx" name="AlexNet">
-  <Node name="conv1" op_type="pytorch!Conv2d">
+  <node name="conv1" op_type="pytorch!Conv2d">
   	<input>graph input</input>
   	<output>conv1->pool1</output>
-  </Node>
-  <Node name="pool1" op_type="pytorch!MaxPool2d">
+  </node>
+  <node name="pool1" op_type="pytorch!MaxPool2d">
   	<input>conv1->pool1</input>
   	<output>pool1->conv2</output>
-  </Node>
-  <Node name="conv2" op_type="pytorch!Conv2d">
+  </node>
+  <node name="conv2" op_type="pytorch!Conv2d">
   	<input>pool1->conv2</input>
   	<output>conv2->pool2</output>
-  </Node>
-  <Node name="pool2" op_type="pytorch!MaxPool2d">
+  </node>
+  <node name="pool2" op_type="pytorch!MaxPool2d">
   	<input>conv2->pool2</input>
   	<output>pool2->conv3</output>
-  </Node>
-  <Node name="conv3" op_type="pytorch!Conv2d">
+  </node>
+  <node name="conv3" op_type="pytorch!Conv2d">
   	<input>pool2->conv3</input>
   	<output>conv3->conv4</output>
-  </Node>
-  <Node name="conv4" op_type="pytorch!Conv2d">
+  </node>
+  <node name="conv4" op_type="pytorch!Conv2d">
   	<input>conv3->conv4</input>
   	<output>conv4->conv5</output>
-  </Node>
-  <Node name="conv5" op_type="pytorch!Conv2d">
+  </node>
+  <node name="conv5" op_type="pytorch!Conv2d">
   	<input>conv4->conv5</input>
   	<output>conv5->linear1</output>
-  </Node>
-  <Node name="linear1" op_type="pytorch!Linear">
+  </node>
+  <node name="linear1" op_type="pytorch!Linear">
   	<input>conv5->linear1</input>
   	<output>linear1->linear2</output>
-  </Node>
-  <Node name="linear2" op_type="pytorch!Linear">
+  </node>
+  <node name="linear2" op_type="pytorch!Linear">
   	<input>linear1->linear2</input>
   	<output>linear2->linear3</output>
-  </Node>
-  <Node name="linear3" op_type="pytorch!Linear">
+  </node>
+  <node name="linear3" op_type="pytorch!Linear">
   	<input>linear2->linear3</input>
   	<output>graph output</output>
-  </Node>
+  </node>
   <input>graph input</input>
   <output>graph output</output>
 </Graph>

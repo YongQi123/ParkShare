@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="pytorch">
+	<NeuralNetwork name="AlexNet">
+		<modules>
+			<Conv2d name="conv1">
+				<next name="pool1"/>
+			</Conv2d>
+		</modules>
+		<modules>
+			<MaxPool2d name="pool1">
+				<prev name="conv1"/>
+				<next name="conv2"/>
+			</MaxPool2d>
+		</modules>
+		<modules>
+			<Conv2d name="conv2">
+				<prev name="pool1"/>
+				<next name="pool2"/>
+			</Conv2d>
+		</modules>
+		<modules>
+			<MaxPool2d name="pool2">
+				<prev name="conv2"/>
+				<next name="conv3"/>
+			</MaxPool2d>
+		</modules>
+		<modules>
+			<Conv2d name="conv3">
+				<prev name="pool2"/>
+				<next name="conv4"/>
+			</Conv2d>
+		</modules>
+		<modules>
+			<Conv2d name="conv4">
+				<prev name="conv3"/>
+				<next name="conv5"/>
+			</Conv2d>
+		</modules>
+		<modules>
+			<Conv2d name="conv5">
+				<prev name="conv4"/>
+				<next name="pool3"/>
+			</Conv2d>
+		</modules>
+		<modules>
+			<MaxPool2d name="pool3">
+				<prev name="conv5"/>
+				<next name="linear1"/>
+			</MaxPool2d>
+		</modules>
+		<modules>
+			<Linear name="linear1">
+				<prev name="pool3"/>
+				<next name="linear2"/>
+			</Linear>
+		</modules>
+		<modules>
+			<Linear name="linear2">
+				<prev name="linear1"/>
+				<next name="linear3"/>
+			</Linear>
+		</modules>
+		<modules>
+			<Linear name="linear3">
+				<prev name="linear2"/>
+			</Linear>
+		</modules>
+	</NeuralNetwork>
+</xmi:XMI>

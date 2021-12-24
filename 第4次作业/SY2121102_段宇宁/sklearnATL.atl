@@ -1,0 +1,24 @@
+module sklearnATL;
+-- @path component=/skLearn/sklearn.ecore
+-- @path model=/skLearn/model.ecore
+create OUT: model from IN: component;
+
+rule ClassifierConstruct {
+	from
+		s: component!MLPClassifier 
+	to
+		t: model!Classifier
+}
+
+rule RegressorConstruct {
+	from
+		s: component!MLPRegressor 
+	to
+		t: model!Regressor
+}
+rule OptimizerConstruct {
+	from
+		s: component!SGDOptimizer 
+	to
+		t: model!Optimizer
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pytorch" nsURI="http://www.example.org/pytorch" nsPrefix="pytorch">
+  <eClassifiers xsi:type="ecore:EClass" name="NeuralNetwork">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
+        eType="#//Module" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Module" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" upperBound="-1" eType="#//Module"
+        containment="true" eOpposite="#//Module/prev"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="prev" upperBound="-1" eType="#//Module"
+        containment="true" eOpposite="#//Module/next"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConvLayer" abstract="true" eSuperTypes="#//Module"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxPoolLayer" abstract="true" eSuperTypes="#//Module"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AvgPoolLayer" abstract="true" eSuperTypes="#//Module"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivationLayer" abstract="true" eSuperTypes="#//Module"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinearLayer" abstract="true" eSuperTypes="#//Module"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Identity" eSuperTypes="#//LinearLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Linear" eSuperTypes="#//LinearLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Bilinear" eSuperTypes="#//LinearLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Conv1d" eSuperTypes="#//ConvLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Conv2d" eSuperTypes="#//ConvLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Conv3d" eSuperTypes="#//ConvLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxPool1d" eSuperTypes="#//MaxPoolLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxPool2d" eSuperTypes="#//MaxPoolLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxPool3d" eSuperTypes="#//MaxPoolLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AvgPool1d" eSuperTypes="#//AvgPoolLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AvgPool2d" eSuperTypes="#//AvgPoolLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AvgPool3d" eSuperTypes="#//AvgPoolLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sigmoid" eSuperTypes="#//ActivationLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReLU" eSuperTypes="#//ActivationLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LeakyReLU" eSuperTypes="#//ActivationLayer"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Softmax" eSuperTypes="#//ActivationLayer"/>
+</ecore:EPackage>
